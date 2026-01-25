@@ -8,3 +8,4 @@ docs/
 Makefile.local
 .DS_Store
 .~lock.xis2.ods\#
+*.pyc
