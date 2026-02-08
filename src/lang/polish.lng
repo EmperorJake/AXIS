@@ -7,10 +7,12 @@ STR_GRF_DESC                                                                    
 
 STR_PARAM_DESC_COAST_DISTANCE_MARINE_INDUSTRY                                   :Maksymalna odległość od linii brzegowej dla łowisk, platform wiertniczych i pogłębiarek.
 STR_PARAM_DESC_ECONOMIES                                                        :Każda z dostępnych w FIRS ekonomii oferuje inną kombinację towarów i fabryk.{}{}Dla graczy preferujących proste zasady gry zalecany jest wybór ekonomii {SILVER}Zwykła. {BLACK}Zawiera ona mniej fabryk i towarów niż inne ekonomie FIRS.{}{}Strona internetowa FIRS zawiera szczegółowe informacje na temat każdej z ekonomii.
-STR_PARAM_DESC_NO_OPENINGS                                                      :Domyślnie nowe przedsiębiorstwa powstają w trakcie gry.{}{}Jeśli parametr {SILVER}zapobiegaj powstawaniu przedsiębiorstw {BLACK}jest włączony to zakłady nie będą otwierane, a gracz nie będzie miał możliwości ich fundowania.
+STR_PARAM_DESC_NO_OPENINGS                                                      :Parametr ten uniemożliwia graczom fundować i zlecać poszukiwania nowych przedsiębiorstw.
+STR_PARAM_DESC_NO_SPAWNING                                                      :Domyślnie nowe przedsiębiorstwa powstają w trakcie gry.{}{}Jeśli parametr {SILVER}pozwalaj na pojawianie się przedsiębiorstw {BLACK}jest włączony to zakłady będą losowo otwierane. Ich ilość jest zależna od ustawienia gry "Liczba przedsiębiorstw".
 STR_PARAM_NAME_COAST_DISTANCE_MARINE_INDUSTRY                                   :Maksymalny dystans przedsiębiorstw morskich od wybrzeża
 STR_PARAM_NAME_ECONOMIES                                                        :Ekonomia
-STR_PARAM_NAME_NO_OPENINGS                                                      :Zapobiegaj powstawaniu przedsiębiorstw
+STR_PARAM_NAME_NO_OPENINGS                                                      :Zapobiegaj fundowaniu przedsiębiorstw
+STR_PARAM_NAME_NO_SPAWNING                                                      :Pozwalaj na pojawianie się przedsiębiorstw
 STR_PARAM_VALUE_SECONDARY_NEVER_CLOSE_0                                         :bez limitu
 
 STR_PARAM_NAME_PRIMARY_LEVEL1_REQUIREMENT                                       :Surowce potrzebne dla zwiększonej produkcji (domyślnie 16)
@@ -20,12 +22,32 @@ STR_PARAM_NAME_PRIMARY_LEVEL1_BONUS                                             
 STR_PARAM_NAME_PRIMARY_LEVEL2_BONUS                                             :Niewiarygodny poziom produkcji (%)
 STR_PARAM_DESC_PRIMARY_LEVEL_BONUS                                              :Produkcja w gospodarstwach, kopalniach i podobnych zakładach kiedy wymagania dotyczące dostaw są spełnione (jako procent {SILVER}normalnego {BLACK}poziomu produkcji).
 
-STR_PARAM_VALUE_ECONOMIES_BASIC_TEMPERATE                                       :Zwykła ekonomia dla klimatu umiarkowanego
-STR_PARAM_VALUE_ECONOMIES_BASIC_ARCTIC                                          :Zwykła ekonomia dla klimatu arktycznego
-STR_PARAM_VALUE_ECONOMIES_BASIC_TROPIC                                          :Zwykła ekonomia dla klimatu tropikalnego
-# STR_PARAM_VALUE_ECONOMIES_BETTER_LIVING_THROUGH_CHEMISTRY                       :Better Living Through Chemistry  //unused in current version, not sure how to translate
-STR_PARAM_VALUE_ECONOMIES_IN_A_HOT_COUNTRY                                      :W Gorącym Kraju
+STR_PARAM_NAME_EXPERIMENTAL_FEATURES                                            :Enable experimental features
+STR_PARAM_DESC_EXPERIMENTAL_FEATURES                                            :Turns experimental features on or off.
+
+STR_PARAM_VALUE_ECONOMIES_BASIC_TEMPERATE                                       :Klasyczna extremalna ekonomia
+STR_PARAM_VALUE_ECONOMIES_BASIC_ARCTIC                                          :NIEDOKOŃCZONE Ekonomia dla klimatu arktycznego
+STR_PARAM_VALUE_ECONOMIES_BASIC_TROPIC                                          :Tropikalny raj
+STR_PARAM_VALUE_ECONOMIES_TROPICAL_PARADISE                                     :Tropikalny raj 2
+STR_PARAM_VALUE_ECONOMIES_BETTER_LIVING_THROUGH_CHEMISTRY                       :NIEDOKOŃCZONE Lepiej żyj dzięki chemii
+STR_PARAM_VALUE_ECONOMIES_IN_A_HOT_COUNTRY                                      :NIEDOKOŃCZONE W gorącym kraju
 STR_PARAM_VALUE_ECONOMIES_STEELTOWN                                             :Stalowa metropolia
+
+STR_CARGO_SUBTYPE_DISPLAY_CARGO_SUPPLIED_FLAG                                   : {BLACK}(dostarczono)
+STR_EXTRA_TEXT_SECONDARY_NON_COMBINATORY                                        :{BLACK}Produkuje z maksymalną wydajnością, jeśli dostarczany jest {WHITE}którykolwiek {BLACK}z potrzebnych towarów.
+STR_EXTRA_TEXT_SECONDARY_COMBINATORY                                            :{BLACK}Dla maksymalnej produkcji, dostarcz {WHITE}wszystkie {BLACK}potrzebne towary co najmniej raz na 3 miesiące.
+STR_EXTRA_TEXT_TOWN_PRODUCER                                                    :{BLACK}Produkcja jest proporcjonalna do populacji miasta. Przynajmniej {WHITE}{SIGNED_WORD} jednostek{BLACK} i nie więcej niż {WHITE}{SIGNED_WORD} jednostek{BLACK} towaru będzie produkowanych każdego miesiąca.
+STR_PRIMARY_PRODUCTION_1X                                                       :{BLACK}Aktualna produkcja: {YELLOW}normalna{}{}{BLACK}Dla {WHITE}zwiększonej {BLACK}produkcji, dostarcz {SIGNED_WORD} skrzyń zaopatrzenia w ciągu trzech miesięcy.{}Dla {WHITE}niewiarygodnej {BLACK}produkcji dostarcz {SIGNED_WORD} skrzyń.
+STR_PRIMARY_PRODUCTION_2X                                                       :{BLACK}Aktualna produkcja: {YELLOW}zwiększona{}{}{BLACK}By utrzymać ten poziom, dostarcz {SIGNED_WORD} skrzyń zaopatrzenia w ciągu trzech miesięcy.{}Dla {WHITE}niewiarygodnej {BLACK}produkcji, dostarcz {SIGNED_WORD} skrzyń.
+STR_PRIMARY_PRODUCTION_4X                                                       :{BLACK}Aktualna produkcja: {YELLOW}niewiarygodna{}{}{BLACK}By utrzymać ten poziom, dostarcz {SKIP}{SIGNED_WORD} skrzyń zaopatrzenia w ciągu trzech miesięcy.
+STR_PORT_PRODUCTION_1X                                                          :{BLACK}Aktualna produkcja: {YELLOW}normalna{}{}{BLACK}Dla {WHITE}zwiększonej {BLACK}produkcji dostarcz {SIGNED_WORD} jednostek towaru w ciągu trzech miesięcy.{}Dla {WHITE}niewiarygodnej {BLACK}produkcji dostarcz {SIGNED_WORD} jednostek.
+STR_PORT_PRODUCTION_2X                                                          :{BLACK}Aktualna produkcja: {YELLOW}zwiększona{}{}{BLACK}By utrzymać ten poziom, dostarcz {SIGNED_WORD} jednostek towaru w ciągu trzech miesięcy.{}Dla {WHITE}niewiarygodnej {BLACK}produkcji dostarcz {SIGNED_WORD} jednostek.
+STR_PORT_PRODUCTION_4X                                                          :{BLACK}Aktualna produkcja: {YELLOW}niewiarygodna{}{}{BLACK}By utrzymać ten poziom, dostarcz {SKIP}{SIGNED_WORD} jednostek towaru w ciągu trzech miesięcy.
+
+STR_INFORMATIVE_EXTRA_TEXT_PLAZA                                                :{SKIP}{SKIP}Nastrój populacji:{} {STRING}{STRING}{}{}{BLACK}Poziom optymizmu: {STRING}{SIGNED_WORD} punkt{P 2 "" y ów}{}{BLACK} Zapewnione dobra i potrzeby: {YELLOW}{SIGNED_WORD} punkt{P 2 "" y ów}{}{BLACK} Brud i zanieczyszczenie: {YELLOW}{SIGNED_WORD} punkt{P 2 "" y ów}{}{}{BLACK}Poziom brudu i zanieczyszczenia wzrasta wraz z rozwojem populacji i powstawanie przedsiębiorstw.{}{}Dobra i potrzeby są zapewniane poprzez by dostarczanie ich do odpowiednich przedsiębiorstw.{}{}Jeśli poziom optymizmu jest większy niż 10, to populacja będzie w {WHITE}optymistycznym{BLACK} nastroju. Jeśli poziom optymizmu będzie mniej niż -10, to populacja będzie w {WHITE}ponurym{BLACK} nastroju.
+STR_INFORMATIVE_EXTRA_TEXT_PLAZA_MOOD_OPTIMISTIC                                :Optymistyczny
+STR_INFORMATIVE_EXTRA_TEXT_PLAZA_MOOD_GLOOMY                                    :Ponury
+STR_INFORMATIVE_EXTRA_TEXT_PLAZA_MOOD_NEUTRAL                                   :Neutralny
 
 STR_CARGO_NAME_ACID                                                             :{G=m}Kwas
 STR_CARGO_NAME_ACID.b                                                           :kwas
@@ -946,16 +968,6 @@ STR_IND_WIRE_AND_SECTION_MILL                                                   
 STR_IND_WIRE_AND_SECTION_MILL.d                                                 :fabryki profili i walcówki
 
 
-STR_CARGO_SUBTYPE_DISPLAY_CARGO_SUPPLIED_FLAG                             : {BLACK}(dostarczono)
-STR_EXTRA_TEXT_SECONDARY_NON_COMBINATORY                                        :{BLACK}Produkuje z maksymalną wydajnością, jeśli dostarczany jest {WHITE}którykolwiek {BLACK}z potrzebnych towarów.
-STR_EXTRA_TEXT_SECONDARY_COMBINATORY                                            :{BLACK}Dla maksymalnej produkcji, dostarcz {WHITE}wszystkie {BLACK}potrzebne towary co najmniej raz na 3 miesiące.
-STR_EXTRA_TEXT_TOWN_PRODUCER                                                    :{BLACK}Produkcja jest proporcjonalna do populacji miasta. Przynajmniej {WHITE}{SIGNED_WORD} jednostek{BLACK} i nie więcej niż {WHITE}{SIGNED_WORD} jednostek{BLACK} towaru będzie produkowanych każdego miesiąca.
-STR_PRIMARY_PRODUCTION_1X                                                       :{BLACK}Aktualna produkcja: {YELLOW}normalna{}{}{BLACK}Dla {WHITE}zwiększonej {BLACK}produkcji, dostarcz {SIGNED_WORD} skrzyń zaopatrzenia w ciągu trzech miesięcy.{}Dla {WHITE}niewiarygodnej {BLACK}produkcji dostarcz {SIGNED_WORD} skrzyń.
-STR_PRIMARY_PRODUCTION_2X                                                       :{BLACK}Aktualna produkcja: {YELLOW}zwiększona{}{}{BLACK}By utrzymać ten poziom, dostarcz {SIGNED_WORD} skrzyń zaopatrzenia w ciągu trzech miesięcy.{}Dla {WHITE}niewiarygodnej {BLACK}produkcji, dostarcz {SIGNED_WORD} skrzyń.
-STR_PRIMARY_PRODUCTION_4X                                                       :{BLACK}Aktualna produkcja: {YELLOW}niewiarygodna{}{}{BLACK}By utrzymać ten poziom, dostarcz {SKIP}{SIGNED_WORD} skrzyń zaopatrzenia w ciągu trzech miesięcy.
-STR_PORT_PRODUCTION_1X                                                          :{BLACK}Aktualna produkcja: {YELLOW}normalna{}{}{BLACK}Dla {WHITE}zwiększonej {BLACK}produkcji dostarcz {SIGNED_WORD} jednostek towaru w ciągu trzech miesięcy.{}Dla {WHITE}niewiarygodnej {BLACK}produkcji dostarcz {SIGNED_WORD} jednostek.
-STR_PORT_PRODUCTION_2X                                                          :{BLACK}Aktualna produkcja: {YELLOW}zwiększona{}{}{BLACK}By utrzymać ten poziom, dostarcz {SIGNED_WORD} jednostek towaru w ciągu trzech miesięcy.{}Dla {WHITE}niewiarygodnej {BLACK}produkcji dostarcz {SIGNED_WORD} jednostek.
-STR_PORT_PRODUCTION_4X                                                          :{BLACK}Aktualna produkcja: {YELLOW}niewiarygodna{}{}{BLACK}By utrzymać ten poziom, dostarcz {SKIP}{SIGNED_WORD} jednostek towaru w ciągu trzech miesięcy.
 STR_GENERIC_NEWLINE                                                             :{}
 
 STR_FUND_ARABLE_FARM                                                            :{}{BLACK}Lokalizacja: {YELLOW}Nie może być budowane na śniegu ani na pustyni.
