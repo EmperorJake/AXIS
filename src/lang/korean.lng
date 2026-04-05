@@ -1,16 +1,17 @@
 ##grflangid 0x3a
 ##plural 11
-##gender m f
 
-STR_GRF_DESC                                                                    :{ORANGE}FIRS 산업 시설 대체 세트{}{BLACK}andythenorth, FooBar, planetmaker, Terkhen, Yexo 등 많은 분들의 도움을 받아 제공됩니다. {SILVER}FIRS를 사용하는 방법 등을 포함한 자세한 정보는 읽어보기를 참고하세요. {BLACK}라이선스: GPL v2
+STR_GRF_DESC                                                                    :{ORANGE}AXIS: Another Xtreme Industry Set (또다른 극한 악스트림 산업 세트){}{BLACK}XIS의 공식 후속작입니다. Emperor Jake가 디자인했으며, andythenorth, FooBar, planetmaker, Terkhen, Yexo의 FIRS 4 코드를 기반으로 많은 다른 사람들의 도움을 받았습니다. {SILVER}AXIS 사용 방법을 포함한 자세한 내용은 readme 파일을 참조하세요. {BLACK}라이선스: GPL v2.
 
 STR_PARAM_DESC_COAST_DISTANCE_MARINE_INDUSTRY                                   :어장, 유전, 준설 부지의 최대 해안 거리 (단위: 칸)
 STR_PARAM_DESC_ECONOMIES                                                        :각각의 경제 설정에 따라 화물과 산업시설의 구성이 달라집니다.{}{}간단한 게임 플레이를 원하는 플레이어의 경우, 다른 FIRS 경제에 비해 '{SILVER}기본{BLACK}' 경제가 산업 시설과 화물의 종류가 적으므로 이를 사용하십시오.{}{} FIRS 웹 사이트에서 각 경제 설정에 대한 상세 정보를 확인하실 수 있습니다.
-STR_PARAM_DESC_NO_OPENINGS                                                      :기본적으로, 게임 중에 새로운 산업 시설이 건설될 것입니다.{}{}만약 '{SILVER}건설 금지{BLACK}' 옵션을 켠다면 게임 중에 산업 시설이 건설되지 않을 것이고, 플레이어는 산업시설에 투자하거나 산업 시설을 탐사할 수 없게 됩니다.
+STR_PARAM_DESC_NO_OPENINGS                                                      :이 매개변수는 플레이어가 산업에 자금을 투자하거나 산업을 발굴하는 것을 방지합니다.
+STR_PARAM_DESC_NO_SPAWNING                                                      :기본적으로, 게임 중에 새로운 산업 시설이 건설될 것입니다.{}{}만약 '{SILVER}건설 금지{BLACK}' 옵션을 켠다면 게임 중에 산업 시설이 건설되지 않을 것이고, 플레이어는 산업시설에 투자하거나 산업 시설을 탐사할 수 없게 됩니다.
 STR_PARAM_NAME_COAST_DISTANCE_MARINE_INDUSTRY                                   :해양 산업 시설의 최대 해안 거리 (단위: 칸)
 STR_PARAM_NAME_ECONOMIES                                                        :경제
-STR_PARAM_NAME_NO_OPENINGS                                                      :게임 플레이 중 산업 시설의 건설을 금지
-STR_PARAM_VALUE_SECONDARY_NEVER_CLOSE_0                                         :제한 없음
+STR_PARAM_NAME_NO_OPENINGS                                                      :탐사만 허용
+STR_PARAM_NAME_NO_SPAWNING                                                      :게임플레이중 산업시설 건설허용
+STR_PARAM_VALUE_SECONDARY_NEVER_CLOSE_0                                         :제한없음
 
 STR_PARAM_NAME_PRIMARY_LEVEL1_REQUIREMENT                                       :1차 산업 시설의 생산량을 2배로 늘리기 위해 수송해야 할 화물량 (기본값: 16)
 STR_PARAM_NAME_PRIMARY_LEVEL2_REQUIREMENT                                       :1차 산업 시설의 생산량을 4배로 늘리기 위해 수송해야 할 화물량 (기본값: 80)
@@ -19,434 +20,18 @@ STR_PARAM_NAME_PRIMARY_LEVEL1_BONUS                                             
 STR_PARAM_NAME_PRIMARY_LEVEL2_BONUS                                             :생산량이 격렬히 많은 1차 산업시설의 생산 수준 (%)
 STR_PARAM_DESC_PRIMARY_LEVEL_BONUS                                              :농장, 광산, 기타 유사 산업시설에서 생산량이 늘어나기 위한 공급 요구량({SILVER}보통{BLACK} 생산 수준에 대한 비율)
 
-STR_PARAM_VALUE_ECONOMIES_BASIC_TEMPERATE                                       :온대 기후 기본
+STR_PARAM_NAME_EXPERIMENTAL_FEATURES                                            :실험적기능을 활성화합니다.
+STR_PARAM_DESC_EXPERIMENTAL_FEATURES                                            :실험적기능을 켜거나 끕니다.
+
+STR_PARAM_VALUE_ECONOMIES_BASIC_TEMPERATE                                       :극한 클래식
 STR_PARAM_VALUE_ECONOMIES_BASIC_ARCTIC                                          :아한대 기후 기본
 STR_PARAM_VALUE_ECONOMIES_BASIC_TROPIC                                          :아열대 기후 기본
+STR_PARAM_VALUE_ECONOMIES_TROPICAL_PARADISE                                     :열대 파라다이스
 STR_PARAM_VALUE_ECONOMIES_BETTER_LIVING_THROUGH_CHEMISTRY                       :화학을 통한 더 나은 생활
 STR_PARAM_VALUE_ECONOMIES_IN_A_HOT_COUNTRY                                      :더운 나라
 STR_PARAM_VALUE_ECONOMIES_STEELTOWN                                             :철강 도시
 
-STR_CARGO_NAME_ACID                                                             :{G=m}산
-STR_CARGO_NAME_ALCOHOL                                                          :{G=m}술
-STR_CARGO_NAME_ALLOY_STEEL                                                      :{G=m}합금강
-STR_CARGO_NAME_ALUMINIUM                                                        :{G=m}알루미늄
-STR_CARGO_NAME_ALUMINIA                                                         :{G=f}알루미나
-STR_CARGO_NAME_AMMONIA                                                          :{G=f}암모니아
-STR_CARGO_NAME_AMMONIUM_NITRATE                                                 :{G=m}질산암모늄
-STR_CARGO_NAME_BAUXITE                                                          :{G=f}보크사이트
-STR_CARGO_NAME_BEANS                                                            :{G=m}콩
-STR_CARGO_NAME_BUILDING_MATERIALS                                               :{G=f}건축 자재
-STR_CARGO_NAME_CARBON_BLACK                                                     :{G=m}탄소 검댕
-STR_CARGO_NAME_CARBON_STEEL                                                     :{G=m}탄소강
-STR_CARGO_NAME_CASSAVA                                                          :{G=f}카사바
-STR_CARGO_NAME_CAST_IRON                                                        :{G=m}주철
-STR_CARGO_NAME_CEMENT                                                           :{G=f}시멘트
-STR_CARGO_NAME_CHEMICALS                                                        :{G=m}화학품
-STR_CARGO_NAME_CHLORINE                                                         :{G=f}염소
-STR_CARGO_NAME_CHROMITE_ORE                                                     :{G=m}크로마이트 광석
-STR_CARGO_NAME_CLAY                                                             :{G=f}점토
-STR_CARGO_NAME_CLEANING_AGENTS                                                  :{G=f}세정제
-STR_CARGO_NAME_COFFEE                                                           :{G=f}커피
-STR_CARGO_NAME_COAL_TAR                                                         :{G=f}콜타르
-STR_CARGO_NAME_COKE                                                             :{G=f}코크스
-STR_CARGO_NAME_COPPER                                                           :{G=f}구리
-STR_CARGO_NAME_COPPER_CONCENTRATE                                               :{G=m}동정광
-STR_CARGO_NAME_EDIBLE_OIL                                                       :{G=f}식용유
-STR_CARGO_NAME_ELECTRICAL_PARTS                                                 :{G=m}전자부품
-STR_CARGO_NAME_ENGINEERING_SUPPLIES                                             :{G=f}생산 장비
-STR_CARGO_NAME_ETHYLENE                                                         :{G=m}에틸렌
-STR_CARGO_NAME_EXPLOSIVES                                                       :{G=m}폭발물
-STR_CARGO_NAME_FERROCHROME                                                      :{G=m}크롬철
-STR_CARGO_NAME_FIBRES                                                           :{G=f}식물 섬유
-STR_CARGO_NAME_FISH                                                             :{G=f}물고기
-STR_CARGO_NAME_FARM_SUPPLIES                                                    :{G=m}농장 비품
-STR_CARGO_NAME_FERTILISER                                                       :{G=f}비료
-STR_CARGO_NAME_FOOD_ADDITIVES                                                   :{G=m}식품 첨가물
-STR_CARGO_NAME_FORMIC_ACID                                                      :{G=m}포름산
-STR_CARGO_NAME_FRUITS                                                           :{G=m}과일
-STR_CARGO_NAME_FURNITURE                                                        :{G=f}가구
-STR_CARGO_NAME_GLASS                                                            :{G=f}유리
-STR_CARGO_NAME_HYDROCHLORIC_ACID                                                :{G=m}염산
-STR_CARGO_NAME_KAOLIN                                                           :{G=f}고령토
-STR_CARGO_NAME_LIMESTONE                                                        :{G=m}석회석
-STR_CARGO_NAME_LOGS                                                             :{G=f}목재
-STR_CARGO_NAME_LUMBER                                                           :{G=m}제재목
-# cargo uses Sodium Hydroxide as string as it's interchangeable with Lye, but lye is convenient for filename / cargo label
-STR_CARGO_NAME_LYE                                                              :{G=m}수산화나트륨
-STR_CARGO_NAME_METAL                                                            :{G=m}금속
-STR_CARGO_NAME_METHANE                                                          :{G=m}메탄
-STR_CARGO_NAME_METHANOL                                                         :{G=m}메탄올
-STR_CARGO_NAME_MILK                                                             :{G=f}우유
-STR_CARGO_NAME_MANGANESE                                                        :{G=f}망가니즈
-STR_CARGO_NAME_NAPHTHA                                                          :{G=f}나프타
-STR_CARGO_NAME_NICKEL                                                           :{G=m}니켈
-STR_CARGO_NAME_NITRATES                                                         :{G=m}질산염
-STR_CARGO_NAME_NUTS                                                             :{G=f}견과류
-STR_CARGO_NAME_OXYGEN                                                           :{G=f}산소
-STR_CARGO_NAME_PACKAGING                                                        :{G=m}포장품
-STR_CARGO_NAME_PAINTS_AND_COATINGS                                              :{G=m}페인트 & 코팅
-STR_CARGO_NAME_PEAT                                                             :{G=m}토탄
-STR_CARGO_NAME_PETROL                                                           :{G=f}석유 연료
-STR_CARGO_NAME_PHOSPHATE                                                        :{G=m}인산염
-STR_CARGO_NAME_PHOSPHORIC_ACID                                                  :{G=m}인산
-STR_CARGO_NAME_PIG_IRON                                                         :{G=m}선철
-STR_CARGO_NAME_PIPE                                                             :{G=f}파이프
-STR_CARGO_NAME_PLASTICS                                                         :{G=m}플라스틱
-STR_CARGO_NAME_POTASH                                                           :{G=m}탄산칼륨
-STR_CARGO_NAME_PROPYLENE                                                        :{G=m}프로필렌
-STR_CARGO_NAME_PYRITE_ORE                                                       :{G=m}황철석
-STR_CARGO_NAME_QUICKLIME                                                        :{G=f}생석회
-STR_CARGO_NAME_RAW_LATEX                                                        :{G=f}생고무
-STR_CARGO_NAME_REBAR                                                            :{G=m}강철봉
-STR_CARGO_NAME_RECYCLABLES                                                      :{G=m}재활용품
-STR_CARGO_NAME_SALT                                                             :{G=m}소금
-STR_CARGO_NAME_SAND                                                             :{G=f}모래
-STR_CARGO_NAME_SCRAP_METAL                                                      :{G=m}고철
-STR_CARGO_NAME_SLAG                                                             :{G=f}광재
-STR_CARGO_NAME_SODA_ASH                                                         :{G=f}소다회
-STR_CARGO_NAME_STAINLESS_STEEL                                                  :{G=m}스테인리스강
-STR_CARGO_NAME_STEEL                                                            :{G=m}강철
-STR_CARGO_NAME_STEEL_SECTIONS                                                   :{G=m}형강
-STR_CARGO_NAME_STEEL_SHEET                                                      :{G=m}강판
-STR_CARGO_NAME_STEEL_WIRE_ROD                                                   :{G=m}강선봉
-STR_CARGO_NAME_STONE                                                            :{G=f}석재
-STR_CARGO_NAME_SUGAR_BEET                                                       :{G=f}사탕무
-STR_CARGO_NAME_SULPHUR                                                          :{G=m}황
-STR_CARGO_NAME_SULPHURIC_ACID                                                   :{G=m}황산
-STR_CARGO_NAME_TEXTILES                                                         :{G=m}옷감
-STR_CARGO_NAME_TIN                                                              :{G=m}주석
-STR_CARGO_NAME_TINPLATE                                                         :{G=m}양철
-STR_CARGO_NAME_TYRES                                                            :{G=f}타이어
-STR_CARGO_NAME_UREA                                                             :{G=f}요소
-STR_CARGO_NAME_VEHICLE_BODIES                                                   :{G=f}자동차 차체
-STR_CARGO_NAME_VEHICLE_ENGINES                                                  :{G=m}자동차 엔진
-STR_CARGO_NAME_VEHICLE_PARTS                                                    :{G=m}자동차 부품
-STR_CARGO_NAME_VEHICLES                                                         :{G=f}자동차
-STR_CARGO_NAME_WOOL                                                             :{G=m}양털
-STR_CARGO_NAME_YARN                                                             :{G=m}실
-STR_CARGO_NAME_ZINC                                                             :{G=m}아연
-
-STR_CARGO_UNIT_ACID                                                             :산 {VOLUME}
-STR_CARGO_UNIT_ALCOHOL                                                          :술 {VOLUME}
-STR_CARGO_UNIT_ALLOY_STEEL                                                      :합금강 {WEIGHT}
-STR_CARGO_UNIT_ALUMINIA                                                         :알루미나 {WEIGHT}
-STR_CARGO_UNIT_ALUMINIUM                                                        :알루미늄 {WEIGHT}
-STR_CARGO_UNIT_AMMONIA                                                          :암모니아 {VOLUME}
-STR_CARGO_UNIT_AMMONIUM_NITRATE                                                 :질산암모늄 {VOLUME}
-STR_CARGO_UNIT_BAUXITE                                                          :보크사이트 {WEIGHT}
-STR_CARGO_UNIT_BEANS                                                            :콩 {WEIGHT}
-STR_CARGO_UNIT_BUILDING_MATERIALS                                               :건축 자재 {WEIGHT}
-STR_CARGO_UNIT_CARBON_BLACK                                                     :탄소 검댕 {WEIGHT}
-STR_CARGO_UNIT_CARBON_STEEL                                                     :탄소강 {WEIGHT}
-STR_CARGO_UNIT_CASSAVA                                                          :카사바 {WEIGHT}
-STR_CARGO_UNIT_CAST_IRON                                                        :주철 {WEIGHT}
-STR_CARGO_UNIT_CEMENT                                                           :시멘트 {WEIGHT}
-STR_CARGO_UNIT_CHEMICALS                                                        :화학품 {VOLUME}
-STR_CARGO_UNIT_CHLORINE                                                         :염소 {VOLUME}
-STR_CARGO_UNIT_CHROMITE_ORE                                                     :크로마이트 광석 {WEIGHT}
-STR_CARGO_UNIT_CLAY                                                             :점토 {WEIGHT}
-STR_CARGO_UNIT_CLEANING_AGENTS                                                  :세정제 {WEIGHT}
-STR_CARGO_UNIT_COAL_TAR                                                         :콜타르 {VOLUME}
-STR_CARGO_UNIT_COFFEE                                                           :커피 {SIGNED_WORD}자루
-STR_CARGO_UNIT_COKE                                                             :코크스 {WEIGHT}
-STR_CARGO_UNIT_COPPER                                                           :구리 {WEIGHT}
-STR_CARGO_UNIT_COPPER_CONCENTRATE                                               :동정광 {WEIGHT}
-STR_CARGO_UNIT_EDIBLE_OIL                                                       :식용유 {VOLUME}
-STR_CARGO_UNIT_ELECTRICAL_PARTS                                                 :전자부품 {WEIGHT}
-STR_CARGO_UNIT_ENGINEERING_SUPPLIES                                             :생산 장비 {SIGNED_WORD}상자
-STR_CARGO_UNIT_ETHYLENE                                                         :에틸렌 {VOLUME}
-STR_CARGO_UNIT_EXPLOSIVES                                                       :폭발물 {SIGNED_WORD}상자
-STR_CARGO_UNIT_FERROCHROME                                                      :크롬철 {WEIGHT}
-STR_CARGO_UNIT_FERTILISER                                                       :비료 {WEIGHT}
-STR_CARGO_UNIT_FOOD_ADDITIVES                                                   :식품첨가물 {WEIGHT}
-STR_CARGO_UNIT_FORMIC_ACID                                                      :포름산 {VOLUME}
-STR_CARGO_UNIT_FIBRES                                                           :식물 섬유 {SIGNED_WORD}뭉치
-STR_CARGO_UNIT_FISH                                                             :물고기 {WEIGHT}
-STR_CARGO_UNIT_FMSP                                                             :농장 비품 {SIGNED_WORD}상자
-STR_CARGO_UNIT_FRUITS                                                           :과일 {WEIGHT}
-STR_CARGO_UNIT_FURNITURE                                                        :가구 {WEIGHT}
-STR_CARGO_UNIT_GLASS                                                            :유리 {WEIGHT}
-STR_CARGO_UNIT_HYDROCHLORIC_ACID                                                :염산 {VOLUME}
-STR_CARGO_UNIT_KAOLIN                                                           :고령토 {WEIGHT}
-STR_CARGO_UNIT_LIMESTONE                                                        :석회석 {WEIGHT}
-STR_CARGO_UNIT_LOGS                                                             :목재 {WEIGHT}
-STR_CARGO_UNIT_LUMBER                                                           :제재목 {WEIGHT}
-# cargo uses Sodium Hydroxide as string as it's interchangeable with Lye, but lye is convenient for filename / cargo label
-STR_CARGO_UNIT_LYE                                                              :수산화나트륨 {VOLUME}
-STR_CARGO_UNIT_MANGANESE                                                        :망가니즈 {WEIGHT}
-STR_CARGO_UNIT_METAL                                                            :금속 {WEIGHT}
-STR_CARGO_UNIT_METHANE                                                          :메탄 {VOLUME}
-STR_CARGO_UNIT_METHANOL                                                         :메탄올 {VOLUME}
-STR_CARGO_UNIT_MILK                                                             :우유 {VOLUME}
-STR_CARGO_UNIT_NAPHTHA                                                          :나프타 {VOLUME}
-STR_CARGO_UNIT_NICKEL                                                           :니켈 {WEIGHT}
-STR_CARGO_UNIT_NITRATES                                                         :질산염 {WEIGHT}
-STR_CARGO_UNIT_NUTS                                                             :견과류 {SIGNED_WORD}자루
-STR_CARGO_UNIT_OXYGEN                                                           :산소 {VOLUME}
-STR_CARGO_UNIT_PACKAGING                                                        :포장품 {WEIGHT}
-STR_CARGO_UNIT_PAINTS_AND_COATINGS                                              :페인트 & 코팅 {VOLUME}
-STR_CARGO_UNIT_PEAT                                                             :토탄 {WEIGHT}
-STR_CARGO_UNIT_PETROL                                                           :석유 연료 {VOLUME}
-STR_CARGO_UNIT_PHOSPHATE                                                        :인산염 {WEIGHT}
-STR_CARGO_UNIT_PHOSPHORIC_ACID                                                  :인산 {VOLUME}
-STR_CARGO_UNIT_PIG_IRON                                                         :선철 {WEIGHT}
-STR_CARGO_UNIT_PIPE                                                             :파이프 {WEIGHT}
-STR_CARGO_UNIT_PLASTICS                                                         :플라스틱 {WEIGHT}
-STR_CARGO_UNIT_POTASH                                                           :탄산칼륨 {WEIGHT}
-STR_CARGO_UNIT_PROPYLENE                                                        :프로필렌 {VOLUME}
-STR_CARGO_UNIT_PYRITE_ORE                                                       :황철석 {WEIGHT}
-STR_CARGO_UNIT_QUICKLIME                                                        :생석회 {WEIGHT}
-STR_CARGO_UNIT_RAW_LATEX                                                        :생고무 {VOLUME}
-STR_CARGO_UNIT_REBAR                                                            :강철봉 {WEIGHT}
-STR_CARGO_UNIT_RECYCLABLES                                                      :재활용품 {WEIGHT}
-STR_CARGO_UNIT_SALT                                                             :소금 {WEIGHT}
-STR_CARGO_UNIT_SAND                                                             :모래 {WEIGHT}
-STR_CARGO_UNIT_SCRAP_METAL                                                      :고철 {WEIGHT}
-STR_CARGO_UNIT_SLAG                                                             :광재 {WEIGHT}
-STR_CARGO_UNIT_SODA_ASH                                                         :소다회 {WEIGHT}
-STR_CARGO_UNIT_STAINLESS_STEEL                                                  :스테인리스강 {WEIGHT}
-STR_CARGO_UNIT_STEEL                                                            :강철 {WEIGHT}
-STR_CARGO_UNIT_STEEL_SECTIONS                                                   :형강 {WEIGHT}
-STR_CARGO_UNIT_STEEL_SHEET                                                      :강판 {WEIGHT}
-STR_CARGO_UNIT_STEEL_WIRE_ROD                                                   :강선봉 {WEIGHT}
-STR_CARGO_UNIT_STONE                                                            :석재 {WEIGHT}
-STR_CARGO_UNIT_SUGAR_BEET                                                       :사탕무 {WEIGHT}
-STR_CARGO_UNIT_SULPHUR                                                          :황 {WEIGHT}
-STR_CARGO_UNIT_SULPHURIC_ACID                                                   :황산 {VOLUME}
-STR_CARGO_UNIT_TEXTILES                                                         :옷감 {WEIGHT}
-STR_CARGO_UNIT_TIN                                                              :주석 {WEIGHT}
-STR_CARGO_UNIT_TINPLATE                                                         :양철 {WEIGHT}
-STR_CARGO_UNIT_TYRES                                                            :타이어 {WEIGHT}
-STR_CARGO_UNIT_UREA                                                             :요소 {WEIGHT}
-STR_CARGO_UNIT_VEHICLE_BODIES                                                   :자동차 차체 {WEIGHT}
-STR_CARGO_UNIT_VEHICLE_ENGINES                                                  :자동차 엔진 {WEIGHT}
-STR_CARGO_UNIT_VEHICLE_PARTS                                                    :자동차 부품 {WEIGHT}
-STR_CARGO_UNIT_VEHICLES                                                         :자동차 {WEIGHT}
-STR_CARGO_UNIT_WOOL                                                             :양털 {SIGNED_WORD}뭉치
-STR_CARGO_UNIT_YARN                                                             :실 {SIGNED_WORD}더미
-STR_CARGO_UNIT_ZINC                                                             :아연 {WEIGHT}
-
-# it seems that using 2 chars for these is a convention not a limit, I tested 4 chars and OpenTTD renders it fine - May 2020
-STR_CID_ACID                                                                    :{TINYFONT}산
-STR_CID_ALCOHOL                                                                 :{TINYFONT}술
-STR_CID_ALLOY_STEEL                                                             :{TINYFONT}합
-STR_CID_ALUMINIA                                                                :{TINYFONT}알
-STR_CID_ALUMINIUM                                                               :{TINYFONT}루
-STR_CID_AMMONIA                                                                 :{TINYFONT}암
-STR_CID_AMMONIUM_NITRATE                                                        :{TINYFONT}질
-STR_CID_BAUXITE                                                                 :{TINYFONT}보
-STR_CID_BEANS                                                                   :{TINYFONT}콩
-STR_CID_BUILDING_MATERIALS                                                      :{TINYFONT}건
-STR_CID_CARBON_BLACK                                                            :{TINYFONT}댕
-STR_CID_CARBON_STEEL                                                            :{TINYFONT}강
-STR_CID_CASSAVA                                                                 :{TINYFONT}카
-STR_CID_CAST_IRON                                                               :{TINYFONT}주
-STR_CID_CEMENT                                                                  :{TINYFONT}시
-STR_CID_CHEMICALS                                                               :{TINYFONT}화
-STR_CID_CHROMITE_ORE                                                            :{TINYFONT}크
-STR_CID_CHLORINE                                                                :{TINYFONT}염
-STR_CID_CLAY                                                                    :{TINYFONT}점
-STR_CID_CLEANING_AGENTS                                                         :{TINYFONT}세
-STR_CID_COFFEE                                                                  :{TINYFONT}커
-STR_CID_COAL_TAR                                                                :{TINYFONT}타
-STR_CID_COKE                                                                    :{TINYFONT}코
-STR_CID_COPPER                                                                  :{TINYFONT}구
-STR_CID_COPPER_CONCENTRATE                                                      :{TINYFONT}동
-STR_CID_EDIBLE_OIL                                                              :{TINYFONT}용
-STR_CID_ELECTRICAL_PARTS                                                        :{TINYFONT}전
-STR_CID_ENGINEERING_SUPPLIES                                                    :{TINYFONT}생
-STR_CID_ETHYLENE                                                                :{TINYFONT}에
-STR_CID_EXPLOSIVES                                                              :{TINYFONT}폭
-STR_CID_FARM_SUPPLIES                                                           :{TINYFONT}농
-STR_CID_FERROCHROME                                                             :{TINYFONT}롬
-STR_CID_FERTILISER                                                              :{TINYFONT}비
-STR_CID_FIBRES                                                                  :{TINYFONT}섬
-STR_CID_FISH                                                                    :{TINYFONT}물
-STR_CID_FOOD_ADDITIVES                                                          :{TINYFONT}첨
-STR_CID_FORMIC_ACID                                                             :{TINYFONT}포
-STR_CID_FURNITURE                                                               :{TINYFONT}가
-STR_CID_GLASS                                                                   :{TINYFONT}유
-STR_CID_HYDROCHLORIC_ACID                                                       :{TINYFONT}염
-STR_CID_KAOLIN                                                                  :{TINYFONT}토
-STR_CID_LIMESTONE                                                               :{TINYFONT}회
-STR_CID_LOGS                                                                    :{TINYFONT}목
-STR_CID_LUMBER                                                                  :{TINYFONT}제
-# cargo uses Sodium Hydroxide as name string as it's interchangeable with Lye, but lye is convenient for filename / cargo label
-STR_CID_LYE                                                                     :{TINYFONT}수
-STR_CID_MANGANESE                                                               :{TINYFONT}망
-STR_CID_METAL                                                                   :{TINYFONT}금
-STR_CID_METHANE                                                                 :{TINYFONT}메
-STR_CID_METHANOL                                                                :{TINYFONT}올
-STR_CID_MILK                                                                    :{TINYFONT}유
-STR_CID_NAPHTHA                                                                 :{TINYFONT}나
-STR_CID_NICKEL                                                                  :{TINYFONT}니
-STR_CID_NITRATES                                                                :{TINYFONT}질
-STR_CID_NUTS                                                                    :{TINYFONT}견
-STR_CID_OXYGEN                                                                  :{TINYFONT}산
-STR_CID_PACKAGING                                                               :{TINYFONT}포
-STR_CID_PAINTS_AND_COATINGS                                                     :{TINYFONT}페
-STR_CID_PEAT                                                                    :{TINYFONT}탄
-STR_CID_PETROL                                                                  :{TINYFONT}휘
-STR_CID_PIG_IRON                                                                :{TINYFONT}선
-STR_CID_PIPE                                                                    :{TINYFONT}파
-STR_CID_PHOSPHATE                                                               :{TINYFONT}염
-STR_CID_PHOSPHORIC_ACID                                                         :{TINYFONT}인
-STR_CID_PLASTICS                                                                :{TINYFONT}플
-STR_CID_POTASH                                                                  :{TINYFONT}칼
-STR_CID_PROPYLENE                                                               :{TINYFONT}프
-STR_CID_PYRITE_ORE                                                              :{TINYFONT}황
-STR_CID_QUICKLIME                                                               :{TINYFONT}생
-STR_CID_RAW_LATEX                                                               :{TINYFONT}고
-STR_CID_REBAR                                                                   :{TINYFONT}봉
-STR_CID_RECYCLABLES                                                             :{TINYFONT}활
-STR_CID_SALT                                                                    :{TINYFONT}염
-STR_CID_SAND                                                                    :{TINYFONT}사
-STR_CID_SCRAP_METAL                                                             :{TINYFONT}고
-STR_CID_SLAG                                                                    :{TINYFONT}재
-STR_CID_SODA_ASH                                                                :{TINYFONT}소
-STR_CID_STAINLESS_STEEL                                                         :{TINYFONT}텐
-STR_CID_STEEL                                                                   :{TINYFONT}철
-STR_CID_STONE                                                                   :{TINYFONT}석
-STR_CID_SUGAR_BEET                                                              :{TINYFONT}무
-STR_CID_SULPHUR                                                                 :{TINYFONT}황
-STR_CID_SULPHURIC_ACID                                                          :{TINYFONT}황
-STR_CID_STEEL_SECTIONS                                                          :{TINYFONT}형
-STR_CID_STEEL_SHEET                                                             :{TINYFONT}강
-STR_CID_STEEL_WIRE_ROD                                                          :{TINYFONT}선
-STR_CID_TEXTILES                                                                :{TINYFONT}옷
-STR_CID_TIN                                                                     :{TINYFONT}주
-STR_CID_TINPLATE                                                                :{TINYFONT}양
-STR_CID_TYRES                                                                   :{TINYFONT}타
-STR_CID_UREA                                                                    :{TINYFONT}요
-STR_CID_VEHICLE_BODIES                                                          :{TINYFONT}체
-STR_CID_VEHICLE_ENGINES                                                         :{TINYFONT}엔
-STR_CID_VEHICLE_PARTS                                                           :{TINYFONT}부
-STR_CID_VEHICLES                                                                :{TINYFONT}차
-STR_CID_WOOL                                                                    :{TINYFONT}모
-STR_CID_YARN                                                                    :{TINYFONT}실
-STR_CID_ZINC                                                                    :{TINYFONT}연
-
-
-STR_ERR_CLIMATE_TOYLAND                                                         :{ORANGE}FIRS는 장난감나라 기후에서는 사용할 수 없습니다.
-STR_ERR_OPENTTD_VERSION                                                         :{ORANGE}E00: FIRS를 사용하려면 OpenTTD 1.7.0 (또는 r27769 빌드를 기반으로 한) 버전 이상이 필요합니다
-STR_ERR_INCOMPATIBLE_SET                                                        :{ORANGE}E01: {YELLOW}호환되지 않는 NewGRF 세트: {ORANGE}{STRING}
-STR_ERR_INCOMPATIBLE_PARAM_CANSET                                               :{ORANGE}E02: {YELLOW}호환되지 않는 매개변수: {ORANGE}CanSet을 FIRS와 함께 사용하려면 매개변수 2의 값이 0보다 커야합니다.
-STR_ERR_INCOMPATIBLE_PARAM_CITYSET                                              :{ORANGE}E02: {YELLOW}호환되지 않는 매개변수: {ORANGE}NA City Set을 FIRS와 함께 사용하려면 매개변수 2의 값이 0보다 커야합니다.
-STR_ERR_INCOMPATIBLE_SET_TTRS_VERSION                                           :{ORANGE}E04: {YELLOW}호환되지 않는 버전: {ORANGE}Total Town Replacement Set은 3.11 또는 그 이상의 버전을 사용해야 합니다.
-
-STR_ERR_LOCATION_NOT_ABOVE_SNOWLINE                                             :설선 아래에 지어야 합니다.
-STR_ERR_LOCATION_NOT_BELOW_SNOWLINE                                             :설선 위에 지어야 합니다.
-STR_ERR_LOCATION_NOT_ON_WATER                                                   :마른 땅 위에 지어야 합니다.
-STR_ERR_LOCATION_NOT_IN_DESERT                                                  :사막에 지을 수 없습니다.
-STR_ERR_LOCATION_NOT_ON_STEEP_SLOPE                                             :가파른 경사 위에 지을 수 없습니다.
-STR_ERR_LOCATION_LIMIT_1_PER_TOWN                                               :이 종류의 산업 시설은 한 도시에 하나만 지을 수 있습니다.
-
-STR_IND_ALUMINIUM_PLANT                                                         :알루미늄 제련소
-STR_IND_AMMONIA_PLANT                                                           :암모니아 공장
-STR_IND_ARABLE_FARM                                                             :경작 농장
-STR_IND_ASSEMBLY_PLANT                                                          :자동차 공장
-STR_IND_BASIC_OXYGEN_FURNACE                                                    :기본 산소 용광로
-STR_IND_BIOREFINERY                                                             :바이오 리파이너리
-STR_IND_BLAST_FURNACE                                                           :용광로
-STR_IND_BODY_PLANT                                                              :차체 공장
-STR_IND_BREWERY                                                                 :양조장
-STR_IND_CIDER_MILL                                                              :과실주 양조장
-STR_IND_BRICK_WORKS                                                             :벽돌 공장
-STR_IND_BUILDERS_YARD                                                           :공사장
-STR_IND_BULK_TERMINAL                                                           :선적하물 부두
-STR_IND_CARBON_BLACK_PLANT                                                      :탄소 검댕 공장
-STR_IND_CEMENT_PLANT                                                            :시멘트 공장
-STR_IND_CHEMICAL_PLANT                                                          :화학 제품 공장
-STR_IND_CHLOR_ALKALI_PLANT                                                      :클로르 알칼리 공장
-STR_IND_CHROMITE_MINE                                                           :크로마이트 광산
-STR_IND_CIVIL_EXPLOSIVES_FACILITY                                               :민간 폭발물 시설
-STR_IND_CLAY_PIT                                                                :점토 채취장
-STR_IND_COFFEE_ESTATE                                                           :커피 농장
-STR_IND_COKE_OVEN                                                               :코크스 가마
-STR_IND_COMPONENT_FACTORY                                                       :부품 공장
-STR_IND_COPPER_CONCENTRATOR                                                     :구리 농축 공장
-STR_IND_COPPER_REFINERY                                                         :구리 정제 공장
-STR_IND_CRYO_PLANT                                                              :냉각 공장
-STR_IND_DAIRY                                                                   :유제품 회사
-STR_IND_DAIRY_FARM                                                              :낙농장
-STR_IND_DREDGING_SITE                                                           :준설 부지
-STR_IND_ELECTRIC_ARC_FURNACE                                                    :전기 아크로
-STR_IND_ENGINE_PLANT                                                            :엔진 공장
-STR_IND_ETHYLENE_CRACKER                                                        :나프타 공장
-STR_IND_FARM                                                                    :농장
-STR_IND_FERROCHROME_SMELTER                                                     :크롬철 용광로
-STR_IND_FERTILISER_PLANT                                                        :비료 공장
-STR_IND_FACTORY_1                                                               :공장 1
-STR_IND_FACTORY_2                                                               :공장 2
-STR_IND_FACTORY_3                                                               :공장 3
-STR_IND_FISCHER_TROPSCH_PLANT                                                   :피셔 트로프슈 공장
-STR_IND_FISH_FARM                                                               :양식장
-STR_IND_FISHING_GROUND                                                          :어장
-STR_IND_FISHING_HARBOUR                                                         :수산항
-STR_IND_FISHING_VILLAGE                                                         :어촌
-STR_IND_FLOUR_MILL                                                              :제분소
-STR_IND_FOOD_MARKET                                                             :반찬 가게
-STR_IND_FOOD_PROCESSOR                                                          :식품 공장
-STR_IND_FURNITURE_FACTORY                                                       :가구 공장
-STR_IND_GENERAL_STORE                                                           :일반 상점
-STR_IND_GLASS_WORKS                                                             :유리 공장
-STR_IND_HARDWARE_STORE                                                          :철물점
-STR_IND_HOTEL                                                                   :호텔
-STR_IND_HERDING_COOP                                                            :사냥 캠프
-STR_IND_IRON_WORKS                                                              :제철소
-STR_IND_JUNKYARD                                                                :고철 집적소
-STR_IND_LATEX_PROCESSOR                                                         :고무 처리 공장
-STR_IND_LIME_KILN                                                               :석회 가마
-STR_IND_LIMESTONE_MINE                                                          :석회석 광산
-STR_IND_LIQUIDS_TERMINAL                                                        :유류 부두
-STR_IND_LUMBER_YARD                                                             :저목장
-STR_IND_MACHINE_SHOP                                                            :기계 상점
-STR_IND_MACHINE_WORKS                                                           :기계 공장
-STR_IND_MANGANESE_MINE                                                          :망가니즈 광산
-STR_IND_METAL_WORKSHOP                                                          :금속 공방
-STR_IND_MIXEDFARM                                                               :혼합 농장
-STR_IND_NITRATE_MINE                                                            :질산염 광산
-STR_IND_ORCHARD_PIGGERY                                                         :과수원 및 양돈장
-STR_IND_PEATLANDS                                                               :토탄지
-STR_IND_PETROLPUMP                                                              :주유소
-STR_IND_PHOSPHATE_MINE                                                          :인산염 광산
-STR_IND_PHOSPHORIC_ACID_PLANT                                                   :인산 공장
-STR_IND_PLASTICS_PLANT                                                          :플라스틱 공장
-STR_IND_POLYETHYLENE_PLANT                                                      :폴리에틸렌 공장
-STR_IND_POLYPROPYLENE_PLANT                                                     :폴리프로필렌 공장
-STR_IND_PORT                                                                    :항구
-STR_IND_POTASH_MINE                                                             :탄산칼륨 광산
-STR_IND_PYRITE_MINE                                                             :황철석 광산
-STR_IND_PYRITE_SMELTER                                                          :황철석 용광로
-STR_IND_POWER_PLANT                                                             :발전소
-STR_IND_QUARRY                                                                  :채석장
-STR_IND_RANCH                                                                   :목장
-STR_IND_RECYCLING_DEPOT                                                         :재활용품 창고
-STR_IND_RECYCLING_PLANT                                                         :재활용품 처리 공장
-STR_IND_REINDEER_FARM                                                           :순록 농장
-STR_IND_SALT_MINE                                                               :소금 광산
-STR_IND_SHEEPFARM                                                               :목양장
-STR_IND_SLAG_GRINDING_PLANT                                                     :광재 분쇄 공장
-STR_IND_SMITHY_FORGE                                                            :대장간
-STR_IND_SODA_ASH_MINE                                                           :소다회 광산
-STR_IND_SOLVAY_PLANT                                                            :솔베이 공장
-STR_IND_STEEL_MILL                                                              :제철소
-STR_IND_SHEET_AND_PIPE_MILL                                                     :강판 파이프 공장
-STR_IND_STOCKYARD                                                               :도축장
-STR_IND_SUGAR_REFINERY                                                          :제당소
-STR_IND_SULPHURIC_ACID_PLANT                                                    :황산 공장
-STR_IND_SUPPLY_YARD                                                             :물류 창고
-STR_IND_TEXTILE_MILL                                                            :방직 공장
-STR_IND_TINPLATE_WORKS                                                          :양철 공장
-STR_IND_TRADING_POST                                                            :교역소
-STR_IND_TYRE_PLANT                                                              :타이어 공장
-STR_IND_VINEYARD                                                                :포도밭
-STR_IND_VEHICLE_DISTRIBUTOR                                                     :자동차 판매점
-STR_IND_WHARF                                                                   :부두
-STR_IND_WIRE_AND_SECTION_MILL                                                   :형강 & 강철봉 공장
-
-
-STR_CARGO_SUBTYPE_DISPLAY_CARGO_SUPPLIED_FLAG                             : {BLACK}(공급됨)
+STR_CARGO_SUBTYPE_DISPLAY_CARGO_SUPPLIED_FLAG                                   : {BLACK}(공급됨)
 STR_EXTRA_TEXT_SECONDARY_NON_COMBINATORY                                        :{BLACK}최대 생산량을 내려면, {WHITE}아무 {BLACK} 화물이나 공급하십시오.
 STR_EXTRA_TEXT_SECONDARY_COMBINATORY                                            :{BLACK}최대 생산량을 내려면, 필요한 {WHITE}모든 {BLACK} 화물을 최소한 3개월에 한 번씩은 공급하십시오.
 STR_EXTRA_TEXT_TOWN_PRODUCER                                                    :{BLACK}생산량이 도시 인구에 비례합니다. 매월마다 최소 {WHITE}{SIGNED_WORD} 단위{BLACK}에서 {WHITE}{SIGNED_WORD} 단위{BLACK} 사이의 화물이 생산될 것입니다.
@@ -456,105 +41,638 @@ STR_PRIMARY_PRODUCTION_4X                                                       
 STR_PORT_PRODUCTION_1X                                                          :{BLACK}현재 생산량: {YELLOW}보통{}{}{BLACK}생산량을 {WHITE}2배{BLACK}로 늘리려면, 3개월 안에 {SIGNED_WORD} 단위의 화물을 수송하십시오.{}{WHITE}4배{BLACK}로 늘리려면, {SIGNED_WORD} 단위의 화물을 수송하십시오.
 STR_PORT_PRODUCTION_2X                                                          :{BLACK}현재 생산량: {YELLOW}많음{}{}{BLACK}현재 수준을 유지하려면, 3개월 안에 {SIGNED_WORD} 단위의 화물을 수송하십시오.{}{WHITE}4배{BLACK}로 늘리려면, {SIGNED_WORD} 단위의 화물을 수송하십시오.
 STR_PORT_PRODUCTION_4X                                                          :{BLACK}현재 생산량: {YELLOW}격렬히 많음{}{}{BLACK}현재 수준을 유지하려면, 3개월 안에 {SKIP}{SIGNED_WORD} 단위의 화물을 수송하십시오.
-STR_GENERIC_NEWLINE                                                             :{}
 
-STR_FUND_ARABLE_FARM                                                            :{}{BLACK}위치: {YELLOW}눈이나 사막 위에 세울 수 없음
-STR_FUND_COFFEE_ESTATE                                                          :{}{BLACK}위치: {YELLOW}눈이나 사막 위에 세울 수 없음
-STR_FUND_DAIRY_FARM                                                             :{}{BLACK}위치: {YELLOW}눈이나 사막 위에 세울 수 없음
-STR_FUND_FARM                                                                   :{}{BLACK}위치: {YELLOW}눈이나 사막 위에 세울 수 없음
-STR_FUND_FOREST                                                                 :{}{BLACK}위치: {YELLOW}사막 위에 세울 수 없음
-STR_FUND_FRUIT_PLANTATION                                                       :{}{BLACK}위치: {YELLOW}눈 위에 세울 수 없음
-STR_FUND_HERDING_COOP                                                           :{}{BLACK}위치: {YELLOW}눈 위에만 세울 수 있음
-STR_FUND_ORCHARD_PIGGERY                                                        :{}{BLACK}위치: {YELLOW}눈이나 사막 위에 세울 수 없음
-STR_FUND_RUBBER_PLANTATION                                                      :{}{BLACK}위치: {YELLOW}눈이나 사막 위에 세울 수 없음
-STR_FUND_VINEYARD                                                               :{}{BLACK}위치: {YELLOW}눈이나 사막 위에 세울 수 없음
+STR_INFORMATIVE_EXTRA_TEXT_PLAZA                                                :{SKIP}{SKIP}주민들의 상태:{} {STRING}{STRING}{}{}{BLACK}행복도: {STRING}{SIGNED_WORD} point{P 2 "" s}{}{BLACK} 필요요구충족: {YELLOW}{SIGNED_WORD} point{P 3 "" s} {}{BLACK} 오염 및 더러움: {YELLOW}{SIGNED_WORD} point{P 4 "" s} {}{}{BLACK}오염 및 불결함은 인구와 특정 산업 유형에 따라 증가합니다.{}{}특정 산업 유형에 자원을 공급함으로써 필요요구가 충족됩니다{}{}행복도가 10보다 크면 주민들의 상태는{WHITE}행복함{BLACK}됩니다. 행복도가 -10보다 작으면 주민들의 상테는{WHITE}우울한{BLACK}이 됩니다.
+STR_INFORMATIVE_EXTRA_TEXT_PLAZA_MOOD_OPTIMISTIC                                :행복함
+STR_INFORMATIVE_EXTRA_TEXT_PLAZA_MOOD_GLOOMY                                    :우울함
+STR_INFORMATIVE_EXTRA_TEXT_PLAZA_MOOD_NEUTRAL                                   :보통
 
-STR_FUND_AVAILABLE_FROM                                                         :{}{YELLOW}{COMMA}년{BLACK}부터 사용 가능
-STR_FUND_AVAILABLE_UNTIL                                                        :{}{YELLOW}{COMMA}년{BLACK}부터는 사용 불가능
+STR_CARGO_NAME_ACETIC_ACID                                                      :아세트산
+STR_CARGO_NAME_ACID                                                             :산
+STR_CARGO_NAME_ALCOHOL                                                          :술
+STR_CARGO_NAME_ALLOY_STEEL                                                      :합금강
+STR_CARGO_NAME_ALUMINIUM                                                        :알루미늄
+STR_CARGO_NAME_ALUMINIA                                                         :알루미나
+STR_CARGO_NAME_AMMONIA                                                          :암모니아
+STR_CARGO_NAME_AMMONIUM_NITRATE                                                 :질산암모늄
+STR_CARGO_NAME_BAUXITE                                                          :보크사이트
+STR_CARGO_NAME_BEANS                                                            :콩
+STR_CARGO_NAME_BIOMASS                                                          :바이오매스
+STR_CARGO_NAME_BUILDING_MATERIALS                                               :건설 자재
+STR_CARGO_NAME_CARBON_BLACK                                                     :탄소검댕
+STR_CARGO_NAME_CARBON_STEEL                                                     :탄소강
+STR_CARGO_NAME_CASSAVA                                                          :카사바
+STR_CARGO_NAME_CAST_IRON                                                        :주철
+STR_CARGO_NAME_CEMENT                                                           :시멘트
+# more specific petrochemicals
+STR_CARGO_NAME_CHEMICALS                                                        :정제유
+STR_CARGO_NAME_CHLORINE                                                         :염소
+STR_CARGO_NAME_CHROMITE_ORE                                                     :크롬철
+STR_CARGO_NAME_CLAY                                                             :점토
+STR_CARGO_NAME_CLEANING_AGENTS                                                  :세정제
+STR_CARGO_NAME_COFFEE                                                           :커피
+# no longer just coal
+STR_CARGO_NAME_COAL_TAR                                                         :타르
+STR_CARGO_NAME_COKE                                                             :코크스
+STR_CARGO_NAME_COPPER                                                           :구리
+STR_CARGO_NAME_COPPER_CONCENTRATE                                               :동정광
+STR_CARGO_NAME_EDIBLE_OIL                                                       :식용유
+STR_CARGO_NAME_ELECTRICAL_PARTS                                                 :전기 부품
+STR_CARGO_NAME_ENGINEERING_SUPPLIES                                             :생산 장비
+# more generic monomer
+STR_CARGO_NAME_ETHYLENE                                                         :에틸렌
+STR_CARGO_NAME_EXPLOSIVES                                                       :폭발물
+STR_CARGO_NAME_FARM_SUPPLIES                                                    :농장 비품
+# represents ferrochrome and ferromanganese
+STR_CARGO_NAME_FERROCHROME                                                      :합금철
+STR_CARGO_NAME_FERTILISER                                                       :비료
+STR_CARGO_NAME_FIBRES                                                           :천
+# fish and meat was split into its own cargo
+STR_CARGO_NAME_FISH                                                             :물고기
+STR_CARGO_NAME_FISH_AND_MEAT                                                    :육류
+STR_CARGO_NAME_FLOUR                                                            :밀가루
+STR_CARGO_NAME_FOOD_ADDITIVES                                                   :식품 첨가물
+STR_CARGO_NAME_FORGINGS_AND_CASTINGS                                            :단조품 & 주조품
+STR_CARGO_NAME_FORMIC_ACID                                                      :포름산
+STR_CARGO_NAME_FRUITS                                                           :농산물
+STR_CARGO_NAME_FURNITURE                                                        :가구
+STR_CARGO_NAME_GLASS                                                            :유리
+STR_CARGO_NAME_HYDROCHLORIC_ACID                                                :염산
+STR_CARGO_NAME_HYDROGEN                                                         :수소
+STR_CARGO_NAME_KAOLIN                                                           :고령석
+STR_CARGO_NAME_LIMESTONE                                                        :석회석
+STR_CARGO_NAME_LOGS                                                             :원목
+STR_CARGO_NAME_TIMBER                                                           :목재
+# cargo uses Sodium Hydroxide as string as it's interchangeable with Lye, but lye is convenient for filename / cargo label
+STR_CARGO_NAME_LYE                                                              :수산화 나트륨
+STR_CARGO_NAME_MEAT                                                             :고기
+STR_CARGO_NAME_METAL                                                            :금속
+STR_CARGO_NAME_METHANE                                                          :메테인
+STR_CARGO_NAME_METHANOL                                                         :메탄올
+STR_CARGO_NAME_METAL_PARTS                                                      :금속 부품
+STR_CARGO_NAME_MILK                                                             :우유
+STR_CARGO_NAME_MANGANESE                                                        :망가니즈
+STR_CARGO_NAME_NAPHTHA                                                          :나프타
+STR_CARGO_NAME_NICKEL                                                           :니켈
+STR_CARGO_NAME_NITRATES                                                         :질산염
+STR_CARGO_NAME_NITROGEN                                                         :질소
+STR_CARGO_NAME_NUTS                                                             :너트
+STR_CARGO_NAME_OIL_SEEDS                                                        :종자
+STR_CARGO_NAME_OXYGEN                                                           :견과류
+STR_CARGO_NAME_PACKAGING                                                        :포장품
+STR_CARGO_NAME_PAINTS_AND_COATINGS                                              :페인트 & 코팅
+STR_CARGO_NAME_PEAT                                                             :토탄
+STR_CARGO_NAME_PETROL                                                           :석유 연료
+STR_CARGO_NAME_PHOSPHATE                                                        :인산염
+STR_CARGO_NAME_PHOSPHORIC_ACID                                                  :인산
+# now represents both pig and cast iron
+STR_CARGO_NAME_PIG_IRON                                                         :선철
+STR_CARGO_NAME_PIPE                                                             :파이프
+STR_CARGO_NAME_PLASTICS                                                         :플라스틱
+STR_CARGO_NAME_PLASTIC_PARTS                                                    :플라스틱 부품
+STR_CARGO_NAME_POTASH                                                           :칼륨
+STR_CARGO_NAME_PROPYLENE                                                        :프로필렌
+STR_CARGO_NAME_PYRITE_ORE                                                       :황철석
+STR_CARGO_NAME_QUICKLIME                                                        :생석회
+STR_CARGO_NAME_RARE_METALS                                                      :희귀 금속
+STR_CARGO_NAME_RAW_LATEX                                                        :천연 라텍스
+STR_CARGO_NAME_REBAR                                                            :강철봉
+STR_CARGO_NAME_RECYCLABLES                                                      :재활용품
+STR_CARGO_NAME_SALT                                                             :소금
+STR_CARGO_NAME_SAND                                                             :모래
+STR_CARGO_NAME_SCRAP_METAL                                                      :고철
+STR_CARGO_NAME_SLAG                                                             :광재
+STR_CARGO_NAME_SODA_ASH                                                         :소다회
+STR_CARGO_NAME_STAINLESS_STEEL                                                  :스테인리스 강
+STR_CARGO_NAME_STEEL                                                            :강철
+# Not just steel
+STR_CARGO_NAME_STEEL_SECTIONS                                                   :형강
+STR_CARGO_NAME_STEEL_SHEET                                                      :강판
+# not just steel
+STR_CARGO_NAME_STEEL_WIRE_ROD                                                   :강선봉
+STR_CARGO_NAME_STONE                                                            :석제
+STR_CARGO_NAME_SUGAR                                                            :설탕
+STR_CARGO_NAME_SUGAR_CANE                                                       :사탕수수
+STR_CARGO_NAME_SUGAR_BEET                                                       :사탕무
+STR_CARGO_NAME_SULPHUR                                                          :황
+STR_CARGO_NAME_SULPHURIC_ACID                                                   :황산
+STR_CARGO_NAME_TEXTILES                                                         :섬유
+STR_CARGO_NAME_TIN                                                              :주석
+STR_CARGO_NAME_TINPLATE                                                         :양철
+# not just tyres, also belts, gaskets etc
+STR_CARGO_NAME_TYRES                                                            :고무 부품
+STR_CARGO_NAME_UREA                                                             :요소
+STR_CARGO_NAME_VEHICLE_BODIES                                                   :자동차 차체
+STR_CARGO_NAME_VEHICLE_ENGINES                                                  :자동차 엔진
+STR_CARGO_NAME_VEHICLE_PARTS                                                    :자동차 부품
+STR_CARGO_NAME_VEHICLES                                                         :자동차
+STR_CARGO_NAME_WOOL                                                             :양털
+STR_CARGO_NAME_YARN                                                             :실
+STR_CARGO_NAME_ZINC                                                             :아연
+
+STR_CARGO_UNIT_ACETIC_ACID                                                      :아세트산 {VOLUME}
+STR_CARGO_UNIT_ACID                                                             :산 {VOLUME}
+STR_CARGO_UNIT_ALCOHOL                                                          :술 {VOLUME}
+STR_CARGO_UNIT_ALLOY_STEEL                                                      :합금강 {WEIGHT}
+STR_CARGO_UNIT_ALUMINIA                                                         :알루미나 {WEIGHT}
+STR_CARGO_UNIT_ALUMINIUM                                                        :알루미늄{WEIGHT}
+STR_CARGO_UNIT_AMMONIA                                                          :암모니아 {VOLUME}
+STR_CARGO_UNIT_AMMONIUM_NITRATE                                                 :질산암모늄 {VOLUME}
+STR_CARGO_UNIT_BAUXITE                                                          :보크사이트 {WEIGHT}
+STR_CARGO_UNIT_BEANS                                                            :콩 {WEIGHT}
+STR_CARGO_UNIT_BIOMASS                                                          :바이오매스 {WEIGHT}
+STR_CARGO_UNIT_BUILDING_MATERIALS                                               :건설 자재 {WEIGHT}
+STR_CARGO_UNIT_CARBON_BLACK                                                     :탄소검댕 {WEIGHT}
+STR_CARGO_UNIT_CARBON_STEEL                                                     :탄소강 {WEIGHT}
+STR_CARGO_UNIT_CASSAVA                                                          :카사바 {WEIGHT}
+STR_CARGO_UNIT_CAST_IRON                                                        :주철 {WEIGHT}
+STR_CARGO_UNIT_CEMENT                                                           :시멘트 {WEIGHT}
+STR_CARGO_UNIT_CHEMICALS                                                        :정제유 {VOLUME}
+STR_CARGO_UNIT_CHLORINE                                                         :염소 {VOLUME}
+STR_CARGO_UNIT_CHROMITE_ORE                                                     :크롬철 {WEIGHT}
+STR_CARGO_UNIT_CLAY                                                             :점토 {WEIGHT}
+STR_CARGO_UNIT_CLEANING_AGENTS                                                  :세정제 {WEIGHT}
+STR_CARGO_UNIT_COAL_TAR                                                         :타르 {VOLUME}
+STR_CARGO_UNIT_COFFEE                                                           :커피 {P 0 "" s} 생산 {SIGNED_WORD}
+STR_CARGO_UNIT_COKE                                                             :코크스 {WEIGHT}
+STR_CARGO_UNIT_COPPER                                                           :구리 {WEIGHT}
+STR_CARGO_UNIT_COPPER_CONCENTRATE                                               :동정광 {WEIGHT}
+STR_CARGO_UNIT_EDIBLE_OIL                                                       :식용유 {VOLUME}
+STR_CARGO_UNIT_ELECTRICAL_PARTS                                                 :전기 부품{WEIGHT}
+STR_CARGO_UNIT_ENGINEERING_SUPPLIES                                             :생산 장비 {P 0 "" s} 생산 {SIGNED_WORD}
+STR_CARGO_UNIT_ETHYLENE                                                         :에틸렌 {VOLUME}
+STR_CARGO_UNIT_EXPLOSIVES                                                       :폭발물 {P 0 "" s} 생산 {SIGNED_WORD}
+STR_CARGO_UNIT_FERROCHROME                                                      :합금철 {WEIGHT}
+STR_CARGO_UNIT_FERTILISER                                                       :비료 {WEIGHT}
+STR_CARGO_UNIT_FOOD_ADDITIVES                                                   :식품 첨가물 {WEIGHT}
+STR_CARGO_UNIT_FORGINGS_AND_CASTINGS                                            :단조품 & 주조품 {WEIGHT}
+STR_CARGO_UNIT_FORMIC_ACID                                                      :포름산 {VOLUME}
+STR_CARGO_UNIT_FIBRES                                                           :천 {P 0 "" s} 생산{SIGNED_WORD}
+STR_CARGO_UNIT_FISH                                                             :물고기 {WEIGHT}
+STR_CARGO_UNIT_FISH_AND_MEAT                                                    :육류 {WEIGHT}
+STR_CARGO_UNIT_FLOUR                                                            :밀가루 {WEIGHT}
+STR_CARGO_UNIT_FMSP                                                             :농장 비품 {P 0 "" s} 생산{SIGNED_WORD}
+STR_CARGO_UNIT_FRUITS                                                           :농산물 {WEIGHT}
+STR_CARGO_UNIT_FURNITURE                                                        :가구 {WEIGHT}
+STR_CARGO_UNIT_GLASS                                                            :유리 {WEIGHT}
+STR_CARGO_UNIT_HYDROCHLORIC_ACID                                                :염산 {VOLUME}
+STR_CARGO_UNIT_HYDROGEN                                                         :수소 {VOLUME}
+STR_CARGO_UNIT_KAOLIN                                                           :고령석 {WEIGHT}
+STR_CARGO_UNIT_LIMESTONE                                                        :석회석 {WEIGHT}
+STR_CARGO_UNIT_LOGS                                                             :원목 {WEIGHT}
+STR_CARGO_UNIT_TIMBER                                                           :목재 {WEIGHT}
+# cargo uses Sodium Hydroxide as string as it's interchangeable with Lye, but lye is convenient for filename / cargo label
+STR_CARGO_UNIT_LYE                                                              :수산화나트륨{VOLUME}
+STR_CARGO_UNIT_MANGANESE                                                        :망가니즈 {WEIGHT}
+STR_CARGO_UNIT_METAL                                                            :금속 {WEIGHT}
+STR_CARGO_UNIT_METAL_PARTS                                                      :금속 부품 {WEIGHT}
+STR_CARGO_UNIT_MEAT                                                             :고기 {WEIGHT}
+STR_CARGO_UNIT_METHANE                                                          :메테인 {VOLUME}
+STR_CARGO_UNIT_METHANOL                                                         :메탄올 {VOLUME}
+STR_CARGO_UNIT_MILK                                                             :우유 {VOLUME}
+STR_CARGO_UNIT_NAPHTHA                                                          :나프타 {VOLUME}
+STR_CARGO_UNIT_NICKEL                                                           :니켈 {WEIGHT}
+STR_CARGO_UNIT_NITRATES                                                         :질산염 {WEIGHT}
+STR_CARGO_UNIT_NITROGEN                                                         :질소 {VOLUME}
+STR_CARGO_UNIT_NUTS                                                             :너트 {P 0 "" s} {SIGNED_WORD}
+STR_CARGO_UNIT_OXYGEN                                                           :산소 {VOLUME}
+STR_CARGO_UNIT_OIL_SEEDS                                                        :종자 {WEIGHT}
+STR_CARGO_UNIT_PACKAGING                                                        :포장품 {WEIGHT}
+STR_CARGO_UNIT_PAINTS_AND_COATINGS                                              :페인트 & 코팅 {VOLUME}
+STR_CARGO_UNIT_PEAT                                                             :토탄 {WEIGHT}
+STR_CARGO_UNIT_PETROL                                                           :석유 연료 {VOLUME}
+STR_CARGO_UNIT_PHOSPHATE                                                        :인산염 {WEIGHT}
+STR_CARGO_UNIT_PHOSPHORIC_ACID                                                  :인산 {VOLUME}
+STR_CARGO_UNIT_PIG_IRON                                                         :선철 {WEIGHT}
+STR_CARGO_UNIT_PIPE                                                             :파이프 {WEIGHT}
+STR_CARGO_UNIT_PLASTICS                                                         :플라스틱 {WEIGHT}
+STR_CARGO_UNIT_PLASTIC_PARTS                                                    :플라스틱 부품 {WEIGHT}
+STR_CARGO_UNIT_POTASH                                                           :칼륨 {WEIGHT}
+STR_CARGO_UNIT_PROPYLENE                                                        :프로필렌 {VOLUME}
+STR_CARGO_UNIT_PYRITE_ORE                                                       :황철석 {WEIGHT}
+STR_CARGO_UNIT_QUICKLIME                                                        :생석회 {WEIGHT}
+STR_CARGO_UNIT_RARE_METALS                                                      :희귀 금속 {WEIGHT}
+STR_CARGO_UNIT_RAW_LATEX                                                        :천연 라텍스 {VOLUME}
+STR_CARGO_UNIT_REBAR                                                            :강철봉 {WEIGHT}
+STR_CARGO_UNIT_RECYCLABLES                                                      :재활용품 {WEIGHT}
+STR_CARGO_UNIT_SALT                                                             :소금 {WEIGHT}
+STR_CARGO_UNIT_SAND                                                             :모래 {WEIGHT}
+STR_CARGO_UNIT_SCRAP_METAL                                                      :고철 {WEIGHT}
+STR_CARGO_UNIT_SLAG                                                             :광재 {WEIGHT}
+STR_CARGO_UNIT_SODA_ASH                                                         :소다회 {WEIGHT}
+STR_CARGO_UNIT_STAINLESS_STEEL                                                  :스테인리스 강 {WEIGHT}
+STR_CARGO_UNIT_STEEL                                                            :강철 {WEIGHT}
+STR_CARGO_UNIT_STEEL_SECTIONS                                                   :형강 {WEIGHT}
+STR_CARGO_UNIT_STEEL_SHEET                                                      :강판 {WEIGHT}
+STR_CARGO_UNIT_STEEL_WIRE_ROD                                                   :강선봉 {WEIGHT}
+STR_CARGO_UNIT_STONE                                                            :석재 {WEIGHT}
+STR_CARGO_UNIT_SUGAR                                                            :설탕 {WEIGHT}
+STR_CARGO_UNIT_SUGAR_BEET                                                       :사탕무 {WEIGHT}
+STR_CARGO_UNIT_SUGAR_CANE                                                       :사탕수수 {P 0 "" s} {SIGNED_WORD} 
+STR_CARGO_UNIT_SULPHUR                                                          :황 {WEIGHT}
+STR_CARGO_UNIT_SULPHURIC_ACID                                                   :황산 {VOLUME}
+STR_CARGO_UNIT_TEXTILES                                                         :섬유 {WEIGHT}
+STR_CARGO_UNIT_TIN                                                              :주석 {WEIGHT}
+STR_CARGO_UNIT_TINPLATE                                                         :양철 {WEIGHT}
+STR_CARGO_UNIT_TYRES                                                            :고무 부품 {WEIGHT}
+STR_CARGO_UNIT_UREA                                                             :요소 {WEIGHT}
+STR_CARGO_UNIT_VEHICLE_BODIES                                                   :자동차 차체 {WEIGHT}
+STR_CARGO_UNIT_VEHICLE_ENGINES                                                  :자동차 엔진 {WEIGHT}
+STR_CARGO_UNIT_VEHICLE_PARTS                                                    :자동차 부품 {WEIGHT}
+STR_CARGO_UNIT_VEHICLES                                                         :자동차 {WEIGHT}
+STR_CARGO_UNIT_WOOL                                                             :양털 {P 0 "" s} {SIGNED_WORD}
+STR_CARGO_UNIT_YARN                                                             :실 {P 0 "" s} {SIGNED_WORD}
+STR_CARGO_UNIT_ZINC                                                             :야연 {WEIGHT}
+
+# it seems that using 2 chars for these is a convention not a limit, I tested 4 chars and OpenTTD renders it fine - May 2020
+STR_CID_ACETIC_ACID                                                             :{TINYFONT}아세트
+STR_CID_ACID                                                                    :{TINYFONT}산
+STR_CID_ALCOHOL                                                                 :{TINYFONT}술
+STR_CID_ALLOY_STEEL                                                             :{TINYFONT}합금
+STR_CID_ALUMINIA                                                                :{TINYFONT}알나
+STR_CID_ALUMINIUM                                                               :{TINYFONT}알늄
+STR_CID_AMMONIA                                                                 :{TINYFONT}NH3
+STR_CID_AMMONIUM_NITRATE                                                        :{TINYFONT}NHNO
+STR_CID_BAUXITE                                                                 :{TINYFONT}보크사
+STR_CID_BEANS                                                                   :{TINYFONT}콩
+STR_CID_BIOMASS                                                                 :{TINYFONT}바매
+STR_CID_BUILDING_MATERIALS                                                      :{TINYFONT}건설
+STR_CID_CARBON_BLACK                                                            :{TINYFONT}탄검
+STR_CID_CARBON_STEEL                                                            :{TINYFONT}탄소강
+STR_CID_CASSAVA                                                                 :{TINYFONT}카사바
+STR_CID_CAST_IRON                                                               :{TINYFONT}주철
+STR_CID_CEMENT                                                                  :{TINYFONT}시멘트
+STR_CID_CHEMICALS                                                               :{TINYFONT}정제유
+STR_CID_CHROMITE_ORE                                                            :{TINYFONT}크롬철
+STR_CID_CHLORINE                                                                :{TINYFONT}염소
+STR_CID_CLAY                                                                    :{TINYFONT}점토
+STR_CID_CLEANING_AGENTS                                                         :{TINYFONT}세정제
+STR_CID_COFFEE                                                                  :{TINYFONT}거피
+STR_CID_COAL_TAR                                                                :{TINYFONT}타르
+STR_CID_COAL                                                                    :{TINYFONT}석탄
+STR_CID_COKE                                                                    :{TINYFONT}코크스
+STR_CID_COPPER                                                                  :{TINYFONT}구리
+STR_CID_COPPER_CONCENTRATE                                                      :{TINYFONT}동정광
+STR_CID_COPPER_ORE                                                              :{TINYFONT}구리광석
+STR_CID_EDIBLE_OIL                                                              :{TINYFONT}식용유
+STR_CID_ELECTRICAL_PARTS                                                        :{TINYFONT}전기부품
+STR_CID_ENGINEERING_SUPPLIES                                                    :{TINYFONT}생산장비
+STR_CID_ETHYLENE                                                                :{TINYFONT}에틸렌
+STR_CID_EXPLOSIVES                                                              :{TINYFONT}폭발물
+STR_CID_FARM_SUPPLIES                                                           :{TINYFONT}농장비품
+STR_CID_FERROCHROME                                                             :{TINYFONT}합금철
+STR_CID_FERTILISER                                                              :{TINYFONT}비료
+STR_CID_FIBRES                                                                  :{TINYFONT}천
+STR_CID_FISH                                                                    :{TINYFONT}물고기
+STR_CID_FISH_AND_MEAT                                                           :{TINYFONT}육류
+STR_CID_FLOUR                                                                   :{TINYFONT}밀가루
+STR_CID_FOOD_ADDITIVES                                                          :{TINYFONT}첨가물
+STR_CID_FOOD                                                                    :{TINYFONT}식품
+STR_CID_FORMIC_ACID                                                             :{TINYFONT}포산
+STR_CID_FORGINGS_AND_CASTINGS                                                   :{TINYFONT}단조
+STR_CID_FRUITS                                                                  :{TINYFONT}농산물
+STR_CID_FURNITURE                                                               :{TINYFONT}가구
+STR_CID_GLASS                                                                   :{TINYFONT}유리
+STR_CID_GOODS                                                                   :{TINYFONT}상품
+STR_CID_GRAIN                                                                   :{TINYFONT}곡물
+STR_CID_HYDROCHLORIC_ACID                                                       :{TINYFONT}HCL
+STR_CID_HYDROGEN                                                                :{TINYFONT}H2
+STR_CID_IRON_ORE                                                                :{TINYFONT}철광석
+STR_CID_KAOLIN                                                                  :{TINYFONT}고령석
+STR_CID_LIMESTONE                                                               :{TINYFONT}석회석
+STR_CID_LIVESTOCK                                                               :{TINYFONT}가축
+STR_CID_LOGS                                                                    :{TINYFONT}원목
+STR_CID_TIMBER                                                                  :{TINYFONT}가공목
+# cargo uses Sodium Hydroxide as name string as it's interchangeable with Lye, but lye is convenient for filename / cargo label
+STR_CID_LYE                                                                     :{TINYFONT}수나
+STR_CID_MAIL                                                                    :{TINYFONT}우편
+STR_CID_MANGANESE                                                               :{TINYFONT}망간
+STR_CID_MEAT                                                                    :{TINYFONT}고기
+STR_CID_METAL                                                                   :{TINYFONT}금속
+STR_CID_METAL_PARTS                                                             :{TINYFONT}금속부품
+STR_CID_METHANE                                                                 :{TINYFONT}CH4
+STR_CID_METHANOL                                                                :{TINYFONT}메탄올
+STR_CID_MILK                                                                    :{TINYFONT}우류
+STR_CID_NAPHTHA                                                                 :{TINYFONT}나프타
+STR_CID_NICKEL                                                                  :{TINYFONT}니켈
+STR_CID_NITRATES                                                                :{TINYFONT}질산염
+STR_CID_NITROGEN                                                                :{TINYFONT}N2
+STR_CID_NUTS                                                                    :{TINYFONT}너트
+STR_CID_OIL                                                                     :{TINYFONT}석유
+STR_CID_OIL_SEEDS                                                               :{TINYFONT}종자
+STR_CID_OXYGEN                                                                  :{TINYFONT}O2
+STR_CID_PACKAGING                                                               :{TINYFONT}포장품
+STR_CID_PASSENGERS                                                              :{TINYFONT}승객
+STR_CID_PAINTS_AND_COATINGS                                                     :{TINYFONT}페&코
+STR_CID_PEAT                                                                    :{TINYFONT}토탄
+STR_CID_PETROL                                                                  :{TINYFONT}연료
+STR_CID_PIG_IRON                                                                :{TINYFONT}선철
+STR_CID_PIPE                                                                    :{TINYFONT}파이프
+STR_CID_PHOSPHATE                                                               :{TINYFONT}인산
+STR_CID_PHOSPHORIC_ACID                                                         :{TINYFONT}인산염
+STR_CID_PLASTICS                                                                :{TINYFONT}플라스틱
+STR_CID_PLASTIC_PARTS                                                           :{TINYFONT}플라부품
+STR_CID_POTASH                                                                  :{TINYFONT}소다회
+STR_CID_PROPYLENE                                                               :{TINYFONT}프로필렌
+STR_CID_PYRITE_ORE                                                              :{TINYFONT}황철석
+STR_CID_QUICKLIME                                                               :{TINYFONT}생석회
+STR_CID_RARE_METALS                                                             :{TINYFONT}희금속
+STR_CID_RAW_LATEX                                                               :{TINYFONT}라텍스
+STR_CID_REBAR                                                                   :{TINYFONT}강철봉
+STR_CID_RECYCLABLES                                                             :{TINYFONT}재활용
+STR_CID_RUBBER                                                                  :{TINYFONT}고무
+STR_CID_SALT                                                                    :{TINYFONT}소금
+STR_CID_SAND                                                                    :{TINYFONT}모래
+STR_CID_SCRAP_METAL                                                             :{TINYFONT}고철
+STR_CID_SLAG                                                                    :{TINYFONT}광재
+STR_CID_SODA_ASH                                                                :{TINYFONT}소다회
+STR_CID_STAINLESS_STEEL                                                         :{TINYFONT}스텐
+STR_CID_STEEL                                                                   :{TINYFONT}강철
+STR_CID_STONE                                                                   :{TINYFONT}석재
+STR_CID_SUGAR                                                                   :{TINYFONT}설탕
+STR_CID_SUGAR_BEET                                                              :{TINYFONT}사탕무
+STR_CID_SUGAR_CANE                                                              :{TINYFONT}사탕수수
+STR_CID_SULPHUR                                                                 :{TINYFONT}황
+STR_CID_SULPHURIC_ACID                                                          :{TINYFONT}황산
+STR_CID_STEEL_SECTIONS                                                          :{TINYFONT}형강
+STR_CID_STEEL_SHEET                                                             :{TINYFONT}강판
+STR_CID_STEEL_WIRE_ROD                                                          :{TINYFONT}강선봉
+STR_CID_TEXTILES                                                                :{TINYFONT}섬유
+STR_CID_TIN                                                                     :{TINYFONT}주석
+STR_CID_TINPLATE                                                                :{TINYFONT}양철
+STR_CID_TYRES                                                                   :{TINYFONT}타이어
+STR_CID_UREA                                                                    :{TINYFONT}요소
+STR_CID_VEHICLE_BODIES                                                          :{TINYFONT}차체
+STR_CID_VEHICLE_ENGINES                                                         :{TINYFONT}엔진
+STR_CID_VEHICLE_PARTS                                                           :{TINYFONT}부품
+STR_CID_VEHICLES                                                                :{TINYFONT}차
+STR_CID_WOOL                                                                    :{TINYFONT}양털
+STR_CID_YARN                                                                    :{TINYFONT}실
+STR_CID_ZINC                                                                    :{TINYFONT}아연
+
+
+STR_ERR_CLIMATE_TOYLAND                                                         :{ORANGE}FIRS 은 장난감나라에서 사용할수없습니다.
+STR_ERR_OPENTTD_VERSION                                                         :{ORANGE}E00: FIRS는 OpenTTD 1.7.0 (or for those using trunk builds, r27769)이상 필요합니다.
+STR_ERR_INCOMPATIBLE_SET                                                        :{ORANGE}E01: {YELLOW}호환되지않는 GRF: {ORANGE}{STRING}
+STR_ERR_INCOMPATIBLE_PARAM_CANSET                                               :{ORANGE}E02: {YELLOW}호환되지않는 매개변수: {ORANGE}CanSet parameter 2 must be 0 to work with FIRS.
+STR_ERR_INCOMPATIBLE_PARAM_CITYSET                                              :{ORANGE}E02: {YELLOW}호환되지않는 매개변수: {ORANGE}NA City Set parameter 2 must be 0 to work with FIRS.
+STR_ERR_INCOMPATIBLE_SET_TTRS_VERSION                                           :{ORANGE}E04: {YELLOW}호환되지않는 버전: {ORANGE}Total Town Replacement Set must be version release 3.11 or newer.
+
+STR_ERR_LOCATION_NOT_ABOVE_SNOWLINE                                             :설선아래에 배치해야합니다.
+STR_ERR_LOCATION_NOT_BELOW_SNOWLINE                                             :설선위에 배치해야합니다.
+STR_ERR_LOCATION_NOT_ON_WATER                                                   :사막에 배치해야합니다.
+STR_ERR_LOCATION_NOT_IN_DESERT                                                  :사막에 배치할수없습니다..
+STR_ERR_LOCATION_NOT_ON_STEEP_SLOPE                                             :경사면에 설치할수없습니다.
+STR_ERR_LOCATION_LIMIT_1_PER_TOWN                                               :이 산업시설은 도시당 하나만 허용됩니다.
+
+STR_PROD_CHANGE_TEST                                                            :{BIGFONT}{BLACK}쥐가 고양이를 뛰어넘다.
+
+STR_IND_ALUMINIUM_PLANT                                                         :알루미늄 제련소
+STR_IND_ALUMINA_REFINERY                                                        :알루미나 정제소
+STR_IND_AMMONIA_PLANT                                                           :암모니아 공장
+STR_IND_ARABLE_FARM                                                             :경작 농장
+STR_IND_APPLIANCE_FACTORY                                                       :가전제품 공장
+STR_IND_ASSEMBLY_PLANT                                                          :자동차 조립 공장
+STR_IND_BAKERY                                                                  :식품 판매점
+STR_IND_BASIC_OXYGEN_FURNACE                                                    :염기성 산소 제강로
+STR_IND_BAUXITE_MINE                                                            :보크사이트 광산
+STR_IND_BIOREFINERY                                                             :바이오 리파이너리
+STR_IND_BLAST_FURNACE                                                           :용광로
+STR_IND_BODY_PLANT                                                              :자동차 차체 공장
+STR_IND_BREWERY                                                                 :양조장
+STR_IND_CIDER_MILL                                                              :사과주 양조장
+STR_IND_COTTON_FARM                                                             :목화 농장
+STR_IND_BRICK_WORKS                                                             :벽돌 공장
+STR_IND_BUILDERS_YARD                                                           :공사장
+STR_IND_BULK_TERMINAL                                                           :선적화물 부두
+STR_IND_CANNERY                                                                 :통조림 공장
+STR_IND_CARBON_BLACK_PLANT                                                      :탄소검댕 공장
+STR_IND_CEMENT_PLANT                                                            :시멘트 공장
+STR_IND_CHEMICAL_PLANT                                                          :화학 공장
+STR_IND_CHLOR_ALKALI_PLANT                                                      :클로르 알칼리 공장
+STR_IND_CHROMITE_MINE                                                           :크롬 광산
+STR_IND_CIVIL_EXPLOSIVES_FACILITY                                               :민간 폭발물 공장
+STR_IND_CLAY_PIT                                                                :점토 채취장
+STR_IND_COFFEE_ESTATE                                                           :커피 농장
+STR_IND_COKE_OVEN                                                               :코크스 가마
+STR_IND_COMPONENT_FACTORY                                                       :자동차 부품 공장
+STR_IND_COPPER_CONCENTRATOR                                                     :구리 농축 공장
+STR_IND_COPPER_REFINERY                                                         :구리 제련소
+STR_IND_CRYO_PLANT                                                              :냉각공장
+STR_IND_DAIRY                                                                   :유제품 회사
+STR_IND_DAIRY_FARM                                                              :낙농장
+STR_IND_DISTILLERY                                                              :증류소 및 와이너리
+STR_IND_DREDGING_SITE                                                           :준설 부지
+STR_IND_EDIBLE_OIL_REFINERY                                                     :식용유 정제소
+STR_IND_ELECTRIC_ARC_FURNACE                                                    :전기 아크로
+STR_IND_ELECTRICAL_WORKS                                                        :전기 부품 공장
+STR_IND_ENGINE_PLANT                                                            :자동차 엔진 공장
+STR_IND_ETHYLENE_CRACKER                                                        :나프타 공장
+STR_IND_FARM                                                                    :농장
+STR_IND_FARM_SUPPLY_YARD                                                        :농장 비품 기지
+STR_IND_FERROCHROME_SMELTER                                                     :합금철 용광로
+STR_IND_FERTILISER_PLANT                                                        :비료 공장
+STR_IND_FACTORY_1                                                               :공장 1
+STR_IND_FACTORY_2                                                               :공장 2
+STR_IND_FACTORY_3                                                               :공장 3
+STR_IND_FISCHER_TROPSCH_PLANT                                                   :석탄 액화 공장
+STR_IND_FISH_FARM                                                               :물고기 양식장
+STR_IND_FISHING_GROUND                                                          :어장
+STR_IND_FISHING_HARBOUR                                                         :어항
+STR_IND_FISHING_VILLAGE                                                         :어촌
+STR_IND_FLOUR_MILL                                                              :제분소
+STR_IND_FOOD_MARKET                                                             :식료품 상점
+STR_IND_FOOD_PROCESSOR                                                          :식품 가공 공장
+STR_IND_FRUIT_PACKING_PLANT                                                     :과일 포장 공장
+STR_IND_FURNITURE_FACTORY                                                       :가구 공장
+STR_IND_FORGE_AND_FOUNDRY                                                       :단조 & 주조소
+STR_IND_GENERAL_STORE                                                           :일반 상점
+STR_IND_GLASS_WORKS                                                             :유리 공장
+STR_IND_HARDWARE_STORE                                                          :철물점
+STR_IND_HOTEL                                                                   :호텔
+STR_IND_HERDING_COOP                                                            :목축 협동조합
+STR_IND_IRON_WORKS                                                              :제련소
+STR_IND_JUNKYARD                                                                :고철 집적소
+STR_IND_LATEX_PROCESSOR                                                         :라텍스 생산소
+STR_IND_LIME_KILN                                                               :석회 가마
+STR_IND_LIMESTONE_MINE                                                          :석회석 광산
+STR_IND_LIQUIDS_TERMINAL                                                        :액체 부류
+STR_IND_LUMBER_YARD                                                             :목재 야적장
+STR_IND_MACHINE_SHOP                                                            :기계 정비소
+STR_IND_MACHINE_WORKS                                                           :기계 공장
+STR_IND_MANGANESE_MINE                                                          :망가니즈 광산
+STR_IND_MEAT_PACKING_PLANT                                                      :육류 포장 공장
+STR_IND_METAL_WORKSHOP                                                          :금속 공방
+STR_IND_MIXEDFARM                                                               :혼합 농장
+STR_IND_NITRATE_MINE                                                            :질산염 광산
+STR_IND_ORCHARD_PIGGERY                                                         :과수원과 양돈장
+STR_IND_PAINT_FACTORY                                                           :페인트 공장
+STR_IND_PEATLANDS                                                               :토탄지
+STR_IND_PETROLPUMP                                                              :주유소
+STR_IND_PHOSPHATE_MINE                                                          :인산염 광산
+STR_IND_PHOSPHORIC_ACID_PLANT                                                   :인산 공장
+STR_IND_PLASTICS_PLANT                                                          :플라스틱 성형 공장
+STR_IND_PLAZA                                                                   :광장
+STR_IND_POLYETHYLENE_PLANT                                                      :폴리에틸렌 공장
+STR_IND_POLYPROPYLENE_PLANT                                                     :플로필렌 공장
+STR_IND_POLYMER_PLANT                                                           :폴리머 공장
+STR_IND_PORT                                                                    :항구
+STR_IND_POTASH_MINE                                                             :칼륨 광산
+STR_IND_PRINTING_PLANT                                                          :인쇄소
+STR_IND_PYRITE_MINE                                                             :황철석 광산
+STR_IND_PYRITE_SMELTER                                                          :황철석 제련소
+STR_IND_POWER_PLANT                                                             :화력 발전소
+STR_IND_QUARRY                                                                  :채석장
+STR_IND_RANCH                                                                   :목장
+STR_IND_RECYCLING_DEPOT                                                         :재활용품 창고
+STR_IND_RECYCLING_PLANT                                                         :재활용품 처리 공장
+STR_IND_REINDEER_FARM                                                           :순록 목장
+STR_IND_SALT_MINE                                                               :소금 광산
+STR_IND_SALT_EVAPORATOR                                                         :염전
+STR_IND_SEAWEED_FARM                                                            :해조류 양식장
+STR_IND_SHEEPFARM                                                               :양목장
+STR_IND_SLAG_GRINDING_PLANT                                                     :광재 분쇄 공장
+STR_IND_SMITHY_FORGE                                                            :대장간
+STR_IND_SOAP_FACTORY                                                            :청소용품 공장
+STR_IND_SODA_ASH_MINE                                                           :소다회 광산
+STR_IND_SOLVAY_PLANT                                                            :솔베이 공장
+# we use 'integrated_steel_mill' in code to avoid confusion with Steeltown mills, but it's easier to just use 'Steel Mill' for name that players see
+STR_IND_INTEGRATED_STEEL_MILL                                                   :제철소
+STR_IND_SHEET_MILL                                                              :압연소
+STR_IND_SHEET_AND_PIPE_MILL                                                     :강판 파이프 공장
+STR_IND_SHIPBREAKER                                                             :폐선소
+STR_IND_SPICE_PLANTATION                                                        :향신료 농장
+STR_IND_STOCKYARD                                                               :도축장
+STR_IND_SUGAR_REFINERY                                                          :제당소
+STR_IND_SULPHURIC_ACID_PLANT                                                    :황산 공장
+STR_IND_SUPPLY_YARD                                                             :물류 창고
+STR_IND_SYNTHETIC_RUBBER_PLANT                                                  :합성 고무 공장
+STR_IND_TAR_SANDS_MINE                                                          :오일샌드 광산
+STR_IND_TEXTILE_MILL                                                            :방직 공장
+STR_IND_TINPLATE_WORKS                                                          :주석판 공장
+STR_IND_TRADING_POST                                                            :교역소
+STR_IND_TYRE_PLANT                                                              :타이어및 고무 공장
+STR_IND_VINEYARD                                                                :포도밭
+STR_IND_VEHICLE_DISTRIBUTOR                                                     :자동차 판매점
+STR_IND_WHARF                                                                   :부두
+STR_IND_WIRE_AND_SECTION_MILL                                                   :강선봉 공장
+
+STR_FUND_ARABLE_FARM                                                            :{}{BLACK}위치: {YELLOW}눈 덮인 지역이나 사막에서는 생성이 불가능합니다.
+STR_FUND_COFFEE_ESTATE                                                          :{}{BLACK}위치: {YELLOW}눈 덮인 지역이나 사막에서는 생성이 불가능합니다.
+STR_FUND_DAIRY_FARM                                                             :{}{BLACK}위치: {YELLOW}눈 덮인 지역이나 사막에서는 생성이 불가능합니다.
+STR_FUND_FARM                                                                   :{}{BLACK}위치: {YELLOW}눈 덮인 지역이나 사막에서는 생성이 불가능합니다.
+STR_FUND_FOREST                                                                 :{}{BLACK}위치: {YELLOW}사막에서는 생성이 불가능합니다.
+STR_FUND_FRUIT_PLANTATION                                                       :{}{BLACK}위치: {YELLOW}눈 덮인 지역에서는 생성이 불가능합니다.
+STR_FUND_HERDING_COOP                                                           :{}{BLACK}위치: {YELLOW}눈 덮인 지역에서만 생성이 가능합니다.
+STR_FUND_ORCHARD_PIGGERY                                                        :{}{BLACK}위치: {YELLOW}눈 덮인 지역이나 사막에서는 생성이 불가능합니다.
+STR_FUND_RUBBER_PLANTATION                                                      :{}{BLACK}위치: {YELLOW}눈 덮인 지역이나 사막에서는 생성이 불가능합니다.
+STR_FUND_VINEYARD                                                               :{}{BLACK}위치: {YELLOW}눈 덮인 지역이나 사막에서는 생성이 불가능합니다.
+
+STR_FUND_AVAILABLE_FROM                                                         :{}{BLACK}Available from: {YELLOW}{COMMA}
+STR_FUND_AVAILABLE_UNTIL                                                        :{}{BLACK}Not available after: {YELLOW}{COMMA}
 
 STR_TOWN                                                                        :{STRING}
 STR_STATION                                                                     :{STRING} {STRING}
 
-STR_STATION_ANIMALS                                                             :마시장
-STR_STATION_AUTOMOTIVE                                                          :자동차
-STR_STATION_BAR_GRILL_AND_ROOMS                                                 :객실
-STR_STATION_BARNS                                                               :곳간
-STR_STATION_BARREL_AND_KEG                                                      :통
-STR_STATION_BASE                                                                :기지
-STR_STATION_BONEYARD                                                            :폐차장
-STR_STATION_BANK_TOP                                                            :굴뚝
-STR_STATION_BRINE_WORKS                                                         :염수 공장
-STR_STATION_CASTINGS                                                            :주물
-STR_STATION_COLLIERY                                                            :탄광
-STR_STATION_COMPONENTS                                                          :부품
-STR_STATION_COPPER_LODE                                                         :동광맥
-STR_STATION_CREOSOTING                                                          :크레오소트
-STR_STATION_CRYO_PLANT                                                          :냉각 공장
-STR_STATION_DAIRY_LANE                                                          :낙농길
-STR_STATION_DYNAMO                                                              :발전기
-STR_STATION_ESTATE                                                              :커피 농장
-STR_STATION_EXCHANGE                                                            :환승
-STR_STATION_FARM_1                                                              :장원
-STR_STATION_FARM_2                                                              :목초지
-STR_STATION_FARM_3                                                              :목장
-STR_STATION_FISHMARKET                                                          :수산 시장
-STR_STATION_FISH_PENS                                                           :물고기 양식장
-STR_STATION_FOOD_CORPORATION                                                    :식품 협회
-STR_STATION_FOREST                                                              :목재 하차장
+STR_STATION_ANIMALS                                                             :말농장
+STR_STATION_AUTOMOTIVE                                                          :Automotive
+STR_STATION_BAR_GRILL_AND_ROOMS                                                 :Resort
+STR_STATION_BARNS                                                               :Barns
+STR_STATION_BARREL_AND_KEG                                                      :Barrel and Keg
+STR_STATION_BASE                                                                :Base
+STR_STATION_BAUXITE                                                             :Bauxite Deposits
+STR_STATION_BONEYARD                                                            :Boneyard
+STR_STATION_BANK_TOP                                                            :Bank Top
+STR_STATION_BRINE_WORKS                                                         :Brine Works
+STR_STATION_CANNERY                                                             :통조림 공장
+STR_STATION_CASTINGS                                                            :Castings
+STR_STATION_COLLIERY                                                            :Colliery
+STR_STATION_COMPONENTS                                                          :Components
+STR_STATION_COPPER_LODE                                                         :Copper Lode
+STR_STATION_CREOSOTING                                                          :Creosoting
+STR_STATION_CRYO_PLANT                                                          :Cryo Plant
+STR_STATION_DAIRY_LANE                                                          :Dairy Lane
+STR_STATION_DYNAMO                                                              :Dynamo
+STR_STATION_ESTATE                                                              :Estate
+STR_STATION_EXCHANGE                                                            :Exchange
+STR_STATION_FARM_1                                                              :Manor
+STR_STATION_FARM_2                                                              :Meadows
+STR_STATION_FARM_3                                                              :Ranch
+STR_STATION_FEED_AND_SEED                                                       :Feed and Seed
+STR_STATION_FISHMARKET                                                          :어시장
+STR_STATION_FISH_PENS                                                           :Fish Pens
+STR_STATION_FOOD_CORPORATION                                                    :식품 회사
+STR_STATION_FOREST                                                              :Log Landing
 STR_STATION_FORGE                                                               :대장간
-STR_STATION_FURNACE                                                             :용광로
-STR_STATION_HEAVY_EQUIPMENT_YARD                                                :중장비 창고
-STR_STATION_HEAVY_INDUSTRY_2                                                    :공장
-STR_STATION_HERDING_COOP                                                        :산장
-STR_STATION_INDUSTRY_ESTATE_1                                                   :산업 단지
-STR_STATION_INDUSTRY_HARBOUR_1                                                  :공업항
-STR_STATION_INDUSTRY_HARBOUR_2                                                  :물가
-STR_STATION_INDUSTRY_HARBOUR_3                                                  :부잔교
-STR_STATION_INDUSTRY_HARBOUR_4                                                  :물가
-STR_STATION_IRONSTONE                                                           :철광
-STR_STATION_JOINERS_SHOP                                                        :소목장이 상점
-STR_STATION_KILNS                                                               :가마
-STR_STATION_KIMBERLITE_DEPOSITS                                                 :킴벌라이트 매장층
-STR_STATION_LIMESTONE_MINES                                                     :석회석 광산
-STR_STATION_MANGANESE_MINES                                                     :망가니즈 광산
-STR_STATION_MARKET                                                              :시장
-STR_STATION_MERCHANTS_LANE                                                      :무역로
-STR_STATION_MILL                                                                :방앗간
-STR_STATION_MINE                                                                :광산도로
-STR_STATION_MOULDINGS                                                           :몰딩
-STR_STATION_OIL_RIG                                                             :유전
-STR_STATION_ORCHARDS                                                            :과수원
-STR_STATION_PHENOLS                                                             :페놀
-STR_STATION_PIT                                                                 :갱
+STR_STATION_FURNACE                                                             :Furnace
+STR_STATION_GALVANISING                                                         :Galvanising
+STR_STATION_HEAVY_EQUIPMENT_YARD                                                :Heavy Equipment Yard
+STR_STATION_HEAVY_INDUSTRY_2                                                    :Works
+STR_STATION_HERDING_COOP                                                        :Lodge
+STR_STATION_INDUSTRY_ESTATE_1                                                   :Industrial Park
+STR_STATION_INDUSTRY_HARBOUR_1                                                  :Tidal Yard
+STR_STATION_INDUSTRY_HARBOUR_2                                                  :Waterside
+STR_STATION_INDUSTRY_HARBOUR_3                                                  :Landing Stage
+STR_STATION_INDUSTRY_HARBOUR_4                                                  :Shorefront
+STR_STATION_IRONSTONE                                                           :Ironstone
+STR_STATION_JOINERS_SHOP                                                        :Joiner's Shop
+STR_STATION_KILNS                                                               :Kilns
+STR_STATION_KIMBERLITE_DEPOSITS                                                 :Kimberlite Deposits
+STR_STATION_LIMESTONE_MINES                                                     :Limestone Mines
+STR_STATION_MANGANESE_MINES                                                     :Manganese Mines
+STR_STATION_MARKET                                                              :Market
+STR_STATION_MEAT                                                                :Rendering
+STR_STATION_MERCHANTS_LANE                                                      :Merchant's Lane
+STR_STATION_MILL                                                                :Mill
+STR_STATION_MINE                                                                :Tanner Road
+STR_STATION_MOULDINGS                                                           :Mouldings
+STR_STATION_OIL_RIG                                                             :Field
+STR_STATION_OIL_PRESS                                                           :유정
+STR_STATION_ORCHARDS                                                            :Orchards
+STR_STATION_PHENOLS                                                             :Phenols
+STR_STATION_PIT                                                                 :Pit
 STR_STATION_PIPE_MILL                                                           :파이프 공장
-STR_STATION_PLANTATION                                                          :플랜테이션
+STR_STATION_PLANTATION                                                          :농장
+STR_STATION_PLAZA                                                               :광장
+STR_STATION_POLYMERS                                                            :폴리머 공장
 STR_STATION_POWERHUNGRY                                                         :발전소
-STR_STATION_POWERTRAIN                                                          :연쇄 전동 장치
+STR_STATION_POWERTRAIN                                                          :Powertrain
 STR_STATION_PUMPS                                                               :펌프
-STR_STATION_PYRITES                                                             :황철석 매장층
-STR_STATION_REFINERY                                                            :정유공장
-STR_STATION_ROD_MILL                                                            :막대 공장
-STR_STATION_RUBBER_COMPANY                                                      :고무회사
-STR_STATION_SALTPETER_WORKS                                                     :초석사
-STR_STATION_SEAFOOD                                                             :해산물
-STR_STATION_SHARP_STREET                                                        :골목길
-STR_STATION_SHEEP_FOLD                                                          :양우리
-STR_STATION_SHOALS                                                              :어장
-STR_STATION_SILO                                                                :저장고
-STR_STATION_SMELTER                                                             :황철용광로
-STR_STATION_SOOT_FURNACE                                                        :검댕 용광로
-STR_STATION_STACKS                                                              :무더기
-STR_STATION_STAMP_AND_PLATE                                                     :철공소
-STR_STATION_SUGAR_COMPANY                                                       :제당회사
-STR_STATION_TANK_FARM                                                           :유류탱크 집합소
-STR_STATION_TAPPERS_SHED                                                        :고무수액 헛간
-STR_STATION_TOWN_1                                                              :구 읍사무소
-STR_STATION_TOWN_2                                                              :간선도로
+STR_STATION_PYRITES                                                             :Pyrite Deposits
+STR_STATION_REFINERY                                                            :Refinery
+STR_STATION_ROD_MILL                                                            :Rod Mill
+STR_STATION_RUBBER_COMPANY                                                      :Rubber Company
+STR_STATION_SALT                                                                :Salt Flats
+STR_STATION_SALTPETER_WORKS                                                     :Saltpeter Works
+STR_STATION_SEAFOOD                                                             :Seafood
+STR_STATION_SHARP_STREET                                                        :Sharp Street
+STR_STATION_SHEEP_FOLD                                                          :Sheep Fold
+STR_STATION_SHOALS                                                              :Shoals
+STR_STATION_SILO                                                                :Silo
+STR_STATION_SMELTER                                                             :Smelter
+STR_STATION_SOOT_FURNACE                                                        :Soot Furnace
+STR_STATION_STACKS                                                              :Stacks
+STR_STATION_STAMP_AND_PLATE                                                     :Stamp and Plate
+STR_STATION_SUGAR_COMPANY                                                       :Sugar Company
+STR_STATION_TANK_FARM                                                           :Tank Farm
+STR_STATION_TAPPERS_SHED                                                        :Tappers Shed
+STR_STATION_TOWN_1                                                              :구도심
+STR_STATION_TOWN_2                                                              :고가도로
 STR_STATION_TOWN_3                                                              :상점
-STR_STATION_TRONA_BEDS                                                          :중탄산소다석 지층
-STR_STATION_WATER                                                               :모래톱
-STR_STATION_WEAVE_AND_DYE                                                       :직물 및 염료
-STR_STATION_WELLS                                                               :유정
-STR_STATION_WINERY                                                              :양조장
-STR_STATION_VEHICLE_DISTRIBUTOR                                                 :트럭 창고
+STR_STATION_TRONA_BEDS                                                          :Trona Beds
+STR_STATION_WATER                                                               :Sandbank
+STR_STATION_WEAVE_AND_DYE                                                       :Weave and Dye
+STR_STATION_WELLS                                                               :Wells
+STR_STATION_WINERY                                                              :Winery
+STR_STATION_VEHICLE_DISTRIBUTOR                                                 :Truck Lot
 
+# do not translate these
+STR_GENERIC_NEWLINE                                                             :{}
+# to use when dynamically choosing text colours, and we can't return a colour code directly
+STR_COLOUR_BLUE                                                                 :{BLUE}
+STR_COLOUR_GOLD                                                                 :{GOLD}
+STR_COLOUR_GREEN                                                                :{GREEN}
+STR_COLOUR_LTBLUE                                                               :{LTBLUE}
+STR_COLOUR_RED                                                                  :{RED}
+STR_COLOUR_YELLOW                                                               :{YELLOW}
+STR_COLOUR_WHITE                                                                :{WHITE}
