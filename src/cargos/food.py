@@ -10,8 +10,8 @@ cargo = Cargo(
     is_freight="1",
     cargo_classes="bitmask(CC_EXPRESS, CC_PIECE_GOODS, CC_COVERED_BULK, CC_LIQUID_BULK, CC_REFRIGERATED, CC_POTABLE)",
     cargo_label="FOOD",
-    # apart from TOWNGROWTH_PASSENGERS and TOWNGROWTH_MAIL, FIRS does not set any town growth effects; this has the intended effect of disabling food / water requirements for towns in desert and above     snowline
-    town_growth_effect="TOWNGROWTH_NONE",
+    # re-add town growth effects
+    town_growth_effect="TOWNGROWTH_FOOD",
     town_growth_multiplier="1.0",
     units_of_cargo="TTD_STR_TONS",
     items_of_cargo="TTD_STR_QUANTITY_FOOD",

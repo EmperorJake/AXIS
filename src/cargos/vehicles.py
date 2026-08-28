@@ -11,7 +11,7 @@ cargo = Cargo(
     cargo_classes="bitmask(CC_PIECE_GOODS, CC_FLATBED, CC_NON_POTABLE)",
     cargo_label="VEHI",
     # apart from TOWNGROWTH_PASSENGERS and TOWNGROWTH_MAIL, FIRS does not set any town growth effects; this has the intended effect of disabling food / water requirements for towns in desert and above snowline
-    town_growth_effect="TOWNGROWTH_NONE",  # intended for desert Steeltown, may not be appropriate in other cases
+    town_growth_effect="TOWNGROWTH_WATER",  # intended for desert Steeltown, may not be appropriate in other cases
     town_growth_multiplier="1.0",
     units_of_cargo="TTD_STR_TONS",
     items_of_cargo="string(STR_CARGO_UNIT_VEHICLES)",
