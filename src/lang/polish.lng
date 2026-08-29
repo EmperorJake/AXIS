@@ -7,10 +7,12 @@ STR_GRF_DESC                                                                    
 
 STR_PARAM_DESC_COAST_DISTANCE_MARINE_INDUSTRY                                   :Maksymalna odległość od linii brzegowej dla łowisk, platform wiertniczych i pogłębiarek.
 STR_PARAM_DESC_ECONOMIES                                                        :Każda z dostępnych w FIRS ekonomii oferuje inną kombinację towarów i fabryk.{}{}Dla graczy preferujących proste zasady gry zalecany jest wybór ekonomii {SILVER}Zwykła. {BLACK}Zawiera ona mniej fabryk i towarów niż inne ekonomie FIRS.{}{}Strona internetowa FIRS zawiera szczegółowe informacje na temat każdej z ekonomii.
-STR_PARAM_DESC_NO_OPENINGS                                                      :Domyślnie nowe przedsiębiorstwa powstają w trakcie gry.{}{}Jeśli parametr {SILVER}zapobiegaj powstawaniu przedsiębiorstw {BLACK}jest włączony to zakłady nie będą otwierane, a gracz nie będzie miał możliwości ich fundowania.
+STR_PARAM_DESC_NO_OPENINGS                                                      :Parametr ten uniemożliwia graczom fundować i zlecać poszukiwania nowych przedsiębiorstw.
+STR_PARAM_DESC_NO_SPAWNING                                                      :Domyślnie nowe przedsiębiorstwa powstają w trakcie gry.{}{}Jeśli parametr {SILVER}pozwalaj na pojawianie się przedsiębiorstw {BLACK}jest włączony to zakłady będą losowo otwierane. Ich ilość jest zależna od ustawienia gry "Liczba przedsiębiorstw".
 STR_PARAM_NAME_COAST_DISTANCE_MARINE_INDUSTRY                                   :Maksymalny dystans przedsiębiorstw morskich od wybrzeża
 STR_PARAM_NAME_ECONOMIES                                                        :Ekonomia
-STR_PARAM_NAME_NO_OPENINGS                                                      :Zapobiegaj powstawaniu przedsiębiorstw
+STR_PARAM_NAME_NO_OPENINGS                                                      :Zapobiegaj fundowaniu przedsiębiorstw
+STR_PARAM_NAME_NO_SPAWNING                                                      :Pozwalaj na pojawianie się przedsiębiorstw
 STR_PARAM_VALUE_SECONDARY_NEVER_CLOSE_0                                         :bez limitu
 
 STR_PARAM_NAME_PRIMARY_LEVEL1_REQUIREMENT                                       :Surowce potrzebne dla zwiększonej produkcji (domyślnie 16)
@@ -20,13 +22,40 @@ STR_PARAM_NAME_PRIMARY_LEVEL1_BONUS                                             
 STR_PARAM_NAME_PRIMARY_LEVEL2_BONUS                                             :Niewiarygodny poziom produkcji (%)
 STR_PARAM_DESC_PRIMARY_LEVEL_BONUS                                              :Produkcja w gospodarstwach, kopalniach i podobnych zakładach kiedy wymagania dotyczące dostaw są spełnione (jako procent {SILVER}normalnego {BLACK}poziomu produkcji).
 
-STR_PARAM_VALUE_ECONOMIES_BASIC_TEMPERATE                                       :Zwykła ekonomia dla klimatu umiarkowanego
-STR_PARAM_VALUE_ECONOMIES_BASIC_ARCTIC                                          :Zwykła ekonomia dla klimatu arktycznego
-STR_PARAM_VALUE_ECONOMIES_BASIC_TROPIC                                          :Zwykła ekonomia dla klimatu tropikalnego
-# STR_PARAM_VALUE_ECONOMIES_BETTER_LIVING_THROUGH_CHEMISTRY                       :Better Living Through Chemistry  //unused in current version, not sure how to translate
-STR_PARAM_VALUE_ECONOMIES_IN_A_HOT_COUNTRY                                      :W Gorącym Kraju
+STR_PARAM_NAME_EXPERIMENTAL_FEATURES                                            :Enable experimental features
+STR_PARAM_DESC_EXPERIMENTAL_FEATURES                                            :Turns experimental features on or off.
+
+STR_PARAM_VALUE_ECONOMIES_BASIC_TEMPERATE                                       :Klasyczna extremalna ekonomia
+STR_PARAM_VALUE_ECONOMIES_BASIC_ARCTIC                                          :NIEDOKOŃCZONE Ekonomia dla klimatu arktycznego
+STR_PARAM_VALUE_ECONOMIES_BASIC_TROPIC                                          :Tropikalny raj
+STR_PARAM_VALUE_ECONOMIES_TROPICAL_PARADISE                                     :Tropikalny raj 2
+STR_PARAM_VALUE_ECONOMIES_BETTER_LIVING_THROUGH_CHEMISTRY                       :NIEDOKOŃCZONE Lepiej żyj dzięki chemii
+STR_PARAM_VALUE_ECONOMIES_IN_A_HOT_COUNTRY                                      :NIEDOKOŃCZONE W gorącym kraju
 STR_PARAM_VALUE_ECONOMIES_STEELTOWN                                             :Stalowa metropolia
 
+STR_CARGO_SUBTYPE_DISPLAY_CARGO_SUPPLIED_FLAG                                   : {BLACK}(dostarczono)
+STR_EXTRA_TEXT_SECONDARY_NON_COMBINATORY                                        :{BLACK}Produkuje z maksymalną wydajnością, jeśli dostarczany jest {WHITE}którykolwiek {BLACK}z potrzebnych towarów.
+STR_EXTRA_TEXT_SECONDARY_COMBINATORY                                            :{BLACK}Dla maksymalnej produkcji, dostarcz {WHITE}wszystkie {BLACK}potrzebne towary co najmniej raz na 3 miesiące.
+STR_EXTRA_TEXT_TOWN_PRODUCER                                                    :{BLACK}Produkcja jest proporcjonalna do populacji miasta. Przynajmniej {WHITE}{SIGNED_WORD} jednostek{BLACK} i nie więcej niż {WHITE}{SIGNED_WORD} jednostek{BLACK} towaru będzie produkowanych każdego miesiąca.
+STR_PRIMARY_PRODUCTION_1X                                                       :{BLACK}Aktualna produkcja: {YELLOW}normalna{}{}{BLACK}Dla {WHITE}zwiększonej {BLACK}produkcji, dostarcz {SIGNED_WORD} skrzyń zaopatrzenia w ciągu trzech miesięcy.{}Dla {WHITE}niewiarygodnej {BLACK}produkcji dostarcz {SIGNED_WORD} skrzyń.
+STR_PRIMARY_PRODUCTION_2X                                                       :{BLACK}Aktualna produkcja: {YELLOW}zwiększona{}{}{BLACK}By utrzymać ten poziom, dostarcz {SIGNED_WORD} skrzyń zaopatrzenia w ciągu trzech miesięcy.{}Dla {WHITE}niewiarygodnej {BLACK}produkcji, dostarcz {SIGNED_WORD} skrzyń.
+STR_PRIMARY_PRODUCTION_4X                                                       :{BLACK}Aktualna produkcja: {YELLOW}niewiarygodna{}{}{BLACK}By utrzymać ten poziom, dostarcz {SKIP}{SIGNED_WORD} skrzyń zaopatrzenia w ciągu trzech miesięcy.
+STR_PORT_PRODUCTION_1X                                                          :{BLACK}Aktualna produkcja: {YELLOW}normalna{}{}{BLACK}Dla {WHITE}zwiększonej {BLACK}produkcji dostarcz {SIGNED_WORD} jednostek towaru w ciągu trzech miesięcy.{}Dla {WHITE}niewiarygodnej {BLACK}produkcji dostarcz {SIGNED_WORD} jednostek.
+STR_PORT_PRODUCTION_2X                                                          :{BLACK}Aktualna produkcja: {YELLOW}zwiększona{}{}{BLACK}By utrzymać ten poziom, dostarcz {SIGNED_WORD} jednostek towaru w ciągu trzech miesięcy.{}Dla {WHITE}niewiarygodnej {BLACK}produkcji dostarcz {SIGNED_WORD} jednostek.
+STR_PORT_PRODUCTION_4X                                                          :{BLACK}Aktualna produkcja: {YELLOW}niewiarygodna{}{}{BLACK}By utrzymać ten poziom, dostarcz {SKIP}{SIGNED_WORD} jednostek towaru w ciągu trzech miesięcy.
+
+STR_INFORMATIVE_EXTRA_TEXT_PLAZA                                                :{SKIP}{SKIP}Nastrój populacji:{} {STRING}{STRING}{}{}{BLACK}Poziom optymizmu: {STRING}{SIGNED_WORD} punkt{P 2 "" y ów}{}{BLACK} Zapewnione dobra i potrzeby: {YELLOW}{SIGNED_WORD} punkt{P 2 "" y ów}{}{BLACK} Brud i zanieczyszczenie: {YELLOW}{SIGNED_WORD} punkt{P 2 "" y ów}{}{}{BLACK}Poziom brudu i zanieczyszczenia wzrasta wraz z rozwojem populacji i powstawanie przedsiębiorstw.{}{}Dobra i potrzeby są zapewniane poprzez by dostarczanie ich do odpowiednich przedsiębiorstw.{}{}Jeśli poziom optymizmu jest większy niż 10, to populacja będzie w {WHITE}optymistycznym{BLACK} nastroju. Jeśli poziom optymizmu będzie mniej niż -10, to populacja będzie w {WHITE}ponurym{BLACK} nastroju.
+STR_INFORMATIVE_EXTRA_TEXT_PLAZA_MOOD_OPTIMISTIC                                :Optymistyczny
+STR_INFORMATIVE_EXTRA_TEXT_PLAZA_MOOD_GLOOMY                                    :Ponury
+STR_INFORMATIVE_EXTRA_TEXT_PLAZA_MOOD_NEUTRAL                                   :Neutralny
+
+STR_CARGO_NAME_ACETIC_ACID                                                      :{G=m}Kwas octowy
+STR_CARGO_NAME_ACETIC_ACID.b                                                    :kwas octowy
+STR_CARGO_NAME_ACETIC_ACID.c                                                    :kwasowi octowemu
+STR_CARGO_NAME_ACETIC_ACID.d                                                    :kwasu octowego
+STR_CARGO_NAME_ACETIC_ACID.m                                                    :kwasie octowym
+STR_CARGO_NAME_ACETIC_ACID.n                                                    :kwasem octowym
+STR_CARGO_NAME_ACETIC_ACID.w                                                    :kwasie octowy
 STR_CARGO_NAME_ACID                                                             :{G=m}Kwas
 STR_CARGO_NAME_ACID.b                                                           :kwas
 STR_CARGO_NAME_ACID.c                                                           :kwasowi
@@ -42,12 +71,12 @@ STR_CARGO_NAME_ALCOHOL.n                                                        
 STR_CARGO_NAME_ALLOY_STEEL                                                      :{G=f}Stal stopowa
 STR_CARGO_NAME_ALLOY_STEEL.b                                                    :stal stopową
 STR_CARGO_NAME_ALLOY_STEEL.d                                                    :stali stopowej
-STR_CARGO_NAME_ALUMINIA                                                         :{G=m}Tlenek glinu
-STR_CARGO_NAME_ALUMINIA.b                                                       :tlenek glinu
-STR_CARGO_NAME_ALUMINIA.d                                                       :tlenku glinu
 STR_CARGO_NAME_ALUMINIUM                                                        :{G=m}Glin
 STR_CARGO_NAME_ALUMINIUM.b                                                      :glin
 STR_CARGO_NAME_ALUMINIUM.d                                                      :glinu
+STR_CARGO_NAME_ALUMINIA                                                         :{G=m}Tlenek glinu
+STR_CARGO_NAME_ALUMINIA.b                                                       :tlenek glinu
+STR_CARGO_NAME_ALUMINIA.d                                                       :tlenku glinu
 STR_CARGO_NAME_AMMONIA                                                          :{G=m}Amoniak
 STR_CARGO_NAME_AMMONIA.b                                                        :amoniak
 STR_CARGO_NAME_AMMONIA.d                                                        :amoniaku
@@ -63,6 +92,13 @@ STR_CARGO_NAME_BEANS.c                                                          
 STR_CARGO_NAME_BEANS.d                                                          :soi
 STR_CARGO_NAME_BEANS.m                                                          :soi
 STR_CARGO_NAME_BEANS.n                                                          :soją
+STR_CARGO_NAME_BIOMASS                                                          :{G=f}Biomasa
+STR_CARGO_NAME_BIOMASS.b                                                        :biomasę
+STR_CARGO_NAME_BIOMASS.c                                                        :biomasie
+STR_CARGO_NAME_BIOMASS.d                                                        :biomasy
+STR_CARGO_NAME_BIOMASS.m                                                        :biomasie
+STR_CARGO_NAME_BIOMASS.n                                                        :biomasą
+STR_CARGO_NAME_BIOMASS.w                                                        :boimaso
 STR_CARGO_NAME_BUILDING_MATERIALS                                               :Materiały budowlane
 STR_CARGO_NAME_BUILDING_MATERIALS.b                                             :materiały budowlane
 STR_CARGO_NAME_BUILDING_MATERIALS.d                                             :materiałów budowlanych
@@ -87,6 +123,7 @@ STR_CARGO_NAME_CEMENT.d                                                         
 STR_CARGO_NAME_CEMENT.m                                                         :cemencie
 STR_CARGO_NAME_CEMENT.n                                                         :cementem
 STR_CARGO_NAME_CEMENT.w                                                         :cemencie
+# more specific petrochemicals
 STR_CARGO_NAME_CHEMICALS                                                        :{G=n}Chemikalia
 STR_CARGO_NAME_CHEMICALS.b                                                      :chemikalia
 STR_CARGO_NAME_CHEMICALS.d                                                      :chemikaliów
@@ -106,9 +143,6 @@ STR_CARGO_NAME_CLAY.d                                                           
 STR_CARGO_NAME_CLEANING_AGENTS                                                  :Środki czyszczące
 STR_CARGO_NAME_CLEANING_AGENTS.b                                                :środki czyszczące
 STR_CARGO_NAME_CLEANING_AGENTS.d                                                :środków czyszczących
-STR_CARGO_NAME_COAL_TAR                                                         :{G=f}Smoła pogazowa
-STR_CARGO_NAME_COAL_TAR.b                                                       :smołę pogazową
-STR_CARGO_NAME_COAL_TAR.d                                                       :smoły pogazowej
 STR_CARGO_NAME_COFFEE                                                           :{G=f}Kawa
 STR_CARGO_NAME_COFFEE.b                                                         :kawę
 STR_CARGO_NAME_COFFEE.c                                                         :kawie
@@ -116,6 +150,10 @@ STR_CARGO_NAME_COFFEE.d                                                         
 STR_CARGO_NAME_COFFEE.m                                                         :kawie
 STR_CARGO_NAME_COFFEE.n                                                         :kawą
 STR_CARGO_NAME_COFFEE.w                                                         :kawo
+# no longer just coal
+STR_CARGO_NAME_COAL_TAR                                                         :{G=f}Smoła pogazowa
+STR_CARGO_NAME_COAL_TAR.b                                                       :smołę pogazową
+STR_CARGO_NAME_COAL_TAR.d                                                       :smoły pogazowej
 STR_CARGO_NAME_COKE                                                             :{G=m}Koks
 STR_CARGO_NAME_COKE.b                                                           :koks
 STR_CARGO_NAME_COKE.c                                                           :koksowi
@@ -128,7 +166,13 @@ STR_CARGO_NAME_COPPER.b                                                         
 STR_CARGO_NAME_COPPER.c                                                         :miedzi
 STR_CARGO_NAME_COPPER.d                                                         :miedzi
 STR_CARGO_NAME_COPPER.n                                                         :miedzią
-# STR_CARGO_NAME_COPPER_CONCENTRATE                                               :Copper Concentrate //unused in current version, not sure how to translate
+STR_CARGO_NAME_COPPER_CONCENTRATE                                               :{G=m}Koncentrat miedzi
+STR_CARGO_NAME_COPPER_CONCENTRATE.b                                             :koncentrat miedzi
+STR_CARGO_NAME_COPPER_CONCENTRATE.c                                             :koncentratowi miedzi
+STR_CARGO_NAME_COPPER_CONCENTRATE.d                                             :koncentratu miedzi
+STR_CARGO_NAME_COPPER_CONCENTRATE.m                                             :koncentracie miedzi
+STR_CARGO_NAME_COPPER_CONCENTRATE.n                                             :koncentratem miedzi
+STR_CARGO_NAME_COPPER_CONCENTRATE.w                                             :koncentracie miedzi
 STR_CARGO_NAME_EDIBLE_OIL                                                       :{G=m}Olej jadalny
 STR_CARGO_NAME_EDIBLE_OIL.b                                                     :olej jadalny
 STR_CARGO_NAME_EDIBLE_OIL.c                                                     :olejowi jadalnemu
@@ -143,6 +187,7 @@ STR_CARGO_NAME_ENGINEERING_SUPPLIES.c                                           
 STR_CARGO_NAME_ENGINEERING_SUPPLIES.d                                           :zaopatrzenia technicznego
 STR_CARGO_NAME_ENGINEERING_SUPPLIES.m                                           :zaopatrzeniu technicznym
 STR_CARGO_NAME_ENGINEERING_SUPPLIES.n                                           :zaopatrzeniem technicznym
+# more generic monomer
 STR_CARGO_NAME_ETHYLENE                                                         :{G=m}Etylen
 STR_CARGO_NAME_ETHYLENE.b                                                       :etylen
 STR_CARGO_NAME_ETHYLENE.d                                                       :etylenu
@@ -152,9 +197,22 @@ STR_CARGO_NAME_EXPLOSIVES.c                                                     
 STR_CARGO_NAME_EXPLOSIVES.d                                                     :materiałów wybuchowych
 STR_CARGO_NAME_EXPLOSIVES.m                                                     :materiałach wybuchowych
 STR_CARGO_NAME_EXPLOSIVES.n                                                     :materiałami wybuchowymi
+STR_CARGO_NAME_FARM_SUPPLIES                                                    :{G=n}Zaopatrzenie rolnictwa
+STR_CARGO_NAME_FARM_SUPPLIES.b                                                  :zaopatrzenie rolnictwa
+STR_CARGO_NAME_FARM_SUPPLIES.c                                                  :zaopatrzeniu rolnictwa
+STR_CARGO_NAME_FARM_SUPPLIES.d                                                  :zaopatrzenia rolnictwa
+STR_CARGO_NAME_FARM_SUPPLIES.m                                                  :zaopatrzeniem rolnictwa
+# represents ferrochrome and ferromanganese
 STR_CARGO_NAME_FERROCHROME                                                      :{G=m}Żelazochrom
 STR_CARGO_NAME_FERROCHROME.b                                                    :żelazochrom
 STR_CARGO_NAME_FERROCHROME.d                                                    :żelazochromu
+STR_CARGO_NAME_FERTILISER                                                       :Nawóz
+STR_CARGO_NAME_FERTILISER.b                                                     :nawóz
+STR_CARGO_NAME_FERTILISER.c                                                     :nawozowi
+STR_CARGO_NAME_FERTILISER.d                                                     :nawozu
+STR_CARGO_NAME_FERTILISER.m                                                     :nawozie
+STR_CARGO_NAME_FERTILISER.n                                                     :nawozem
+STR_CARGO_NAME_FERTILISER.w                                                     :nawozie
 STR_CARGO_NAME_FIBRES                                                           :Włókna roślinne
 STR_CARGO_NAME_FIBRES.b                                                         :włókna roślinne
 STR_CARGO_NAME_FIBRES.c                                                         :włóknom roślinnym
@@ -166,19 +224,34 @@ STR_CARGO_NAME_FISH.c                                                           
 STR_CARGO_NAME_FISH.d                                                           :ryb
 STR_CARGO_NAME_FISH.m                                                           :rybach
 STR_CARGO_NAME_FISH.n                                                           :rybami
-STR_CARGO_NAME_FARM_SUPPLIES                                                    :{G=n}Zaopatrzenie rolnictwa
-STR_CARGO_NAME_FARM_SUPPLIES.b                                                  :zaopatrzenie rolnictwa
-STR_CARGO_NAME_FARM_SUPPLIES.c                                                  :zaopatrzeniu rolnictwa
-STR_CARGO_NAME_FARM_SUPPLIES.d                                                  :zaopatrzenia rolnictwa
-STR_CARGO_NAME_FARM_SUPPLIES.m                                                  :zaopatrzeniem rolnictwa
-STR_CARGO_NAME_FERTILISER                                                       :Nawóz
-STR_CARGO_NAME_FERTILISER.b                                                     :nawóz
-STR_CARGO_NAME_FERTILISER.c                                                     :nawozowi
-STR_CARGO_NAME_FERTILISER.d                                                     :nawozu
-STR_CARGO_NAME_FERTILISER.m                                                     :nawozie
-STR_CARGO_NAME_FERTILISER.n                                                     :nawozem
-STR_CARGO_NAME_FERTILISER.w                                                     :nawozie
-# STR_CARGO_NAME_FOOD_ADDITIVES                                                   :Food Additives //unused in current version, not sure how to translate
+STR_CARGO_NAME_FISH_AND_MEAT                                                    :Ryby i mięso
+STR_CARGO_NAME_FISH_AND_MEAT.b                                                  :ryby i mięso
+STR_CARGO_NAME_FISH_AND_MEAT.c                                                  :rybom i mięsu
+STR_CARGO_NAME_FISH_AND_MEAT.d                                                  :ryb i mięsa
+STR_CARGO_NAME_FISH_AND_MEAT.m                                                  :rybach i mięsie
+STR_CARGO_NAME_FISH_AND_MEAT.n                                                  :rybami i mięsem
+STR_CARGO_NAME_FISH_AND_MEAT.w                                                  :ryby i mięso
+STR_CARGO_NAME_FLOUR                                                            :{G=f}Mąka
+STR_CARGO_NAME_FLOUR.b                                                          :mąkę
+STR_CARGO_NAME_FLOUR.c                                                          :mące
+STR_CARGO_NAME_FLOUR.d                                                          :mąki
+STR_CARGO_NAME_FLOUR.m                                                          :mące
+STR_CARGO_NAME_FLOUR.n                                                          :mąką
+STR_CARGO_NAME_FLOUR.w                                                          :mąko
+STR_CARGO_NAME_FOOD_ADDITIVES                                                   :Dodatki do żywności
+STR_CARGO_NAME_FOOD_ADDITIVES.b                                                 :dodatki do żywności
+STR_CARGO_NAME_FOOD_ADDITIVES.c                                                 :dodatkom do żywności
+STR_CARGO_NAME_FOOD_ADDITIVES.d                                                 :dodatków do żywności
+STR_CARGO_NAME_FOOD_ADDITIVES.m                                                 :dodatkach do żywności
+STR_CARGO_NAME_FOOD_ADDITIVES.n                                                 :dodatkami do żywności
+STR_CARGO_NAME_FOOD_ADDITIVES.w                                                 :dodatki do żywności
+STR_CARGO_NAME_FORGINGS_AND_CASTINGS                                            :Odkuwki i odlewy
+STR_CARGO_NAME_FORGINGS_AND_CASTINGS.b                                          :odkuwki i odlewy
+STR_CARGO_NAME_FORGINGS_AND_CASTINGS.c                                          :odkuwkom i odlewom
+STR_CARGO_NAME_FORGINGS_AND_CASTINGS.d                                          :odkuwkek i odlewów
+STR_CARGO_NAME_FORGINGS_AND_CASTINGS.m                                          :odkuwkach i odlewach
+STR_CARGO_NAME_FORGINGS_AND_CASTINGS.n                                          :odkuwkami i odlewami
+STR_CARGO_NAME_FORGINGS_AND_CASTINGS.w                                          :odkuwki i odlewy
 STR_CARGO_NAME_FORMIC_ACID                                                      :{G=m}Kwas mrówkowy
 STR_CARGO_NAME_FORMIC_ACID.b                                                    :kwas mrówkowy
 STR_CARGO_NAME_FORMIC_ACID.d                                                    :kwasu mrówkowego
@@ -194,6 +267,13 @@ STR_CARGO_NAME_GLASS.d                                                          
 STR_CARGO_NAME_HYDROCHLORIC_ACID                                                :{G=m}Kwas solny
 STR_CARGO_NAME_HYDROCHLORIC_ACID.b                                              :kwas solny
 STR_CARGO_NAME_HYDROCHLORIC_ACID.d                                              :kwasu solnego
+STR_CARGO_NAME_HYDROGEN                                                         :{G=m}Wodór
+STR_CARGO_NAME_HYDROGEN.b                                                       :wodór
+STR_CARGO_NAME_HYDROGEN.c                                                       :wodorowi
+STR_CARGO_NAME_HYDROGEN.d                                                       :wodoru
+STR_CARGO_NAME_HYDROGEN.m                                                       :wodorze
+STR_CARGO_NAME_HYDROGEN.n                                                       :wodorem
+STR_CARGO_NAME_HYDROGEN.w                                                       :wodorze
 STR_CARGO_NAME_KAOLIN                                                           :{G=m}Kaolinit
 STR_CARGO_NAME_KAOLIN.b                                                         :kaolinit
 STR_CARGO_NAME_KAOLIN.c                                                         :kaolinitowi
@@ -201,19 +281,30 @@ STR_CARGO_NAME_KAOLIN.d                                                         
 STR_CARGO_NAME_KAOLIN.m                                                         :kaolinicie
 STR_CARGO_NAME_KAOLIN.n                                                         :kaolinitem
 STR_CARGO_NAME_KAOLIN.w                                                         :kaolinicie
-STR_CARGO_NAME_LIMESTONE                                                        :{G=n}Wapień
+STR_CARGO_NAME_LIMESTONE                                                        :{G=m}Wapień
 STR_CARGO_NAME_LIMESTONE.b                                                      :wapień
 STR_CARGO_NAME_LIMESTONE.d                                                      :wapienia
 STR_CARGO_NAME_LOGS                                                             :{G=n}Drewno
 STR_CARGO_NAME_LOGS.b                                                           :drewno
 STR_CARGO_NAME_LOGS.d                                                           :drewna
-STR_CARGO_NAME_LUMBER                                                           :{G=f}Deski
-STR_CARGO_NAME_LUMBER.b                                                         :deski
-STR_CARGO_NAME_LUMBER.d                                                         :desek
+STR_CARGO_NAME_TIMBER                                                           :Deski
+STR_CARGO_NAME_TIMBER.b                                                         :deski
+STR_CARGO_NAME_TIMBER.c                                                         :deskom
+STR_CARGO_NAME_TIMBER.d                                                         :desek
+STR_CARGO_NAME_TIMBER.m                                                         :deskach
+STR_CARGO_NAME_TIMBER.n                                                         :deskami
+STR_CARGO_NAME_TIMBER.w                                                         :deski
 # cargo uses Sodium Hydroxide (wodorotlenek sodu) as string as it's interchangeable with Lye (ług), but lye is convenient for filename / cargo label
 STR_CARGO_NAME_LYE                                                              :{G=m}Wodorotlenek sodu
 STR_CARGO_NAME_LYE.b                                                            :wodorotlenek sodu
 STR_CARGO_NAME_LYE.d                                                            :wodorotlenku sodu
+STR_CARGO_NAME_MEAT                                                             :{G=n}Mięso
+STR_CARGO_NAME_MEAT.b                                                           :mięso
+STR_CARGO_NAME_MEAT.c                                                           :mięsu
+STR_CARGO_NAME_MEAT.d                                                           :mięsa
+STR_CARGO_NAME_MEAT.m                                                           :mięsie
+STR_CARGO_NAME_MEAT.n                                                           :mięsem
+STR_CARGO_NAME_MEAT.w                                                           :mięso
 STR_CARGO_NAME_METAL                                                            :{G=m}Metal
 STR_CARGO_NAME_METAL.b                                                          :metal
 STR_CARGO_NAME_METAL.d                                                          :metalu
@@ -223,6 +314,13 @@ STR_CARGO_NAME_METHANE.d                                                        
 STR_CARGO_NAME_METHANOL                                                         :{G=m}Metanol
 STR_CARGO_NAME_METHANOL.b                                                       :metanol
 STR_CARGO_NAME_METHANOL.d                                                       :metanolu
+STR_CARGO_NAME_METAL_PARTS                                                      :Metalowe części
+STR_CARGO_NAME_METAL_PARTS.b                                                    :metalowe części
+STR_CARGO_NAME_METAL_PARTS.c                                                    :metalowym częściom
+STR_CARGO_NAME_METAL_PARTS.d                                                    :metalowych części
+STR_CARGO_NAME_METAL_PARTS.m                                                    :metalowych częściach
+STR_CARGO_NAME_METAL_PARTS.n                                                    :metalowymi częściami
+STR_CARGO_NAME_METAL_PARTS.w                                                    :metalowe części
 STR_CARGO_NAME_MILK                                                             :{G=n}Mleko
 STR_CARGO_NAME_MILK.b                                                           :mleko
 STR_CARGO_NAME_MILK.d                                                           :mleka
@@ -231,7 +329,13 @@ STR_CARGO_NAME_MANGANESE.b                                                      
 STR_CARGO_NAME_MANGANESE.c                                                      :manganowi
 STR_CARGO_NAME_MANGANESE.d                                                      :manganu
 STR_CARGO_NAME_MANGANESE.n                                                      :manganem
-# STR_CARGO_NAME_NAPHTHA                                                          :Naphtha //Not sure if should be "nafta" (EN: paraffin, more common popular name) or "benzyna surowa" (more official, technical)
+STR_CARGO_NAME_NAPHTHA                                                          :{G=f}Nafta
+STR_CARGO_NAME_NAPHTHA.b                                                        :naftę
+STR_CARGO_NAME_NAPHTHA.c                                                        :nafcie
+STR_CARGO_NAME_NAPHTHA.d                                                        :nafty
+STR_CARGO_NAME_NAPHTHA.m                                                        :nafcie
+STR_CARGO_NAME_NAPHTHA.n                                                        :naftą
+STR_CARGO_NAME_NAPHTHA.w                                                        :nafto
 STR_CARGO_NAME_NICKEL                                                           :{G=m}Nikiel
 STR_CARGO_NAME_NICKEL.b                                                         :nikiel
 STR_CARGO_NAME_NICKEL.d                                                         :niklu
@@ -241,11 +345,25 @@ STR_CARGO_NAME_NITRATES.c                                                       
 STR_CARGO_NAME_NITRATES.d                                                       :saletry
 STR_CARGO_NAME_NITRATES.m                                                       :saletrze
 STR_CARGO_NAME_NITRATES.n                                                       :saletrą
+STR_CARGO_NAME_NITROGEN                                                         :{G=m}Azot
+STR_CARGO_NAME_NITROGEN.b                                                       :azot
+STR_CARGO_NAME_NITROGEN.c                                                       :azotowi
+STR_CARGO_NAME_NITROGEN.d                                                       :azotu
+STR_CARGO_NAME_NITROGEN.m                                                       :azocie
+STR_CARGO_NAME_NITROGEN.n                                                       :azotem
+STR_CARGO_NAME_NITROGEN.w                                                       :azocie
 STR_CARGO_NAME_NUTS                                                             :Orzechy
 STR_CARGO_NAME_NUTS.b                                                           :orzechy
 STR_CARGO_NAME_NUTS.c                                                           :orzechom
 STR_CARGO_NAME_NUTS.d                                                           :orzechów
 STR_CARGO_NAME_NUTS.n                                                           :orzechami
+STR_CARGO_NAME_OIL_SEEDS                                                        :Nasiona oleiste
+STR_CARGO_NAME_OIL_SEEDS.b                                                      :nasiona oleiste
+STR_CARGO_NAME_OIL_SEEDS.c                                                      :nasionom oleistym
+STR_CARGO_NAME_OIL_SEEDS.d                                                      :nasion oleistych
+STR_CARGO_NAME_OIL_SEEDS.m                                                      :nasionach oleistych
+STR_CARGO_NAME_OIL_SEEDS.n                                                      :nasionami oleistymi
+STR_CARGO_NAME_OIL_SEEDS.w                                                      :nasiona oleiste
 STR_CARGO_NAME_OXYGEN                                                           :{G=m}Tlen
 STR_CARGO_NAME_OXYGEN.b                                                         :tlen
 STR_CARGO_NAME_OXYGEN.d                                                         :tlenu
@@ -277,11 +395,12 @@ STR_CARGO_NAME_PHOSPHATE.n                                                      
 STR_CARGO_NAME_PHOSPHORIC_ACID                                                  :{G=m}Kwas fosforowy
 STR_CARGO_NAME_PHOSPHORIC_ACID.b                                                :kwas fosforowy
 STR_CARGO_NAME_PHOSPHORIC_ACID.d                                                :kwasu fosforowego
+# now represents both pig and cast iron
 STR_CARGO_NAME_PIG_IRON                                                         :{G=f}Surówka hutnicza
 STR_CARGO_NAME_PIG_IRON.b                                                       :surówkę hutniczą
 STR_CARGO_NAME_PIG_IRON.d                                                       :surówki hutniczej
 STR_CARGO_NAME_PIPE                                                             :{G=f}Rury
-STR_CARGO_NAME_PIPE.b                                                           :rur
+STR_CARGO_NAME_PIPE.b                                                           :rury
 STR_CARGO_NAME_PIPE.c                                                           :rurom
 STR_CARGO_NAME_PIPE.d                                                           :rur
 STR_CARGO_NAME_PIPE.m                                                           :rurach
@@ -290,6 +409,13 @@ STR_CARGO_NAME_PIPE.w                                                           
 STR_CARGO_NAME_PLASTICS                                                         :Plastiki
 STR_CARGO_NAME_PLASTICS.b                                                       :plastiki
 STR_CARGO_NAME_PLASTICS.d                                                       :plastików
+STR_CARGO_NAME_PLASTIC_PARTS                                                    :Plastikowe części
+STR_CARGO_NAME_PLASTIC_PARTS.b                                                  :plastikowe części
+STR_CARGO_NAME_PLASTIC_PARTS.c                                                  :plastokowym częściom
+STR_CARGO_NAME_PLASTIC_PARTS.d                                                  :plastikowych części
+STR_CARGO_NAME_PLASTIC_PARTS.m                                                  :plastikowych częściach
+STR_CARGO_NAME_PLASTIC_PARTS.n                                                  :plastikowymi częściami
+STR_CARGO_NAME_PLASTIC_PARTS.w                                                  :plastikowe części
 STR_CARGO_NAME_POTASH                                                           :{G=m}Potaż
 STR_CARGO_NAME_POTASH.c                                                         :potażowi
 STR_CARGO_NAME_POTASH.d                                                         :potażu
@@ -309,6 +435,13 @@ STR_CARGO_NAME_QUICKLIME.c                                                      
 STR_CARGO_NAME_QUICKLIME.d                                                      :wapna palonego
 STR_CARGO_NAME_QUICKLIME.m                                                      :wapnie palonym
 STR_CARGO_NAME_QUICKLIME.n                                                      :wapnem palonym
+STR_CARGO_NAME_RARE_METALS                                                      :Metale rzadkie
+STR_CARGO_NAME_RARE_METALS.b                                                    :metale rzadkie
+STR_CARGO_NAME_RARE_METALS.c                                                    :metalom rzadkim
+STR_CARGO_NAME_RARE_METALS.d                                                    :metalów rzadkich
+STR_CARGO_NAME_RARE_METALS.m                                                    :metalach rzadkich
+STR_CARGO_NAME_RARE_METALS.n                                                    :metalami rzadkimi
+STR_CARGO_NAME_RARE_METALS.w                                                    :metale rzadkie
 # STR_CARGO_NAME_RAW_LATEX                                                        :Raw Latex //not sure how to translate, but not used in current version
 STR_CARGO_NAME_REBAR                                                            :{G=n}Zbrojenie
 STR_CARGO_NAME_REBAR.b                                                          :zbrojenie
@@ -355,15 +488,38 @@ STR_CARGO_NAME_STEEL_SECTIONS.d                                                 
 STR_CARGO_NAME_STEEL_SHEET                                                      :{G=f}Blacha stalowa
 STR_CARGO_NAME_STEEL_SHEET.b                                                    :blachę stalową
 STR_CARGO_NAME_STEEL_SHEET.d                                                    :blachy stalowej
-STR_CARGO_NAME_STEEL_WIRE_ROD                                                   :{G=f}Walcówka stalowa
-STR_CARGO_NAME_STEEL_WIRE_ROD.b                                                 :walcówkę stalową
-STR_CARGO_NAME_STEEL_WIRE_ROD.d                                                 :walcówki stalowej
+# Not just steel
+STR_CARGO_NAME_STEEL_WIRE_ROD                                                   :{G=f}Walcówka metalowa
+STR_CARGO_NAME_STEEL_WIRE_ROD.b                                                 :walcówkę metalową
+STR_CARGO_NAME_STEEL_WIRE_ROD.c                                                 :walcówce metalowej
+STR_CARGO_NAME_STEEL_WIRE_ROD.d                                                 :walcówki metalowej
+STR_CARGO_NAME_STEEL_WIRE_ROD.m                                                 :walcówce metalowej
+STR_CARGO_NAME_STEEL_WIRE_ROD.n                                                 :walcówką metalową
+STR_CARGO_NAME_STEEL_WIRE_ROD.w                                                 :walcówko metalowa
 STR_CARGO_NAME_STONE                                                            :Kamienie
 STR_CARGO_NAME_STONE.b                                                          :kamienie
 STR_CARGO_NAME_STONE.d                                                          :kamieni
+STR_CARGO_NAME_SUGAR                                                            :{G=m}Cukier
+STR_CARGO_NAME_SUGAR.b                                                          :cukier
+STR_CARGO_NAME_SUGAR.c                                                          :cukrowi
+STR_CARGO_NAME_SUGAR.d                                                          :cukru
+STR_CARGO_NAME_SUGAR.m                                                          :cukrze
+STR_CARGO_NAME_SUGAR.n                                                          :cukrem
+STR_CARGO_NAME_SUGAR.w                                                          :cukrze
+STR_CARGO_NAME_SUGAR_CANE                                                       :{G=f}Trzcina cukrowa
+STR_CARGO_NAME_SUGAR_CANE.b                                                     :trzcinę cukrową
+STR_CARGO_NAME_SUGAR_CANE.c                                                     :trzcinie cukrowej
+STR_CARGO_NAME_SUGAR_CANE.d                                                     :trzciny cukrowej
+STR_CARGO_NAME_SUGAR_CANE.m                                                     :trzcinie cukrowej
+STR_CARGO_NAME_SUGAR_CANE.n                                                     :trzciną cukrową
+STR_CARGO_NAME_SUGAR_CANE.w                                                     :trzcino cukrowa
 STR_CARGO_NAME_SUGAR_BEET                                                       :Buraki cukrowe
 STR_CARGO_NAME_SUGAR_BEET.b                                                     :buraki cukrowe
+STR_CARGO_NAME_SUGAR_BEET.c                                                     :burakom cukrowym
 STR_CARGO_NAME_SUGAR_BEET.d                                                     :buraków cukrowych
+STR_CARGO_NAME_SUGAR_BEET.m                                                     :burakach cukrowych
+STR_CARGO_NAME_SUGAR_BEET.n                                                     :burakami cukrowymi
+STR_CARGO_NAME_SUGAR_BEET.w                                                     :buraki cukrowe
 STR_CARGO_NAME_SULPHUR                                                          :{G=f}Siarka
 STR_CARGO_NAME_SULPHUR.b                                                        :siarkę
 STR_CARGO_NAME_SULPHUR.c                                                        :siarce
@@ -383,9 +539,14 @@ STR_CARGO_NAME_TIN.d                                                            
 STR_CARGO_NAME_TINPLATE                                                         :{G=f}Blacha cynowana
 STR_CARGO_NAME_TINPLATE.b                                                       :blachę cynowaną
 STR_CARGO_NAME_TINPLATE.d                                                       :blachy cynowanej
-STR_CARGO_NAME_TYRES                                                            :Opony
-STR_CARGO_NAME_TYRES.b                                                          :opony
-STR_CARGO_NAME_TYRES.d                                                          :opon
+# not just tyres, also belts, gaskets etc
+STR_CARGO_NAME_TYRES                                                            :Gumowe przedmioty
+STR_CARGO_NAME_TYRES.b                                                          :gumowe przedmioty
+STR_CARGO_NAME_TYRES.c                                                          :gumowym przedmiotom
+STR_CARGO_NAME_TYRES.d                                                          :gumowych przedmiotów
+STR_CARGO_NAME_TYRES.m                                                          :gumowych przedmiotach
+STR_CARGO_NAME_TYRES.n                                                          :gumowymi przedmiotami
+STR_CARGO_NAME_TYRES.w                                                          :gumowe przedmioty
 STR_CARGO_NAME_UREA                                                             :{G=m}Mocznik
 STR_CARGO_NAME_UREA.b                                                           :mocznik
 STR_CARGO_NAME_UREA.d                                                           :mocznika
@@ -422,6 +583,7 @@ STR_CARGO_NAME_ZINC.m                                                           
 STR_CARGO_NAME_ZINC.n                                                           :cynkiem
 STR_CARGO_NAME_ZINC.w                                                           :cynku
 
+STR_CARGO_UNIT_ACETIC_ACID                                                      :{VOLUME} kwasu octowego
 STR_CARGO_UNIT_ACID                                                             :{VOLUME} kwasu
 STR_CARGO_UNIT_ALCOHOL                                                          :{VOLUME} alkoholu
 STR_CARGO_UNIT_ALLOY_STEEL                                                      :{WEIGHT} stali stopowej
@@ -431,6 +593,7 @@ STR_CARGO_UNIT_AMMONIA                                                          
 STR_CARGO_UNIT_AMMONIUM_NITRATE                                                 :{VOLUME} azotanu amonu
 STR_CARGO_UNIT_BAUXITE                                                          :{WEIGHT} boksytu
 STR_CARGO_UNIT_BEANS                                                            :{WEIGHT} soi
+STR_CARGO_UNIT_BIOMASS                                                          :{WEIGHT} biomasy
 STR_CARGO_UNIT_BUILDING_MATERIALS                                               :{WEIGHT} materiałów budowlanych
 STR_CARGO_UNIT_CARBON_BLACK                                                     :{WEIGHT} sadzy
 STR_CARGO_UNIT_CARBON_STEEL                                                     :{WEIGHT} stali niestopowej
@@ -446,7 +609,7 @@ STR_CARGO_UNIT_COAL_TAR                                                         
 STR_CARGO_UNIT_COFFEE                                                           :{SIGNED_WORD} wor{P 0 ek ki ków} kawy
 STR_CARGO_UNIT_COKE                                                             :{WEIGHT} koksu
 STR_CARGO_UNIT_COPPER                                                           :{WEIGHT} miedzi
-# STR_CARGO_UNIT_COPPER_CONCENTRATE                                               :{WEIGHT} of copper concentrate //unused in current version, not sure how to translate
+STR_CARGO_UNIT_COPPER_CONCENTRATE                                               :{WEIGHT} koncentratu miedzi
 STR_CARGO_UNIT_EDIBLE_OIL                                                       :{VOLUME} oleju jadalnego
 STR_CARGO_UNIT_ELECTRICAL_PARTS                                                 :{WEIGHT} części elektrycznych
 STR_CARGO_UNIT_ENGINEERING_SUPPLIES                                             :{SIGNED_WORD} skrzy{P 0 nia nie ń} zaopatrzenia technicznego
@@ -454,31 +617,39 @@ STR_CARGO_UNIT_ETHYLENE                                                         
 STR_CARGO_UNIT_EXPLOSIVES                                                       :{SIGNED_WORD} skrzy{P 0 nia nie ń} materiałów wybuchowych
 STR_CARGO_UNIT_FERROCHROME                                                      :{WEIGHT} żelazochromu
 STR_CARGO_UNIT_FERTILISER                                                       :{WEIGHT} nawozu
-# STR_CARGO_UNIT_FOOD_ADDITIVES                                                   :{WEIGHT} of food additives //unused in current version, not sure how to translate
+STR_CARGO_UNIT_FOOD_ADDITIVES                                                   :{WEIGHT} dodatków do żywności
+STR_CARGO_UNIT_FORGINGS_AND_CASTINGS                                            :{WEIGHT} odkuwek i odlewów
 STR_CARGO_UNIT_FORMIC_ACID                                                      :{VOLUME} kwasu mrówkowego
 STR_CARGO_UNIT_FIBRES                                                           :{SIGNED_WORD} bel{P 0 a e i} włókien roślinnych
 STR_CARGO_UNIT_FISH                                                             :{WEIGHT} ryb
+STR_CARGO_UNIT_FISH_AND_MEAT                                                    :{WEIGHT} ryb i mięsa
+STR_CARGO_UNIT_FLOUR                                                            :{WEIGHT} mąki
 STR_CARGO_UNIT_FMSP                                                             :{SIGNED_WORD} skrzy{P 0 nia nie ń} zaopatrzenia rolnictwa
 STR_CARGO_UNIT_FRUITS                                                           :{WEIGHT} owoców
 STR_CARGO_UNIT_FURNITURE                                                        :{WEIGHT} mebli
 STR_CARGO_UNIT_GLASS                                                            :{WEIGHT} szkła
 STR_CARGO_UNIT_HYDROCHLORIC_ACID                                                :{VOLUME} kwasu solnego
+STR_CARGO_UNIT_HYDROGEN                                                         :{VOLUME} wodoru
 STR_CARGO_UNIT_KAOLIN                                                           :{WEIGHT} kaolinitu
 STR_CARGO_UNIT_LIMESTONE                                                        :{WEIGHT} wapienia
 STR_CARGO_UNIT_LOGS                                                             :{WEIGHT} drewna
-STR_CARGO_UNIT_LUMBER                                                           :{WEIGHT} desek
+STR_CARGO_UNIT_TIMBER                                                           :{WEIGHT} desek
 # cargo uses Sodium Hydroxide (wodorotlenek sodu) as string as it's interchangeable with Lye (ług), but lye is convenient for filename / cargo label
 STR_CARGO_UNIT_LYE                                                              :{VOLUME} wodorotlenku sodu
 STR_CARGO_UNIT_MANGANESE                                                        :{WEIGHT} manganu
 STR_CARGO_UNIT_METAL                                                            :{WEIGHT} metalu
+STR_CARGO_UNIT_METAL_PARTS                                                      :{WEIGHT} metalowych części
+STR_CARGO_UNIT_MEAT                                                             :{WEIGHT} mięsa
 STR_CARGO_UNIT_METHANE                                                          :{VOLUME} metanu
 STR_CARGO_UNIT_METHANOL                                                         :{VOLUME} metanolu
 STR_CARGO_UNIT_MILK                                                             :{VOLUME} mleka
-# STR_CARGO_UNIT_NAPHTHA                                                          :{VOLUME} of naphtha //Not sure if should be "nafta" (EN: paraffin, more common popular name) or "benzyna surowa" (more official, technical)
+STR_CARGO_UNIT_NAPHTHA                                                          :{VOLUME} nafty
 STR_CARGO_UNIT_NICKEL                                                           :{WEIGHT} niklu
 STR_CARGO_UNIT_NITRATES                                                         :{WEIGHT} saletry
+STR_CARGO_UNIT_NITROGEN                                                         :{VOLUME} azotu
 STR_CARGO_UNIT_NUTS                                                             :{SIGNED_WORD} wor{P 0 ek ki ków} orzechów
 STR_CARGO_UNIT_OXYGEN                                                           :{VOLUME} tlenu
+STR_CARGO_UNIT_OIL_SEEDS                                                        :{WEIGHT} nasion oleistych
 STR_CARGO_UNIT_PACKAGING                                                        :{WEIGHT} opakowań
 STR_CARGO_UNIT_PAINTS_AND_COATINGS                                              :{VOLUME} farb i lakierów
 STR_CARGO_UNIT_PEAT                                                             :{WEIGHT} torfu
@@ -488,10 +659,12 @@ STR_CARGO_UNIT_PHOSPHORIC_ACID                                                  
 STR_CARGO_UNIT_PIG_IRON                                                         :{WEIGHT} surówki hutniczej
 STR_CARGO_UNIT_PIPE                                                             :{WEIGHT} rur
 STR_CARGO_UNIT_PLASTICS                                                         :{WEIGHT} plastików
+STR_CARGO_UNIT_PLASTIC_PARTS                                                    :{WEIGHT} plastikowych części
 STR_CARGO_UNIT_POTASH                                                           :{WEIGHT} potażu
 STR_CARGO_UNIT_PROPYLENE                                                        :{VOLUME} propenu
 STR_CARGO_UNIT_PYRITE_ORE                                                       :{WEIGHT} rudy pirytu
 STR_CARGO_UNIT_QUICKLIME                                                        :{WEIGHT} wapna palonego
+STR_CARGO_UNIT_RARE_METALS                                                      :{WEIGHT} rzadkich metali
 # STR_CARGO_UNIT_RAW_LATEX                                                        :{VOLUME} of raw latex //not sure how to translate, but not used in current version
 STR_CARGO_UNIT_REBAR                                                            :{WEIGHT} zbrojenia
 STR_CARGO_UNIT_RECYCLABLES                                                      :{WEIGHT} surowców wtórnych
@@ -506,13 +679,15 @@ STR_CARGO_UNIT_STEEL_SECTIONS                                                   
 STR_CARGO_UNIT_STEEL_SHEET                                                      :{WEIGHT} blachy stalowej
 STR_CARGO_UNIT_STEEL_WIRE_ROD                                                   :{WEIGHT} walcówki stalowej
 STR_CARGO_UNIT_STONE                                                            :{WEIGHT} kamieni
+STR_CARGO_UNIT_SUGAR                                                            :{WEIGHT} cukru
 STR_CARGO_UNIT_SUGAR_BEET                                                       :{WEIGHT} buraków cukrowych
+STR_CARGO_UNIT_SUGAR_CANE                                                       :{SIGNED_WORD} bel{P 0 a e i} trzciny cukrowej
 STR_CARGO_UNIT_SULPHUR                                                          :{WEIGHT} siarki
 STR_CARGO_UNIT_SULPHURIC_ACID                                                   :{VOLUME} kwasu siarkowego
 STR_CARGO_UNIT_TEXTILES                                                         :{WEIGHT} odzieży
 STR_CARGO_UNIT_TIN                                                              :{WEIGHT} cyny
 STR_CARGO_UNIT_TINPLATE                                                         :{WEIGHT} blachy cynowanej
-STR_CARGO_UNIT_TYRES                                                            :{WEIGHT} opon
+STR_CARGO_UNIT_TYRES                                                            :{WEIGHT} gumowych przedmiotów
 STR_CARGO_UNIT_UREA                                                             :{WEIGHT} mocznika
 STR_CARGO_UNIT_VEHICLE_BODIES                                                   :{WEIGHT} karoserii
 STR_CARGO_UNIT_VEHICLE_ENGINES                                                  :{WEIGHT} silników samochodowych
@@ -523,6 +698,7 @@ STR_CARGO_UNIT_YARN                                                             
 STR_CARGO_UNIT_ZINC                                                             :{WEIGHT} cynku
 
 # it seems that using 2 chars for these is a convention not a limit, I tested 4 chars and OpenTTD renders it fine - May 2020
+STR_CID_ACETIC_ACID                                                             :{TINYFONT}KWOC
 STR_CID_ACID                                                                    :{TINYFONT}KWAS
 STR_CID_ALCOHOL                                                                 :{TINYFONT}ALKO
 STR_CID_ALLOY_STEEL                                                             :{TINYFONT}STST
@@ -532,6 +708,7 @@ STR_CID_AMMONIA                                                                 
 STR_CID_AMMONIUM_NITRATE                                                        :{TINYFONT}AZAM
 STR_CID_BAUXITE                                                                 :{TINYFONT}BOK
 STR_CID_BEANS                                                                   :{TINYFONT}SOJA
+STR_CID_BIOMASS                                                                 :{TINYFONT}BIOM
 STR_CID_BUILDING_MATERIALS                                                      :{TINYFONT}MB
 STR_CID_CARBON_BLACK                                                            :{TINYFONT}SADZ
 STR_CID_CARBON_STEEL                                                            :{TINYFONT}STNS
@@ -545,9 +722,11 @@ STR_CID_CLAY                                                                    
 STR_CID_CLEANING_AGENTS                                                         :{TINYFONT}ŚRCZ
 STR_CID_COFFEE                                                                  :{TINYFONT}KAWA
 STR_CID_COAL_TAR                                                                :{TINYFONT}SMŁ
+STR_CID_COAL                                                                    :{TINYFONT}WG
 STR_CID_COKE                                                                    :{TINYFONT}KOKS
 STR_CID_COPPER                                                                  :{TINYFONT}MI
-# STR_CID_COPPER_CONCENTRATE                                                      :{TINYFONT}CC //unused in current version, not sure how to translate
+STR_CID_COPPER_CONCENTRATE                                                      :{TINYFONT}KNMI
+STR_CID_COPPER_ORE                                                              :{TINYFONT}RMI
 STR_CID_EDIBLE_OIL                                                              :{TINYFONT}OJ
 STR_CID_ELECTRICAL_PARTS                                                        :{TINYFONT}CZEL
 STR_CID_ENGINEERING_SUPPLIES                                                    :{TINYFONT}ZT
@@ -557,29 +736,46 @@ STR_CID_FARM_SUPPLIES                                                           
 STR_CID_FERROCHROME                                                             :{TINYFONT}ŻECH
 STR_CID_FERTILISER                                                              :{TINYFONT}NW
 STR_CID_FIBRES                                                                  :{TINYFONT}WN
-STR_CID_FISH                                                                    :{TINYFONT}RB
-# STR_CID_FOOD_ADDITIVES                                                          :{TINYFONT}FV //unused in current version, not sure how to translate
+STR_CID_FISH                                                                    :{TINYFONT}RYBY
+STR_CID_FISH_AND_MEAT                                                           :{TINYFONT}RBMS
+STR_CID_FLOUR                                                                   :{TINYFONT}MĄK
+STR_CID_FOOD_ADDITIVES                                                          :{TINYFONT}DŻYW
+STR_CID_FOOD                                                                    :{TINYFONT}ŻYW
 STR_CID_FORMIC_ACID                                                             :{TINYFONT}KWMR
+STR_CID_FORGINGS_AND_CASTINGS                                                   :{TINYFONT}ODKL
+STR_CID_FRUITS                                                                  :{TINYFONT}OWOC
 STR_CID_FURNITURE                                                               :{TINYFONT}MBL
-STR_CID_GLASS                                                                   :{TINYFONT}SZK
+STR_CID_GLASS                                                                   :{TINYFONT}SZKŁ
+STR_CID_GOODS                                                                   :{TINYFONT}TOWA
+STR_CID_GRAIN                                                                   :{TINYFONT}ZBOŻ
 STR_CID_HYDROCHLORIC_ACID                                                       :{TINYFONT}KWSO
+STR_CID_HYDROGEN                                                                :{TINYFONT}H2
+STR_CID_IRON_ORE                                                                :{TINYFONT}RŻ
 STR_CID_KAOLIN                                                                  :{TINYFONT}KA
 STR_CID_LIMESTONE                                                               :{TINYFONT}WP
+STR_CID_LIVESTOCK                                                               :{TINYFONT}ŻYWC
 STR_CID_LOGS                                                                    :{TINYFONT}DW
-STR_CID_LUMBER                                                                  :{TINYFONT}DS
+STR_CID_TIMBER                                                                  :{TINYFONT}DS
 # cargo uses Sodium Hydroxide (wodorotlenek sodu) as string as it's interchangeable with Lye (ług), but lye is convenient for filename / cargo label
 STR_CID_LYE                                                                     :{TINYFONT}WS
+STR_CID_MAIL                                                                    :{TINYFONT}POCZ
 STR_CID_MANGANESE                                                               :{TINYFONT}MN
+STR_CID_MEAT                                                                    :{TINYFONT}MIĘS
 STR_CID_METAL                                                                   :{TINYFONT}MT
+STR_CID_METAL_PARTS                                                             :{TINYFONT}MTCZ
 STR_CID_METHANE                                                                 :{TINYFONT}MTN
 STR_CID_METHANOL                                                                :{TINYFONT}MTOL
 STR_CID_MILK                                                                    :{TINYFONT}MK
-# STR_CID_NAPHTHA                                                                 :{TINYFONT}NA //Not sure if should be "nafta" (EN: paraffin, more common popular name) or "benzyna surowa" (more official, technical)
+STR_CID_NAPHTHA                                                                 :{TINYFONT}NAFT
 STR_CID_NICKEL                                                                  :{TINYFONT}NK
 STR_CID_NITRATES                                                                :{TINYFONT}SL
+STR_CID_NITROGEN                                                                :{TINYFONT}N2
 STR_CID_NUTS                                                                    :{TINYFONT}OR
+STR_CID_OIL                                                                     :{TINYFONT}ROPA
+STR_CID_OIL_SEEDS                                                               :{TINYFONT}NSOL
 STR_CID_OXYGEN                                                                  :{TINYFONT}O2
 STR_CID_PACKAGING                                                               :{TINYFONT}OPAK
+STR_CID_PASSENGERS                                                              :{TINYFONT}PASS
 STR_CID_PAINTS_AND_COATINGS                                                     :{TINYFONT}FARB
 STR_CID_PEAT                                                                    :{TINYFONT}TORF
 STR_CID_PETROL                                                                  :{TINYFONT}PW
@@ -588,13 +784,16 @@ STR_CID_PIPE                                                                    
 STR_CID_PHOSPHATE                                                               :{TINYFONT}FSF
 STR_CID_PHOSPHORIC_ACID                                                         :{TINYFONT}KWFS
 STR_CID_PLASTICS                                                                :{TINYFONT}PLAS
+STR_CID_PLASTIC_PARTS                                                           :{TINYFONT}PlCZ
 STR_CID_POTASH                                                                  :{TINYFONT}PŻ
 STR_CID_PROPYLENE                                                               :{TINYFONT}PR
 STR_CID_PYRITE_ORE                                                              :{TINYFONT}PI
 STR_CID_QUICKLIME                                                               :{TINYFONT}WP
+STR_CID_RARE_METALS                                                             :{TINYFONT}MTRZ
 # STR_CID_RAW_LATEX                                                               :{TINYFONT}RL //not sure how to translate, but not used in current version
 STR_CID_REBAR                                                                   :{TINYFONT}ZBR
 STR_CID_RECYCLABLES                                                             :{TINYFONT}SW
+STR_CID_RUBBER                                                                  :{TINYFONT}GUMA
 STR_CID_SALT                                                                    :{TINYFONT}SL
 STR_CID_SAND                                                                    :{TINYFONT}PK
 STR_CID_SCRAP_METAL                                                             :{TINYFONT}ZŁOM
@@ -603,7 +802,9 @@ STR_CID_SODA_ASH                                                                
 STR_CID_STAINLESS_STEEL                                                         :{TINYFONT}STNR
 STR_CID_STEEL                                                                   :{TINYFONT}ST
 STR_CID_STONE                                                                   :{TINYFONT}KM
+STR_CID_SUGAR                                                                   :{TINYFONT}CUKR
 STR_CID_SUGAR_BEET                                                              :{TINYFONT}BC
+STR_CID_SUGAR_CANE                                                              :{TINYFONT}TRCK
 STR_CID_SULPHUR                                                                 :{TINYFONT}SI
 STR_CID_SULPHURIC_ACID                                                          :{TINYFONT}KWSI
 STR_CID_STEEL_SECTIONS                                                          :{TINYFONT}STPR
@@ -616,7 +817,7 @@ STR_CID_TYRES                                                                   
 STR_CID_UREA                                                                    :{TINYFONT}MCZK
 STR_CID_VEHICLE_BODIES                                                          :{TINYFONT}KR
 STR_CID_VEHICLE_ENGINES                                                         :{TINYFONT}SIL
-STR_CID_VEHICLE_PARTS                                                           :{TINYFONT}CZ
+STR_CID_VEHICLE_PARTS                                                           :{TINYFONT}CZSM
 STR_CID_VEHICLES                                                                :{TINYFONT}SM
 STR_CID_WOOL                                                                    :{TINYFONT}WE
 STR_CID_YARN                                                                    :{TINYFONT}PRZ
@@ -637,23 +838,53 @@ STR_ERR_LOCATION_NOT_IN_DESERT                                                  
 STR_ERR_LOCATION_NOT_ON_STEEP_SLOPE                                             :nie może być ustawione na stromym zboczu.
 STR_ERR_LOCATION_LIMIT_1_PER_TOWN                                               :dozwolone tylko jedno przedsiębiorstwo tego typu na jedno miasto.
 
+STR_PROD_CHANGE_TEST                                                            :{BIGFONT}{BLACK}Szczur przeskoczył nad kotem
+
 STR_IND_ALUMINIUM_PLANT                                                         :{G=f}Huta aluminium
 STR_IND_ALUMINIUM_PLANT.d                                                       :huty aluminium
+STR_IND_ALUMINA_REFINERY                                                        :{G=f}Rafineria tlenku glinu
+STR_IND_ALUMINA_REFINERY.b                                                      :rafinerię tlenku glinu
+STR_IND_ALUMINA_REFINERY.c                                                      :rafinerii tlenku glinu
+STR_IND_ALUMINA_REFINERY.d                                                      :rafinerii tlenku glinu
+STR_IND_ALUMINA_REFINERY.m                                                      :rafinerii tlenku glinu
+STR_IND_ALUMINA_REFINERY.n                                                      :rafinerią tlenku glinu
+STR_IND_ALUMINA_REFINERY.w                                                      :rafinerio tlenku glinu
 STR_IND_AMMONIA_PLANT                                                           :{G=f}Fabryka amoniaku
 STR_IND_AMMONIA_PLANT.d                                                         :fabryki amoniaku
 STR_IND_ARABLE_FARM                                                             :{G=n}Pole uprawne
 STR_IND_ARABLE_FARM.d                                                           :pola uprawnego
+STR_IND_APPLIANCE_FACTORY                                                       :{G=f}Fabryka sprzętu AGD
+STR_IND_APPLIANCE_FACTORY.b                                                     :fabrykę sprzętu AGD
+STR_IND_APPLIANCE_FACTORY.c                                                     :fabryce sprzętu AGD
+STR_IND_APPLIANCE_FACTORY.d                                                     :fabryki sprzętu AGD
+STR_IND_APPLIANCE_FACTORY.m                                                     :fabryce sprzętu AGD
+STR_IND_APPLIANCE_FACTORY.n                                                     :fabryką sprzętu AGD
+STR_IND_APPLIANCE_FACTORY.w                                                     :fabryko sprzętu AGD
 STR_IND_ASSEMBLY_PLANT                                                          :{G=f}Fabryka samochodów
 STR_IND_ASSEMBLY_PLANT.b                                                        :fabrykę samochodów
 STR_IND_ASSEMBLY_PLANT.c                                                        :fabryce samochodów
 STR_IND_ASSEMBLY_PLANT.d                                                        :fabryki samochodów
 STR_IND_ASSEMBLY_PLANT.n                                                        :fabryką samochodów
+STR_IND_BAKERY                                                                  :{G=f}Piekarnia
+STR_IND_BAKERY.b                                                                :piekarnię
+STR_IND_BAKERY.c                                                                :piekarni
+STR_IND_BAKERY.d                                                                :piekarni
+STR_IND_BAKERY.m                                                                :piekarni
+STR_IND_BAKERY.n                                                                :piekarnią
+STR_IND_BAKERY.w                                                                :piekarnio
 STR_IND_BASIC_OXYGEN_FURNACE                                                    :{G=m}Konwertor tlenowy
 STR_IND_BASIC_OXYGEN_FURNACE.c                                                  :konwertorowi tlenowemu
 STR_IND_BASIC_OXYGEN_FURNACE.d                                                  :konwertora tlenowego
 STR_IND_BASIC_OXYGEN_FURNACE.m                                                  :konwertorze tlenowym
 STR_IND_BASIC_OXYGEN_FURNACE.n                                                  :konwertorem tlenowym
 STR_IND_BASIC_OXYGEN_FURNACE.w                                                  :konwertorze tlenowy
+STR_IND_BAUXITE_MINE                                                            :{G=f}Kopalnia boksytu
+STR_IND_BAUXITE_MINE.b                                                          :kopalnię boksytu
+STR_IND_BAUXITE_MINE.c                                                          :kopalni boksytu
+STR_IND_BAUXITE_MINE.d                                                          :kopalni boksytu
+STR_IND_BAUXITE_MINE.m                                                          :kopalni boksytu
+STR_IND_BAUXITE_MINE.n                                                          :kopalnią boksytu
+STR_IND_BAUXITE_MINE.w                                                          :kopalnio boksytu
 STR_IND_BIOREFINERY                                                             :{G=f}Biorafineria
 STR_IND_BIOREFINERY.d                                                           :biorafinerii
 STR_IND_BLAST_FURNACE                                                           :{G=m}Wielki piec
@@ -673,12 +904,26 @@ STR_IND_CIDER_MILL.d                                                            
 STR_IND_CIDER_MILL.m                                                            :wytwórni cydru
 STR_IND_CIDER_MILL.n                                                            :wytwórnią cydru
 STR_IND_CIDER_MILL.w                                                            :wytwórnio cydru
+STR_IND_COTTON_FARM                                                             :{G=f}Farma bawełny
+STR_IND_COTTON_FARM.b                                                           :farmę bawełny
+STR_IND_COTTON_FARM.c                                                           :farmie bawełny
+STR_IND_COTTON_FARM.d                                                           :farmy bawełny
+STR_IND_COTTON_FARM.m                                                           :farmie bawełny
+STR_IND_COTTON_FARM.n                                                           :farmą bawełny
+STR_IND_COTTON_FARM.w                                                           :farmo bawełny
 STR_IND_BRICK_WORKS                                                             :{G=f}Cegielnia
 STR_IND_BRICK_WORKS.d                                                           :cegielni
 STR_IND_BUILDERS_YARD                                                           :{G=f}Spółka budowlana
 STR_IND_BUILDERS_YARD.d                                                         :spółki budowlanej
 STR_IND_BULK_TERMINAL                                                           :{G=m}Port handlowy
 STR_IND_BULK_TERMINAL.d                                                         :portu handlowego
+STR_IND_CANNERY                                                                 :{G=f}Fabryka konserw
+STR_IND_CANNERY.b                                                               :fabrykę konserw
+STR_IND_CANNERY.c                                                               :fabryce konserw
+STR_IND_CANNERY.d                                                               :fabryki konserw
+STR_IND_CANNERY.m                                                               :fabryce konserw
+STR_IND_CANNERY.n                                                               :fabryką konserw
+STR_IND_CANNERY.w                                                               :fabryko konserw
 STR_IND_CARBON_BLACK_PLANT                                                      :{G=f}Przetwórnia smoły pogazowej
 STR_IND_CARBON_BLACK_PLANT.d                                                    :przetwórni smoły pogazowej
 STR_IND_CEMENT_PLANT                                                            :{G=f}Cementownia
@@ -704,8 +949,13 @@ STR_IND_COKE_OVEN.n                                                             
 STR_IND_COKE_OVEN.w                                                             :koksownio
 STR_IND_COMPONENT_FACTORY                                                       :{G=f}Fabryka części samochodowych
 STR_IND_COMPONENT_FACTORY.d                                                     :fabryki części samochodowych
-# STR_IND_COPPER_CONCENTRATOR                                                     :Copper Concentrator //depends on COPPER_CONCENTRATE translation
-# STR_IND_COPPER_CONCENTRATOR.d                                                   :Copper Concentrator //depends on COPPER_CONCENTRATE translation
+STR_IND_COPPER_CONCENTRATOR                                                     :{G=m}Flotownik miedzi
+STR_IND_COPPER_CONCENTRATOR.b                                                   :flotownik miedzi
+STR_IND_COPPER_CONCENTRATOR.c                                                   :flotownikowi miedzi
+STR_IND_COPPER_CONCENTRATOR.d                                                   :flotownika miedzi
+STR_IND_COPPER_CONCENTRATOR.m                                                   :flotowniku miedzi
+STR_IND_COPPER_CONCENTRATOR.n                                                   :flotownikiem miedzi
+STR_IND_COPPER_CONCENTRATOR.w                                                   :flotowniku miedzi
 STR_IND_COPPER_REFINERY                                                         :{G=f}Rafineria miedzi
 STR_IND_COPPER_REFINERY.b                                                       :rafinerię miedzi
 STR_IND_COPPER_REFINERY.c                                                       :rafinerii miedzi
@@ -722,30 +972,64 @@ STR_IND_DAIRY_FARM.d                                                            
 STR_IND_DAIRY_FARM.m                                                            :hodowli
 STR_IND_DAIRY_FARM.n                                                            :hodowlą
 STR_IND_DAIRY_FARM.w                                                            :hodowlo
+STR_IND_DISTILLERY                                                              :{G=f}Winiarnia i destylarnia
+STR_IND_DISTILLERY.b                                                            :winiarnię i destylarnię
+STR_IND_DISTILLERY.c                                                            :winiarni i destylarni
+STR_IND_DISTILLERY.d                                                            :winiarni i destylarni
+STR_IND_DISTILLERY.m                                                            :winiarni i destylarni
+STR_IND_DISTILLERY.n                                                            :winiarnią i destylarnią
+STR_IND_DISTILLERY.w                                                            :winiarnio i destylarnio
 STR_IND_DREDGING_SITE                                                           :{G=f}Pogłębiarka
 STR_IND_DREDGING_SITE.d                                                         :pogłębiarki
+STR_IND_EDIBLE_OIL_REFINERY                                                     :{G=f}Prasa do oleju
+STR_IND_EDIBLE_OIL_REFINERY.b                                                   :prasę do oleju
+STR_IND_EDIBLE_OIL_REFINERY.c                                                   :prasie do oleju
+STR_IND_EDIBLE_OIL_REFINERY.d                                                   :prasy do oleju
+STR_IND_EDIBLE_OIL_REFINERY.m                                                   :prasie do oleju
+STR_IND_EDIBLE_OIL_REFINERY.n                                                   :prasą do oleju
+STR_IND_EDIBLE_OIL_REFINERY.w                                                   :praso do oleju
 STR_IND_ELECTRIC_ARC_FURNACE                                                    :{G=m}Piec łukowy
 STR_IND_ELECTRIC_ARC_FURNACE.c                                                  :piecowi łukowemu
 STR_IND_ELECTRIC_ARC_FURNACE.d                                                  :pieca łukowego
 STR_IND_ELECTRIC_ARC_FURNACE.m                                                  :piecu łukowym
 STR_IND_ELECTRIC_ARC_FURNACE.n                                                  :piecem łukowym
 STR_IND_ELECTRIC_ARC_FURNACE.w                                                  :piecu łukowy
+STR_IND_ELECTRICAL_WORKS                                                        :{G=f}Fabryka części elektrycznych
+STR_IND_ELECTRICAL_WORKS.b                                                      :fabrykę części elektrycznych
+STR_IND_ELECTRICAL_WORKS.c                                                      :fabryce części elektrycznych
+STR_IND_ELECTRICAL_WORKS.d                                                      :fabryki części elektrycznych
+STR_IND_ELECTRICAL_WORKS.m                                                      :fabryce części elektrycznych
+STR_IND_ELECTRICAL_WORKS.n                                                      :fabryką części elektrycznych
+STR_IND_ELECTRICAL_WORKS.w                                                      :fabryko części elektrycznych
 STR_IND_ENGINE_PLANT                                                            :{G=f}Fabryka silników samochodowych
 STR_IND_ENGINE_PLANT.d                                                          :fabryki silników
-# STR_IND_ETHYLENE_CRACKER                                                        :Naphtha Cracker //Depends on NAPHTHA translation
-# STR_IND_ETHYLENE_CRACKER.d                                                      :Naphtha Cracker
+STR_IND_ETHYLENE_CRACKER                                                        :{G=m}Zakład krakingu nafty
+STR_IND_ETHYLENE_CRACKER.b                                                      :zakład krakingu nafty
+STR_IND_ETHYLENE_CRACKER.c                                                      :zakładowi krakingu nafty
+STR_IND_ETHYLENE_CRACKER.d                                                      :zakładu krakingu nafty
+STR_IND_ETHYLENE_CRACKER.m                                                      :zakładzie krakingu nafty
+STR_IND_ETHYLENE_CRACKER.n                                                      :zakładem krakingu nafty
+STR_IND_ETHYLENE_CRACKER.w                                                      :zakładzie krakingu nafty
 STR_IND_FARM                                                                    :{G=f}Farma
 STR_IND_FARM.d                                                                  :farmy
+STR_IND_FARM_SUPPLY_YARD                                                        :{G=m}Skład zaopatrzenia rolniczego
+STR_IND_FARM_SUPPLY_YARD.b                                                      :skład zaopatrzenia rolniczego
+STR_IND_FARM_SUPPLY_YARD.c                                                      :składowi zaopatrzenia rolniczego
+STR_IND_FARM_SUPPLY_YARD.d                                                      :składu zaopatrzenia rolniczego
+STR_IND_FARM_SUPPLY_YARD.m                                                      :składzie zaopatrzenia rolniczego
+STR_IND_FARM_SUPPLY_YARD.n                                                      :składem zaopatrzenia rolniczego
+STR_IND_FARM_SUPPLY_YARD.w                                                      :składzie zaopatrzenia rolniczego
 STR_IND_FERROCHROME_SMELTER                                                     :{G=f}Wytwórnia żelazochromu
 STR_IND_FERROCHROME_SMELTER.d                                                   :wytwórni żelazochromu
 STR_IND_FERTILISER_PLANT                                                        :{G=f}Fabryka nawozu
 STR_IND_FERTILISER_PLANT.d                                                      :fabryki nawozu
-# STR_IND_FACTORY_1                                                               :Factory 1 //These factory numbers does not look like final names
-# STR_IND_FACTORY_1.d                                                             :Factory 1
-# STR_IND_FACTORY_2                                                               :Factory 2
-# STR_IND_FACTORY_2.d                                                             :Factory 2
-# STR_IND_FACTORY_3                                                               :Factory 3
-# STR_IND_FACTORY_3.d                                                             :Factory 3
+# These factory numbers does not look like final names
+STR_IND_FACTORY_1                                                               :Fabryka 1
+STR_IND_FACTORY_1.d                                                             :Fabryki 1
+STR_IND_FACTORY_2                                                               :Fabryka 2
+STR_IND_FACTORY_2.d                                                             :Fabryki 2
+STR_IND_FACTORY_3                                                               :Fabryka 3
+STR_IND_FACTORY_3.d                                                             :Fabryki 3
 STR_IND_FISCHER_TROPSCH_PLANT                                                   :{G=m}Zakład syntezy Fischera-Tropscha
 STR_IND_FISCHER_TROPSCH_PLANT.d                                                 :zakładu syntezy Fischera-Tropscha
 STR_IND_FISH_FARM                                                               :{G=f}Hodowla ryb
@@ -768,8 +1052,22 @@ STR_IND_FOOD_MARKET                                                             
 STR_IND_FOOD_MARKET.d                                                           :sklepu spożywczego
 STR_IND_FOOD_PROCESSOR                                                          :{G=f}Przetwórnia żywności
 STR_IND_FOOD_PROCESSOR.d                                                        :przetwórni żywności
+STR_IND_FRUIT_PACKING_PLANT                                                     :{G=m}Zakład pakowania owoców
+STR_IND_FRUIT_PACKING_PLANT.b                                                   :zakład pakowania owoców
+STR_IND_FRUIT_PACKING_PLANT.c                                                   :zakładowi pakowania owoców
+STR_IND_FRUIT_PACKING_PLANT.d                                                   :zakładu pakowania owoców
+STR_IND_FRUIT_PACKING_PLANT.m                                                   :zakładzie pakowania owoców
+STR_IND_FRUIT_PACKING_PLANT.n                                                   :zakładem pakowania owoców
+STR_IND_FRUIT_PACKING_PLANT.w                                                   :zakładzie pakowania owoców
 STR_IND_FURNITURE_FACTORY                                                       :{G=f}Fabryka mebli
 STR_IND_FURNITURE_FACTORY.d                                                     :fabryki mebli
+STR_IND_FORGE_AND_FOUNDRY                                                       :{G=f}Kuźnia z piecem
+STR_IND_FORGE_AND_FOUNDRY.b                                                     :kuźnię z piecem
+STR_IND_FORGE_AND_FOUNDRY.c                                                     :kuźni z piecem
+STR_IND_FORGE_AND_FOUNDRY.d                                                     :kuźni z piecem
+STR_IND_FORGE_AND_FOUNDRY.m                                                     :kuźni z piecem
+STR_IND_FORGE_AND_FOUNDRY.n                                                     :kuźnią z piecem
+STR_IND_FORGE_AND_FOUNDRY.w                                                     :kuźnio z piecem
 STR_IND_GENERAL_STORE                                                           :{G=m}Sklep
 STR_IND_GENERAL_STORE.d                                                         :sklepu
 STR_IND_GLASS_WORKS                                                             :{G=f}Huta szkła
@@ -789,8 +1087,7 @@ STR_IND_IRON_WORKS                                                              
 STR_IND_IRON_WORKS.d                                                            :pieca hutniczego
 STR_IND_JUNKYARD                                                                :{G=n}Złomowisko
 STR_IND_JUNKYARD.d                                                              :złomowiska
-# STR_IND_LATEX_PROCESSOR                                                         :Latex Processor //depends on RAW_LATEX translation
-# STR_IND_LATEX_PROCESSOR.d                                                       :Latex Processor
+# STR_IND_LATEX_PROCESSOR                                                         :Latex Processor //depends on RAW_LATEX translation and is a left over from unfinished FIRS project.
 STR_IND_LIME_KILN                                                               :{G=m}Wapiennik
 STR_IND_LIME_KILN.d                                                             :wapiennika
 STR_IND_LIMESTONE_MINE                                                          :{G=f}Kopalnia wapienia
@@ -812,6 +1109,13 @@ STR_IND_MANGANESE_MINE.b                                                        
 STR_IND_MANGANESE_MINE.c                                                        :kopalni manganu
 STR_IND_MANGANESE_MINE.d                                                        :kopalni manganu
 STR_IND_MANGANESE_MINE.n                                                        :kopalnią manganu
+STR_IND_MEAT_PACKING_PLANT                                                      :Zakłady mięsne
+STR_IND_MEAT_PACKING_PLANT.b                                                    :zakłady mięsne
+STR_IND_MEAT_PACKING_PLANT.c                                                    :zakładom mięsnym
+STR_IND_MEAT_PACKING_PLANT.d                                                    :zakładów mięsnych
+STR_IND_MEAT_PACKING_PLANT.m                                                    :zakładach mięsnych
+STR_IND_MEAT_PACKING_PLANT.n                                                    :zakładami mięsnymi
+STR_IND_MEAT_PACKING_PLANT.w                                                    :zakłady mięsne
 STR_IND_METAL_WORKSHOP                                                          :{G=m}Warsztat metalowy
 STR_IND_METAL_WORKSHOP.c                                                        :warsztatowi metalowemu
 STR_IND_METAL_WORKSHOP.d                                                        :warsztatu metalowego
@@ -824,6 +1128,13 @@ STR_IND_NITRATE_MINE                                                            
 STR_IND_NITRATE_MINE.d                                                          :kopalni saletry
 STR_IND_ORCHARD_PIGGERY                                                         :{G=m}Sad i hodowla trzody chlewnej
 STR_IND_ORCHARD_PIGGERY.d                                                       :sadu i hodowli trzody chlewnej
+STR_IND_PAINT_FACTORY                                                           :{G=f}Fabryka farby
+STR_IND_PAINT_FACTORY.b                                                         :fabrykę farby
+STR_IND_PAINT_FACTORY.c                                                         :fabryce farby
+STR_IND_PAINT_FACTORY.d                                                         :fabryki farby
+STR_IND_PAINT_FACTORY.m                                                         :fabryce farby
+STR_IND_PAINT_FACTORY.n                                                         :fabryką farby
+STR_IND_PAINT_FACTORY.w                                                         :fabryko farby
 STR_IND_PEATLANDS                                                               :{G=n}Torfowisko
 STR_IND_PEATLANDS.c                                                             :torfowisku
 STR_IND_PEATLANDS.d                                                             :torfowiska
@@ -838,10 +1149,24 @@ STR_IND_PHOSPHORIC_ACID_PLANT                                                   
 STR_IND_PHOSPHORIC_ACID_PLANT.d                                                 :wytwórni kwasu fosforowego
 STR_IND_PLASTICS_PLANT                                                          :{G=f}Fabryka tworzyw sztucznych
 STR_IND_PLASTICS_PLANT.d                                                        :fabryki tworzyw sztucznych
+STR_IND_PLAZA                                                                   :{G=m}Plac
+STR_IND_PLAZA.b                                                                 :plac
+STR_IND_PLAZA.c                                                                 :placowi
+STR_IND_PLAZA.d                                                                 :placu
+STR_IND_PLAZA.m                                                                 :placu
+STR_IND_PLAZA.n                                                                 :placem
+STR_IND_PLAZA.w                                                                 :placu
 STR_IND_POLYETHYLENE_PLANT                                                      :{G=f}Fabryka polietylenu
 STR_IND_POLYETHYLENE_PLANT.d                                                    :fabryki polietylenu
 STR_IND_POLYPROPYLENE_PLANT                                                     :{G=f}Fabryka polipropylenu
 STR_IND_POLYPROPYLENE_PLANT.d                                                   :fabryki polipropylenu
+STR_IND_POLYMER_PLANT                                                           :{G=m}Zakład polimeryzacji
+STR_IND_POLYMER_PLANT.b                                                         :zakład polimeryzacji
+STR_IND_POLYMER_PLANT.c                                                         :zakładowi polimeryzacji
+STR_IND_POLYMER_PLANT.d                                                         :zakładu polimeryzacji
+STR_IND_POLYMER_PLANT.m                                                         :zakładzie polimeryzacji
+STR_IND_POLYMER_PLANT.n                                                         :zakładem polimeryzacji
+STR_IND_POLYMER_PLANT.w                                                         :zakładzie polimeryzacji
 STR_IND_PORT                                                                    :{G=m}Port
 STR_IND_PORT.d                                                                  :portu
 STR_IND_POTASH_MINE                                                             :{G=f}Kopalnia potażu
@@ -851,6 +1176,13 @@ STR_IND_POTASH_MINE.d                                                           
 STR_IND_POTASH_MINE.m                                                           :kopalni potażu
 STR_IND_POTASH_MINE.n                                                           :kopalnią potażu
 STR_IND_POTASH_MINE.w                                                           :kopalnio potażu
+STR_IND_PRINTING_PLANT                                                          :{G=f}Drukarnia
+STR_IND_PRINTING_PLANT.b                                                        :drukarnię
+STR_IND_PRINTING_PLANT.c                                                        :drukarni
+STR_IND_PRINTING_PLANT.d                                                        :drukarni
+STR_IND_PRINTING_PLANT.m                                                        :drukarni
+STR_IND_PRINTING_PLANT.n                                                        :drukarnią
+STR_IND_PRINTING_PLANT.w                                                        :drukarnio
 STR_IND_PYRITE_MINE                                                             :{G=f}Kopalnia pirytu
 STR_IND_PYRITE_MINE.b                                                           :kopalnię pirytu
 STR_IND_PYRITE_MINE.c                                                           :kopalni pirytu
@@ -894,6 +1226,20 @@ STR_IND_REINDEER_FARM.n                                                         
 STR_IND_REINDEER_FARM.w                                                         :farmo reniferów
 STR_IND_SALT_MINE                                                               :{G=f}Kopalnia soli
 STR_IND_SALT_MINE.d                                                             :kopalni soli
+STR_IND_SALT_EVAPORATOR                                                         :{G=f}Salina
+STR_IND_SALT_EVAPORATOR.b                                                       :Salinę
+STR_IND_SALT_EVAPORATOR.c                                                       :Salinie
+STR_IND_SALT_EVAPORATOR.d                                                       :Saliny
+STR_IND_SALT_EVAPORATOR.m                                                       :Salinie
+STR_IND_SALT_EVAPORATOR.n                                                       :Saliną
+STR_IND_SALT_EVAPORATOR.w                                                       :Salino
+STR_IND_SEAWEED_FARM                                                            :{G=f}Farma wodorostów
+STR_IND_SEAWEED_FARM.b                                                          :Farmę wodorostów
+STR_IND_SEAWEED_FARM.c                                                          :Farmie wodorostów
+STR_IND_SEAWEED_FARM.d                                                          :Farmy wodorostów
+STR_IND_SEAWEED_FARM.m                                                          :Farmie wodorostów
+STR_IND_SEAWEED_FARM.n                                                          :Farmą wodorostów
+STR_IND_SEAWEED_FARM.w                                                          :Farmo wodorostów
 STR_IND_SHEEPFARM                                                               :{G=f}Ferma owiec
 STR_IND_SHEEPFARM.d                                                             :fermy owiec
 STR_IND_SLAG_GRINDING_PLANT                                                     :{G=f}Przetwórnia żużlu
@@ -901,6 +1247,13 @@ STR_IND_SLAG_GRINDING_PLANT.c                                                   
 STR_IND_SLAG_GRINDING_PLANT.d                                                   :przetwórni żużlu
 STR_IND_SMITHY_FORGE                                                            :{G=f}Kuźnia
 STR_IND_SMITHY_FORGE.d                                                          :kuźni
+STR_IND_SOAP_FACTORY                                                            :{G=f}Fabryka środków czystości
+STR_IND_SOAP_FACTORY.b                                                          :fabrykę środków czystości
+STR_IND_SOAP_FACTORY.c                                                          :fabryce środków czystości
+STR_IND_SOAP_FACTORY.d                                                          :fabryki środków czystości
+STR_IND_SOAP_FACTORY.m                                                          :fabryce środków czystości
+STR_IND_SOAP_FACTORY.n                                                          :fabryką środków czystości
+STR_IND_SOAP_FACTORY.w                                                          :fabryko środków czystości
 STR_IND_SODA_ASH_MINE                                                           :{G=f}Fabryka sody
 STR_IND_SODA_ASH_MINE.b                                                         :fabrykę sody
 STR_IND_SODA_ASH_MINE.d                                                         :fabryki sody
@@ -909,8 +1262,29 @@ STR_IND_SOLVAY_PLANT.d                                                          
 # we use 'integrated_steel_mill' in code to avoid confusion with Steeltown mills, but it's easier to just use 'Steel Mill' for name that players see
 STR_IND_INTEGRATED_STEEL_MILL                                                   :{G=f}Huta stali
 STR_IND_INTEGRATED_STEEL_MILL.d                                                 :huty stali
+STR_IND_SHEET_MILL                                                              :{G=f}Fabryka blachy
+STR_IND_SHEET_MILL.b                                                            :fabrykę blachy
+STR_IND_SHEET_MILL.c                                                            :fabryce blachy
+STR_IND_SHEET_MILL.d                                                            :fabryki blachy
+STR_IND_SHEET_MILL.m                                                            :fabryce blachy
+STR_IND_SHEET_MILL.n                                                            :fabryką blachy
+STR_IND_SHEET_MILL.w                                                            :fabryko blachy
 STR_IND_SHEET_AND_PIPE_MILL                                                     :{G=f}Fabryka blachy i rur
 STR_IND_SHEET_AND_PIPE_MILL.d                                                   :fabryki blachy i rur
+STR_IND_SHIPBREAKER                                                             :{G=f}Stocznia złomowa
+STR_IND_SHIPBREAKER.b                                                           :stocznię złomową
+STR_IND_SHIPBREAKER.c                                                           :stoczni złomowej
+STR_IND_SHIPBREAKER.d                                                           :stoczni złomowej
+STR_IND_SHIPBREAKER.m                                                           :stoczni złomowej
+STR_IND_SHIPBREAKER.n                                                           :stocznią złomową
+STR_IND_SHIPBREAKER.w                                                           :stocznio złomowa
+STR_IND_SPICE_PLANTATION                                                        :{G=f}Plantacja przypraw
+STR_IND_SPICE_PLANTATION.b                                                      :plantację przypraw
+STR_IND_SPICE_PLANTATION.c                                                      :plantacji przypraw
+STR_IND_SPICE_PLANTATION.d                                                      :plantacji przypraw
+STR_IND_SPICE_PLANTATION.m                                                      :plantacji przypraw
+STR_IND_SPICE_PLANTATION.n                                                      :plantacją przypraw
+STR_IND_SPICE_PLANTATION.w                                                      :plantacjo przypraw
 STR_IND_STOCKYARD                                                               :{G=f}Ubojnia
 STR_IND_STOCKYARD.d                                                             :ubojni
 STR_IND_SUGAR_REFINERY                                                          :{G=f}Cukrownia
@@ -922,6 +1296,20 @@ STR_IND_SUPPLY_YARD.b                                                           
 STR_IND_SUPPLY_YARD.c                                                           :magazynowi zaopatrzeniowemu
 STR_IND_SUPPLY_YARD.d                                                           :magazynu zaopatrzeniowego
 STR_IND_SUPPLY_YARD.n                                                           :magazynem zaopatrzeniowym
+STR_IND_SYNTHETIC_RUBBER_PLANT                                                  :{G=f}Fabryka sztucznej gumy
+STR_IND_SYNTHETIC_RUBBER_PLANT.b                                                :fabrykę sztucznej gumy
+STR_IND_SYNTHETIC_RUBBER_PLANT.c                                                :fabryce sztucznej gumy
+STR_IND_SYNTHETIC_RUBBER_PLANT.d                                                :fabryki sztucznej gumy
+STR_IND_SYNTHETIC_RUBBER_PLANT.m                                                :fabryce sztucznej gumy
+STR_IND_SYNTHETIC_RUBBER_PLANT.n                                                :fabryką sztucznej gumy
+STR_IND_SYNTHETIC_RUBBER_PLANT.w                                                :fabryko sztucznej gumy
+STR_IND_TAR_SANDS_MINE                                                          :{G=f}Kopalnia piasków smołowych
+STR_IND_TAR_SANDS_MINE.b                                                        :kopalnię piasków smołowych
+STR_IND_TAR_SANDS_MINE.c                                                        :kopalni piasków smołowych
+STR_IND_TAR_SANDS_MINE.d                                                        :kopalni piasków smołowych
+STR_IND_TAR_SANDS_MINE.m                                                        :kopalni piasków smołowych
+STR_IND_TAR_SANDS_MINE.n                                                        :kopalnią piasków smołowych
+STR_IND_TAR_SANDS_MINE.w                                                        :kopalnio piasków smołowych
 STR_IND_TEXTILE_MILL                                                            :{G=m}Zakład odzieżowy
 STR_IND_TEXTILE_MILL.d                                                          :zakładu odzieżowego
 STR_IND_TINPLATE_WORKS                                                          :{G=f}Fabryka blachy cynowanej
@@ -945,19 +1333,6 @@ STR_IND_WHARF.d                                                                 
 STR_IND_WIRE_AND_SECTION_MILL                                                   :{G=f}Fabryka profili i walcówki
 STR_IND_WIRE_AND_SECTION_MILL.d                                                 :fabryki profili i walcówki
 
-
-STR_CARGO_SUBTYPE_DISPLAY_CARGO_SUPPLIED_FLAG                             : {BLACK}(dostarczono)
-STR_EXTRA_TEXT_SECONDARY_NON_COMBINATORY                                        :{BLACK}Produkuje z maksymalną wydajnością, jeśli dostarczany jest {WHITE}którykolwiek {BLACK}z potrzebnych towarów.
-STR_EXTRA_TEXT_SECONDARY_COMBINATORY                                            :{BLACK}Dla maksymalnej produkcji, dostarcz {WHITE}wszystkie {BLACK}potrzebne towary co najmniej raz na 3 miesiące.
-STR_EXTRA_TEXT_TOWN_PRODUCER                                                    :{BLACK}Produkcja jest proporcjonalna do populacji miasta. Przynajmniej {WHITE}{SIGNED_WORD} jednostek{BLACK} i nie więcej niż {WHITE}{SIGNED_WORD} jednostek{BLACK} towaru będzie produkowanych każdego miesiąca.
-STR_PRIMARY_PRODUCTION_1X                                                       :{BLACK}Aktualna produkcja: {YELLOW}normalna{}{}{BLACK}Dla {WHITE}zwiększonej {BLACK}produkcji, dostarcz {SIGNED_WORD} skrzyń zaopatrzenia w ciągu trzech miesięcy.{}Dla {WHITE}niewiarygodnej {BLACK}produkcji dostarcz {SIGNED_WORD} skrzyń.
-STR_PRIMARY_PRODUCTION_2X                                                       :{BLACK}Aktualna produkcja: {YELLOW}zwiększona{}{}{BLACK}By utrzymać ten poziom, dostarcz {SIGNED_WORD} skrzyń zaopatrzenia w ciągu trzech miesięcy.{}Dla {WHITE}niewiarygodnej {BLACK}produkcji, dostarcz {SIGNED_WORD} skrzyń.
-STR_PRIMARY_PRODUCTION_4X                                                       :{BLACK}Aktualna produkcja: {YELLOW}niewiarygodna{}{}{BLACK}By utrzymać ten poziom, dostarcz {SKIP}{SIGNED_WORD} skrzyń zaopatrzenia w ciągu trzech miesięcy.
-STR_PORT_PRODUCTION_1X                                                          :{BLACK}Aktualna produkcja: {YELLOW}normalna{}{}{BLACK}Dla {WHITE}zwiększonej {BLACK}produkcji dostarcz {SIGNED_WORD} jednostek towaru w ciągu trzech miesięcy.{}Dla {WHITE}niewiarygodnej {BLACK}produkcji dostarcz {SIGNED_WORD} jednostek.
-STR_PORT_PRODUCTION_2X                                                          :{BLACK}Aktualna produkcja: {YELLOW}zwiększona{}{}{BLACK}By utrzymać ten poziom, dostarcz {SIGNED_WORD} jednostek towaru w ciągu trzech miesięcy.{}Dla {WHITE}niewiarygodnej {BLACK}produkcji dostarcz {SIGNED_WORD} jednostek.
-STR_PORT_PRODUCTION_4X                                                          :{BLACK}Aktualna produkcja: {YELLOW}niewiarygodna{}{}{BLACK}By utrzymać ten poziom, dostarcz {SKIP}{SIGNED_WORD} jednostek towaru w ciągu trzech miesięcy.
-STR_GENERIC_NEWLINE                                                             :{}
-
 STR_FUND_ARABLE_FARM                                                            :{}{BLACK}Lokalizacja: {YELLOW}Nie może być budowane na śniegu ani na pustyni.
 STR_FUND_COFFEE_ESTATE                                                          :{}{BLACK}Lokalizacja: {YELLOW}Nie może być budowane na śniegu ani na pustyni.
 STR_FUND_DAIRY_FARM                                                             :{}{BLACK}Lokalizacja: {YELLOW}Nie może być budowane na śniegu ani na pustyni.
@@ -980,10 +1355,12 @@ STR_STATION_AUTOMOTIVE                                                          
 STR_STATION_BAR_GRILL_AND_ROOMS                                                 :Hotel
 STR_STATION_BARNS                                                               :Ferma
 STR_STATION_BARREL_AND_KEG                                                      :Gorzelnia
-STR_STATION_BASE                                                                :Baza sprzętu
+STR_STATION_BASE                                                                :Baza Sprzętu
+STR_STATION_BAUXITE                                                             :Złoża Boksytu
 STR_STATION_BONEYARD                                                            :Złomowisko
 STR_STATION_BANK_TOP                                                            :Hałdy
 STR_STATION_BRINE_WORKS                                                         :Solanka
+STR_STATION_CANNERY                                                             :Fabryka Konserw
 STR_STATION_CASTINGS                                                            :Odlewnia
 STR_STATION_COLLIERY                                                            :Kopalnia Węgla
 STR_STATION_COLLIERY.b                                                          :kopalnię węgla
@@ -1003,12 +1380,14 @@ STR_STATION_EXCHANGE                                                            
 STR_STATION_FARM_1                                                              :Folwark
 STR_STATION_FARM_2                                                              :Łąki
 STR_STATION_FARM_3                                                              :{G=n}Ranczo
+STR_STATION_FEED_AND_SEED                                                       :Pasza i Nasiona
 STR_STATION_FISHMARKET                                                          :Targ Rybny
 STR_STATION_FISH_PENS                                                           :Stawy
 STR_STATION_FOOD_CORPORATION                                                    :Zakłady Spożywcze
 STR_STATION_FOREST                                                              :Polanka
 STR_STATION_FORGE                                                               :{G=f}Kuźnia
 STR_STATION_FURNACE                                                             :Wielki Piec
+STR_STATION_GALVANISING                                                         :Cynkowanie
 STR_STATION_HEAVY_EQUIPMENT_YARD                                                :Baza zaopatrzenia
 STR_STATION_HEAVY_INDUSTRY_2                                                    :Zakłady
 STR_STATION_HERDING_COOP                                                        :Koliba
@@ -1024,16 +1403,20 @@ STR_STATION_KIMBERLITE_DEPOSITS                                                 
 STR_STATION_LIMESTONE_MINES                                                     :Kamieniołomy Wapienne
 STR_STATION_MANGANESE_MINES                                                     :Kopalnie Manganu
 STR_STATION_MARKET                                                              :Targowisko
+STR_STATION_MEAT                                                                :Wytapialnia Tłuszczy
 STR_STATION_MERCHANTS_LANE                                                      :Rynek
 STR_STATION_MILL                                                                :Młyny
 STR_STATION_MINE                                                                :Zagłębie
 STR_STATION_MOULDINGS                                                           :Formiernia
 STR_STATION_OIL_RIG                                                             :Pole Naftowe
+STR_STATION_OIL_PRESS                                                           :Prasa do Oleju
 STR_STATION_ORCHARDS                                                            :Sady
 STR_STATION_PHENOLS                                                             :Fenole
 STR_STATION_PIT                                                                 :Wyrobisko
 STR_STATION_PIPE_MILL                                                           :Rurownia
 STR_STATION_PLANTATION                                                          :Plantacja
+STR_STATION_PLAZA                                                               :Plac
+STR_STATION_POLYMERS                                                            :Polimery
 STR_STATION_POWERHUNGRY                                                         :Elektrownia
 STR_STATION_POWERTRAIN                                                          :Fabryka Silników
 STR_STATION_PUMPS                                                               :Pompy
@@ -1041,6 +1424,7 @@ STR_STATION_PYRITES                                                             
 STR_STATION_REFINERY                                                            :Rafineria
 STR_STATION_ROD_MILL                                                            :Walcownia
 STR_STATION_RUBBER_COMPANY                                                      :Fabryka Opon
+STR_STATION_SALT                                                                :Słone Pola
 STR_STATION_SALTPETER_WORKS                                                     :Azoty
 STR_STATION_SEAFOOD                                                             :Owoce Morza
 STR_STATION_SHARP_STREET                                                        :Huta Szkła
@@ -1048,6 +1432,7 @@ STR_STATION_SHEEP_FOLD                                                          
 STR_STATION_SHOALS                                                              :Łowisko
 STR_STATION_SILO                                                                :Silosy
 STR_STATION_SMELTER                                                             :Huta
+STR_STATION_SOOT_FURNACE                                                        :Osmolony Piec
 STR_STATION_STACKS                                                              :Stosy
 STR_STATION_STAMP_AND_PLATE                                                     :Walcownia
 STR_STATION_SUGAR_COMPANY                                                       :Cukrownia
@@ -1068,3 +1453,14 @@ STR_STATION_WINERY.m                                                            
 STR_STATION_WINERY.n                                                            :winiarnią
 STR_STATION_WINERY.w                                                            :winiarnio
 STR_STATION_VEHICLE_DISTRIBUTOR                                                 :Salon Samochodowy
+
+# do not translate these
+STR_GENERIC_NEWLINE                                                             :{}
+# to use when dynamically choosing text colours, and we can't return a colour code directly
+STR_COLOUR_BLUE                                                                 :{BLUE}
+STR_COLOUR_GOLD                                                                 :{GOLD}
+STR_COLOUR_GREEN                                                                :{GREEN}
+STR_COLOUR_LTBLUE                                                               :{LTBLUE}
+STR_COLOUR_RED                                                                  :{RED}
+STR_COLOUR_YELLOW                                                               :{YELLOW}
+STR_COLOUR_WHITE                                                                :{WHITE}
